@@ -8,7 +8,7 @@
   .qs-top .ds-brand-link { display: inline-flex; align-items: center; }
   .qs-menu-theme { padding: 8px 4px 4px; display: flex; justify-content: flex-start; }
   .qs-menu-signout { display: none; }
-  @media (max-width: 760px) {
+  @media (max-width: 860px) {
     .qs-top-bar { gap: calc(8px * var(--space-scale, 1)); }
     .qs-menu-signout { display: block; }
   }

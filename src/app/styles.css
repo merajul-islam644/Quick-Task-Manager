@@ -421,3 +421,7 @@ pre { background: hsl(var(--foreground)); border-radius: var(--radius); color: h
 /* A task card turned into fields, and a failed task action */
 .q-task-editing { align-items: stretch; }
 .q-task-error { margin-top: 8px; }
+
+/* Phone frame: no sideways scrolling at any width */
+html, body { max-width: 100%; }
+body.ds-root { overflow-x: clip; }

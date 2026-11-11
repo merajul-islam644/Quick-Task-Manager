@@ -44,3 +44,9 @@
 {"type":"check_verified","check":"AC-01 AC2","by":"ran","how":"Both Sign out buttons call the app's sign-out, which ends the session and sends the person to the opening screen where WelcomeScreen shows You're signed out with the one sign-in button."}
 {"type":"assumption","feature":"AC-01","text":"The Settings screen shows the account's created date from the person's profile; when the platform leaves that blank, the line reads Member since only."}
 {"type":"step_done","step":"T05"}
+{"type":"step_started","step":"T06"}
+{"type":"feature_started","feature":"GN-01"}
+{"type":"check_verified","check":"GN-01 AC1","by":"ran","how":"node checks/phone.test.ts read the app's built styles and header: at 860px and below (so at 390px) the sidebar is hidden, the compact header shows the app name and a menu button, the input goes full width, cards stack in one column, tap targets are 44px and nothing scrolls sideways."}
+{"type":"check_verified","check":"GN-01 AC2","by":"ran","how":"Same script read HeaderPart: the menu lists Home, Statistics and Settings, marks the current screen, closes after a choice (and on Escape or an outside click); choosing Statistics routes to the statistics screen through the app's router."}
+{"type":"assumption","feature":"GN-01","text":"The tablet keeps the sidebar and the phone (860px and narrower) gets the compact header, matching the design's breakpoint; the colour-mode switch moves into the phone menu."}
+{"type":"step_done","step":"T06"}

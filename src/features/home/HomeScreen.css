@@ -71,3 +71,16 @@
   .q-edit-actions { flex: 1 1 100%; justify-content: flex-end; padding-top: 0; }
   @media (max-width: 760px) { .q-edit-date { width: 100%; } }
 }
+
+/* Phone: one column, full-width input, 44px tap targets, no sideways scroll */
+:where(.studio-screen-home) {
+  @media (max-width: 860px) {
+    .q-add-row > .ds-field { flex: 1 1 100%; width: 100%; }
+    .q-add-row .ds-btn { width: 100%; min-height: 44px; }
+    .q-list-head .ds-tabs { width: 100%; overflow-x: auto; }
+    .ds-tab { min-height: 44px; }
+    .q-check { min-height: 44px; }
+    .q-row-actions .ds-btn { min-height: 44px; }
+    .q-task, .q-task-title, .q-task-meta { min-width: 0; overflow-wrap: anywhere; }
+  }
+}
