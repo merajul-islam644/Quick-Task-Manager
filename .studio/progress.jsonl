@@ -25,3 +25,12 @@
 {"type":"check_verified","check":"TS-03 AC2","by":"ran","how":"Same script read useToggleTask: a done task clicked sends done false (task.done !== true), the list flips back to Pending and Completed drops by one; the checkbox label reads Reopen for done tasks and Complete for pending ones."}
 {"type":"assumption","feature":"TS-03","text":"Checking a task saves straight away with an optimistic flip; if the gateway refuses, the card flips back and the list reloads, so a failed save is never shown as done."}
 {"type":"step_done","step":"T03"}
+{"type":"step_started","step":"T04"}
+{"type":"feature_started","feature":"TS-04"}
+{"type":"feature_started","feature":"TS-05"}
+{"type":"check_verified","check":"TS-04 AC1","by":"ran","how":"node checks/edit-delete.test.ts ran the app's own date helpers (a stored date round-trips to its date field, tomorrow reads back as Tomorrow) and read the edit path: Save sends only title and dueDate, so a pending task stays pending and its counts do not change; the card returns to its one-line look in place."}
+{"type":"check_verified","check":"TS-04 AC2","by":"ran","how":"Same script: TaskEditForm refuses a blank text with Write the task first. before calling Save, and Cancel closes the fields, leaving the earlier text and date untouched."}
+{"type":"check_verified","check":"TS-05 AC1","by":"ran","how":"The delete path removes the one clicked task through deleteTask with no confirmation step, and the list reloads so the remaining 3 cards and their counts come from the page data; no confirm() anywhere in the screen."}
+{"type":"check_verified","check":"TS-05 AC2","by":"ran","how":"ClearAllDialog asks Delete all your tasks? with Delete all and Cancel; the script showed Cancel leaves all 4 tasks and Delete all empties the list, after which Home shows No tasks here. Add a task to get started! and every card reads 0. Clear All is hidden when there are no tasks."}
+{"type":"assumption","feature":"TS-05","text":"Clear All removes every task one by one (each checked for a refusal), and the confirmation dialog follows the app's style guide since the design draws no dialog."}
+{"type":"step_done","step":"T04"}

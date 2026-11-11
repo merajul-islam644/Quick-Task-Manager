@@ -1,6 +1,7 @@
 import { useT } from "../../lib/i18n/LocalizationProvider";
 import type { Task } from "../tasks/tasksApi";
 import { formatDueDate } from "../tasks/formatDueDate";
+import { TaskEditForm } from "./TaskEditForm";
 
 export type TaskCardActions = {
   onToggle?: (task: Task) => void;
@@ -8,15 +9,37 @@ export type TaskCardActions = {
   onDelete?: (task: Task) => void;
 };
 
+export type TaskListStatus = {
+  editingId?: string;
+  saving?: boolean;
+  editError?: string;
+  onSaveEdit?: (task: Task, edits: { title: string; dueDate: string }) => void;
+  onCancelEdit?: () => void;
+};
+
 function CheckIcon() {
   return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" /></svg>;
 }
 
 /** One task card: round checkbox, text, date label, status and the row actions. */
-export function TaskCard({ task, actions }: { task: Task; actions?: TaskCardActions }) {
+export function TaskCard({ task, actions, status }: { task: Task; actions?: TaskCardActions; status?: TaskListStatus }) {
   const { t } = useT();
   const title = task.title ?? "";
   const done = task.done === true;
+
+  const editing = status?.editingId === task.ItemId ? status : undefined;
+  if (editing) {
+    return (
+      <TaskEditForm
+        task={task}
+        saving={editing.saving === true}
+        error={editing.editError}
+        onSave={(edits) => editing.onSaveEdit?.(task, edits)}
+        onCancel={() => editing.onCancelEdit?.()}
+      />
+    );
+  }
+
   return (
     <div className={done ? "q-task is-done" : "q-task"}>
       <button
@@ -72,11 +95,11 @@ export function TaskCard({ task, actions }: { task: Task; actions?: TaskCardActi
 }
 
 /** The list of task cards under the chosen tab. */
-export function TaskList({ tasks, actions, panel, buttonId }: { tasks: Task[]; actions?: TaskCardActions; panel: string; buttonId: string }) {
+export function TaskList({ tasks, actions, status, panel, buttonId }: { tasks: Task[]; actions?: TaskCardActions; status?: TaskListStatus; panel: string; buttonId: string }) {
   return (
     <div id={panel} role="tabpanel" aria-labelledby={buttonId}>
       <div className="q-tasks">
-        {tasks.map((task) => <TaskCard key={task.ItemId} task={task} actions={actions} />)}
+        {tasks.map((task) => <TaskCard key={task.ItemId} task={task} actions={actions} status={status} />)}
       </div>
     </div>
   );

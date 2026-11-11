@@ -71,3 +71,23 @@ export async function setTaskDone(itemId: string, done: boolean): Promise<void> 
   if (failure) throw new Error(failure);
   if (!result?.acknowledged) throw new Error(result?.message || "The task could not be saved.");
 }
+
+export async function updateTaskFields(itemId: string, input: { title: string; dueDate: string }): Promise<void> {
+  const response = (await tasks.update(itemId, input)) as {
+    data?: { updateTask?: { acknowledged?: boolean; message?: string } | null };
+  };
+  const failure = gatewayError(response);
+  const result = response.data?.updateTask;
+  if (failure) throw new Error(failure);
+  if (!result?.acknowledged) throw new Error(result?.message || "The task could not be saved.");
+}
+
+export async function deleteTask(itemId: string): Promise<void> {
+  const response = (await tasks.delete(itemId, { hardDelete: true })) as {
+    data?: { deleteTask?: { acknowledged?: boolean; message?: string } | null };
+  };
+  const failure = gatewayError(response);
+  const result = response.data?.deleteTask;
+  if (failure) throw new Error(failure);
+  if (!result?.acknowledged) throw new Error(result?.message || "The task could not be removed.");
+}

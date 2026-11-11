@@ -6,6 +6,10 @@ import "./HomeScreen.css";
 import { TaskList } from "./TaskList";
 import { AddTaskCard } from "./AddTaskCard";
 import { useToggleTask } from "../tasks/useToggleTask";
+import { useEditTask } from "../tasks/useEditTask";
+import { useDeleteTasks } from "../tasks/useDeleteTasks";
+import { ClearAllDialog } from "./ClearAllDialog";
+import { useState } from "react";
 import type { Task } from "../tasks/tasksApi";
 
 /** The situations the design shows: the screen as it usually is, then each one drawn. Show the one the real data or request is in. */
@@ -30,7 +34,35 @@ export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props
   const { t } = useT();
   const view = useTasks();
   const toggle = useToggleTask();
-  const taskActions = { onToggle: (task: Task) => toggle.mutate(task) };
+  const edit = useEditTask();
+  const remove = useDeleteTasks();
+  const [editingId, setEditingId] = useState<string | undefined>();
+  const [editError, setEditError] = useState<string | undefined>();
+  const [clearOpen, setClearOpen] = useState(false);
+  const [clearError, setClearError] = useState<string | undefined>();
+  const [deleteError, setDeleteError] = useState<string | undefined>();
+
+  const taskActions = {
+    onToggle: (task: Task) => toggle.mutate(task),
+    onEdit: (task: Task) => { setEditError(undefined); setEditingId(String(task.ItemId)); },
+    onDelete: (task: Task) => {
+      setDeleteError(undefined);
+      remove.remove.mutate(task, { onError: (error) => setDeleteError((error as Error).message) });
+    }
+  };
+  const taskStatus = {
+    editingId,
+    saving: edit.isPending,
+    editError,
+    onSaveEdit: (task: Task, edits: { title: string; dueDate: string }) => {
+      setEditError(undefined);
+      edit.mutate({ task, edits }, {
+        onSuccess: () => setEditingId(undefined),
+        onError: (error) => setEditError((error as Error).message)
+      });
+    },
+    onCancelEdit: () => { setEditError(undefined); setEditingId(undefined); }
+  };
   const counts = view.state === "ready" ? view.counts : { all: 0, pending: 0, completed: 0 };
   const tasks = view.state === "ready" ? view.tasks : [];
   const pending = tasks.filter((task) => task.done !== true);
@@ -116,7 +148,7 @@ export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props
                     <details className="ds-menu">
                       <summary className="ds-btn ds-btn-secondary" aria-label="More task list actions"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><circle cx="5" cy="12" r="1.5" /><circle cx="12" cy="12" r="1.5" /><circle cx="19" cy="12" r="1.5" /></svg> More</summary>
                       <div className="ds-menu-list">
-                        <button className="q-clear" type="button">Clear All</button>
+                        <button className="q-clear" type="button" onClick={() => { setClearError(undefined); setClearOpen(true); }}>Clear All</button>
                       </div>
                     </details>
                   ) : null}
@@ -154,12 +186,28 @@ export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props
                   </div>
                 ) : null}
                 {view.state === "ready" && visible.length > 0 ? (
-                  <TaskList tasks={visible} actions={taskActions} panel={activePanel} buttonId={activeButtonId} />
+                  <span style={{ display: "contents" }}>
+                    <TaskList tasks={visible} actions={taskActions} status={taskStatus} panel={activePanel} buttonId={activeButtonId} />
+                    {deleteError ? <p className="ds-error q-task-error" role="alert">{deleteError}</p> : null}
+                  </span>
                 ) : null}
               </div>
             </div>
           </div>
         </div>
+        <ClearAllDialog
+          open={clearOpen}
+          busy={remove.removeAll.isPending}
+          error={clearError}
+          onCancel={() => setClearOpen(false)}
+          onConfirm={() => {
+            setClearError(undefined);
+            remove.removeAll.mutate(tasks, {
+              onSuccess: () => { setClearOpen(false); setEditingId(undefined); },
+              onError: (error) => setClearError((error as Error).message)
+            });
+          }}
+        />
       </main>
     </div>
   );
