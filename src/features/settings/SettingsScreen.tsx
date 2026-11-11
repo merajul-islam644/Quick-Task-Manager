@@ -6,11 +6,28 @@ import type { MouseEvent } from "react";
 import { SidebarPart } from "../../app/layout/SidebarPart";
 import { HeaderPart } from "../../app/layout/HeaderPart";
 import "./SettingsScreen.css";
+import { useCurrentUser, userDisplayName, userInitials } from "../profile/useCurrentUser";
+import { useSignOut } from "../auth/useSignOut";
+
+function formatMemberSince(value: string | undefined): string {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
 
 /** The situations the design shows: the screen as it usually is, then each one drawn. Show the one the real data or request is in. */
 export type SettingsScreenSituation = "normal" | "not-allowed";
 
-export function SettingsScreen({ situation = "normal", onNavigate }: { situation?: SettingsScreenSituation; onNavigate?: (path: string) => void }) {
+export function SettingsScreen({ onNavigate }: { situation?: SettingsScreenSituation; onNavigate?: (path: string) => void }) {
+  const me = useCurrentUser();
+  const profile = me.data?.data;
+  const name = userDisplayName(profile);
+  const initials = userInitials(profile);
+  const email = profile?.email ?? "";
+  const memberSince = formatMemberSince(profile?.createdDate as string | undefined);
+  const signOut = useSignOut(onNavigate);
+  const situation: SettingsScreenSituation = profile ? "normal" : "not-allowed";
   const goTo = (path: string) => (event: MouseEvent) => {
     if (!onNavigate) return;
     event.preventDefault();
@@ -62,16 +79,16 @@ export function SettingsScreen({ situation = "normal", onNavigate }: { situation
                       <p className="ds-muted" style={{ margin: "calc(8px * var(--space-scale, 1)) 0 0" }}>The account you are signed in with, and the way out.</p>
                     </div>
                     <div className="ds-actions">
-                      <button className="ds-btn ds-btn-danger"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M15 4h4v16h-4M11 8l-4 4 4 4M7 12h9" /></svg> Sign out </button>
+                      <button className="ds-btn ds-btn-danger" type="button" onClick={() => void signOut()}> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M15 4h4v16h-4M11 8l-4 4 4 4M7 12h9" /></svg> Sign out </button>
                     </div>
                   </div>
                   <div className="ds-section qs-account">
                     <div className="qs-id-card">
                       <div className="qs-id-top">
-                        <span className="ds-avatar qs-avatar-big" data-sample="">PS</span>
+                        <span className="ds-avatar qs-avatar-big">{initials}</span>
                         <div>
-                          <h2 className="qs-id-name" data-sample="me.name">Priya Shah</h2>
-                          <p className="qs-id-mail" data-sample="me.email">priya.shah@northgate-studio.co.uk</p>
+                          <h2 className="qs-id-name">{name}</h2>
+                          <p className="qs-id-mail">{email}</p>
                         </div>
                         <span className="ds-spacer" />
                         {" "}
@@ -80,15 +97,15 @@ export function SettingsScreen({ situation = "normal", onNavigate }: { situation
                       <dl className="qs-facts">
                         <div>
                           <dt>Name</dt>
-                          <dd data-sample="me.name">Priya Shah</dd>
+                          <dd>{name}</dd>
                         </div>
                         <div>
                           <dt>Email address</dt>
-                          <dd data-sample="me.email">priya.shah@northgate-studio.co.uk</dd>
+                          <dd>{email}</dd>
                         </div>
                         <div>
                           <dt>Member since</dt>
-                          <dd data-sample="me.memberSince">3 Nov 2026</dd>
+                          <dd>{memberSince ? "Member since " + memberSince : "Member since"}</dd>
                         </div>
                         <div>
                           <dt>Role</dt>
@@ -100,7 +117,7 @@ export function SettingsScreen({ situation = "normal", onNavigate }: { situation
                       <h2>Signed in on this device</h2>
                       <p>Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.</p>
                       <div className="qs-side-actions">
-                        <button className="ds-btn ds-btn-secondary"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M15 4h4v16h-4M11 8l-4 4 4 4M7 12h9" /></svg> Sign out </button>
+                        <button className="ds-btn ds-btn-secondary" type="button" onClick={() => void signOut()}> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M15 4h4v16h-4M11 8l-4 4 4 4M7 12h9" /></svg> Sign out </button>
                         {" "}
                         <a href="/" className="ds-btn ds-btn-ghost" data-goto="home" onClick={goTo("/")}>Back to Home</a>
                       </div>

@@ -4,13 +4,17 @@ import { CallbackPage } from "../../features/auth/CallbackPage";
 import { LoginPage } from "../../features/auth/LoginPage";
 import { WelcomeScreen } from "../../features/welcome/WelcomeScreen";
 import { HomeScreen } from "../../features/home/HomeScreen";
+import { StatisticsScreen } from "../../features/statistics/StatisticsScreen";
+import { SettingsScreen } from "../../features/settings/SettingsScreen";
 import { useAuth } from "../providers/AuthProvider";
+
+type TabKey = "all" | "pending" | "completed";
 
 export function AppRouter() {
   const { justSignedOut } = useAuth();
   const [path, setPath] = useState(() => window.location.pathname);
   const [search, setSearch] = useState(() => window.location.search);
-  const [tab, setTab] = useState<"all" | "pending" | "completed">("all");
+  const [tab, setTab] = useState<TabKey>("all");
 
   useEffect(() => {
     const onPopState = () => {
@@ -52,7 +56,15 @@ export function AppRouter() {
 
   return (
     <RequireAuth currentPath={path} onNavigate={navigate}>
-      {path === "/" ? <HomeScreen onNavigate={navigate} activeTab={tab} onSelectTab={setTab} /> : <div data-screen="missing" />}
+      {path === "/" ? (
+        <HomeScreen onNavigate={navigate} activeTab={tab} onSelectTab={setTab} />
+      ) : path === "/statistics" ? (
+        <StatisticsScreen onNavigate={navigate} />
+      ) : path === "/settings" ? (
+        <SettingsScreen onNavigate={navigate} />
+      ) : (
+        <div className="pane-scope" style={{ padding: 32 }}>This page does not exist.</div>
+      )}
     </RequireAuth>
   );
 }

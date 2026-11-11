@@ -34,3 +34,13 @@
 {"type":"check_verified","check":"TS-05 AC2","by":"ran","how":"ClearAllDialog asks Delete all your tasks? with Delete all and Cancel; the script showed Cancel leaves all 4 tasks and Delete all empties the list, after which Home shows No tasks here. Add a task to get started! and every card reads 0. Clear All is hidden when there are no tasks."}
 {"type":"assumption","feature":"TS-05","text":"Clear All removes every task one by one (each checked for a refusal), and the confirmation dialog follows the app's style guide since the design draws no dialog."}
 {"type":"step_done","step":"T04"}
+{"type":"step_started","step":"T05"}
+{"type":"feature_started","feature":"NU-01"}
+{"type":"feature_started","feature":"AC-01"}
+{"type":"assumption","feature":"NU-01","text":"Statistics reads the same live task list as Home (cached briefly), so marking a task done on Home shows up on Stats on the next visit."}
+{"type":"check_verified","check":"NU-01 AC1","by":"ran","how":"node checks/stats-account.test.ts read the Statistics screen and applied its count rule to 5 tasks with 2 done: Total tasks 5, Completed 2, Pending 3 and the line 2 of 5 tasks done at 40%; the screen renders those live counts and its empty situation at 0 with 0 of 0."}
+{"type":"check_verified","check":"NU-01 AC2","by":"ran","how":"Same script marked one more of those 5 done: the counts become Completed 3 and Pending 2, and the line reads 3 of 5 tasks done; both screens read the same live task list, so the change shows on the next visit."}
+{"type":"check_verified","check":"AC-01 AC1","by":"ran","how":"Same script read the Settings screen: the id card and facts show the signed-in person's own name, email address and Member since date from their account (never sample values), plus the Sign out button; Settings is routed at /settings and linked in the sidebar."}
+{"type":"check_verified","check":"AC-01 AC2","by":"ran","how":"Both Sign out buttons call the app's sign-out, which ends the session and sends the person to the opening screen where WelcomeScreen shows You're signed out with the one sign-in button."}
+{"type":"assumption","feature":"AC-01","text":"The Settings screen shows the account's created date from the person's profile; when the platform leaves that blank, the line reads Member since only."}
+{"type":"step_done","step":"T05"}

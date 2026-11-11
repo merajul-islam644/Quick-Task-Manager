@@ -6,11 +6,16 @@ import type { MouseEvent } from "react";
 import { SidebarPart } from "../../app/layout/SidebarPart";
 import { HeaderPart } from "../../app/layout/HeaderPart";
 import "./StatisticsScreen.css";
+import { useTasks } from "../tasks/useTasks";
 
 /** The situations the design shows: the screen as it usually is, then each one drawn. Show the one the real data or request is in. */
 export type StatisticsScreenSituation = "normal" | "empty";
 
-export function StatisticsScreen({ situation = "normal", onNavigate }: { situation?: StatisticsScreenSituation; onNavigate?: (path: string) => void }) {
+export function StatisticsScreen({ onNavigate }: { situation?: StatisticsScreenSituation; onNavigate?: (path: string) => void }) {
+  const view = useTasks();
+  const counts = view.state === "ready" ? view.counts : { all: 0, pending: 0, completed: 0 };
+  const situation: StatisticsScreenSituation = view.state === "ready" && counts.all === 0 ? "empty" : "normal";
+  const share = counts.all === 0 ? 0 : Math.round((counts.completed / counts.all) * 100);
   const goTo = (path: string) => (event: MouseEvent) => {
     if (!onNavigate) return;
     event.preventDefault();
@@ -82,21 +87,21 @@ export function StatisticsScreen({ situation = "normal", onNavigate }: { situati
                       <div className="st-figure st-figure-key">
                         <span className="ds-stat-label">Total tasks</span>
                         {" "}
-                        <span className="st-big" data-sample="">5</span>
+                        <span className="st-big">{counts.all}</span>
                         {" "}
                         <span className="st-note">Every task on your list</span>
                       </div>
                       <div className="st-figure st-figure-done">
                         <span className="ds-stat-label">Completed</span>
                         {" "}
-                        <span className="st-big" data-sample="">2</span>
+                        <span className="st-big">{counts.completed}</span>
                         {" "}
                         <span className="ds-note ds-muted">Checked off so far</span>
                       </div>
                       <div className="st-figure st-figure-pending">
                         <span className="ds-stat-label">Pending</span>
                         {" "}
-                        <span className="st-big" data-sample="">3</span>
+                        <span className="st-big">{counts.pending}</span>
                         {" "}
                         <span className="ds-note ds-muted">Still waiting for you</span>
                       </div>
@@ -107,12 +112,12 @@ export function StatisticsScreen({ situation = "normal", onNavigate }: { situati
                       <div className="st-share-top">
                         <div>
                           <span className="ds-label-caps">Completed share</span>
-                          <p className="st-share-line" data-sample="">2 of 5 tasks done</p>
+                          <p className="st-share-line">{counts.completed} of {counts.all} tasks done</p>
                         </div>
-                        <span className="st-share-pct" data-sample="">40%</span>
+                        <span className="st-share-pct">{share}%</span>
                       </div>
                       <div className="ds-progress">
-                        <span style={{ width: "40%" }} />
+                        <span style={{ width: share + "%" }} />
                       </div>
                       <div className="st-legend">
                         <span className="st-key">
