@@ -2,9 +2,9 @@ import { SidebarPart } from "../../app/layout/SidebarPart";
 import { HeaderPart } from "../../app/layout/HeaderPart";
 import { useT } from "../../lib/i18n/LocalizationProvider";
 import { useTasks } from "../tasks/useTasks";
-import type { Task } from "../tasks/tasksApi";
-import { formatDueDate } from "../tasks/formatDueDate";
 import "./HomeScreen.css";
+import { TaskList } from "./TaskList";
+import { AddTaskCard } from "./AddTaskCard";
 
 /** The situations the design shows: the screen as it usually is, then each one drawn. Show the one the real data or request is in. */
 export type HomeScreenSituation = "normal" | "empty" | "no-matches";
@@ -23,72 +23,6 @@ const TABS: { key: TabKey; labelKey: "tasks.filterAll" | "tasks.filterPending" |
   { key: "pending", labelKey: "tasks.filterPending", panel: "panel-pending", buttonId: "tab-pending" },
   { key: "completed", labelKey: "tasks.filterCompleted", panel: "panel-completed", buttonId: "tab-completed" }
 ];
-
-function CheckIcon({ className }: { className?: string }) {
-  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden="true" className={className}><path d="m5 12 4.5 4.5L19 7" /></svg>;
-}
-
-function TaskRow({ task }: { task: Task }) {
-  const { t } = useT();
-  const title = task.title ?? "";
-  const done = task.done === true;
-  return (
-    <div className={done ? "q-task is-done" : "q-task"}>
-      <button className="q-check" type="button" aria-pressed={done} aria-label={`${done ? "Reopen" : "Complete"} ${title}`}>
-        {" "}
-        <span>
-          {" "}
-          <CheckIcon />
-          {" "}
-        </span>
-        {" "}
-      </button>
-      <div className="q-task-body">
-        <span className="q-task-title">{title}</span>
-        <div className="q-task-meta">
-          <span className="q-date"> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M3 10h18M8 3v4M16 3v4" /></svg> {formatDueDate(task.dueDate)} </span>
-          {" "}
-          <span className={done ? "ds-badge ds-badge-success" : "ds-badge ds-badge-info"}>{done ? t("tasks.statusCompleted") : t("tasks.statusPending")}</span>
-        </div>
-      </div>
-      <div className="ds-row-actions q-row-actions">
-        <button className="ds-btn ds-btn-ghost ds-btn-sm" type="button" aria-label={`Edit ${title}`}> <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg> Edit </button>
-        {" "}
-        <button className="ds-btn ds-btn-ghost ds-btn-icon" type="button" aria-label={`Delete ${title}`}>
-          {" "}
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-            <path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14" />
-          </svg>
-          {" "}
-        </button>
-        <details className="ds-menu">
-          <summary className="ds-btn ds-btn-ghost ds-btn-icon" aria-label={`More actions for ${title}`}>
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-              <circle cx="5" cy="12" r="1.5" />
-              <circle cx="12" cy="12" r="1.5" />
-              <circle cx="19" cy="12" r="1.5" />
-            </svg>
-          </summary>
-          <div className="ds-menu-list">
-            <button type="button">Edit task</button>
-            {" "}
-            <button type="button" className="q-clear">Delete task</button>
-          </div>
-        </details>
-      </div>
-    </div>
-  );
-}
-
-function TaskPanel({ tasks, panel, buttonId }: { tasks: Task[]; panel: string; buttonId: string }) {
-  return (
-    <div id={panel} role="tabpanel" aria-labelledby={buttonId}>
-      <div className="q-tasks">
-        {tasks.map((task) => <TaskRow key={task.ItemId} task={task} />)}
-      </div>
-    </div>
-  );
-}
 
 export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props) {
   const { t } = useT();
@@ -153,26 +87,7 @@ export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props
                     <span className="q-stat-note">{t("tasks.pendingNote")}</span>
                   </div>
                 </div>
-                <div className="ds-card q-add" id="add">
-                  <div className="q-add-head">
-                    <h2 className="ds-h3">Add New Task</h2>
-                  </div>
-                  <form className="q-add-row">
-                    <div className="ds-field q-add-title">
-                      <label className="ds-label" htmlFor="new-task">Task</label>
-                      {" "}
-                      <input className="ds-input" id="new-task" type="text" maxLength={200} placeholder="Enter your task..." />
-                    </div>
-                    <div className="ds-field q-add-date">
-                      <label className="ds-label" htmlFor="new-date">Due date</label>
-                      {" "}
-                      <input className="ds-input" id="new-date" type="date" />
-                    </div>
-                    <div className="ds-form-actions" style={{ margin: "0" }}>
-                      <button className="ds-btn" type="submit">Add Task</button>
-                    </div>
-                  </form>
-                </div>
+                <AddTaskCard id="add" />
                 <div className="q-list-head">
                   <div className="ds-tabs" role="tablist" aria-label="Filter tasks">
                     {TABS.map((tab, index) => (
@@ -235,7 +150,7 @@ export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props
                   </div>
                 ) : null}
                 {view.state === "ready" && visible.length > 0 ? (
-                  <TaskPanel tasks={visible} panel={activePanel} buttonId={activeButtonId} />
+                  <TaskList tasks={visible} panel={activePanel} buttonId={activeButtonId} />
                 ) : null}
               </div>
             </div>

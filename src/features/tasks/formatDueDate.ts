@@ -19,3 +19,17 @@ export function toDateInputValue(dueDate: string | undefined): string {
   const day = String(due.getDate()).padStart(2, "0");
   return `${due.getFullYear()}-${month}-${day}`;
 }
+
+/** A date field's value (YYYY-MM-DD) as the full time the gateway stores, at noon of that day. */
+export function fromDateInputValue(value: string): string {
+  const [year = 1970, month = 1, day = 1] = value.split("-").map(Number);
+  const date = new Date(year, month - 1, day, 12, 0, 0, 0);
+  return date.toISOString();
+}
+
+/** Today's date as a date field shows it (YYYY-MM-DD). */
+export function todayInputValue(now: Date = new Date()): string {
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return `${now.getFullYear()}-${month}-${day}`;
+}

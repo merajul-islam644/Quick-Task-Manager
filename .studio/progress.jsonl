@@ -16,3 +16,6 @@
 {"type":"check_verified","check":"TS-01 AC3","by":"read","how":"HomeScreen picks the no-matches situation when the Completed tab has no matches and shows No tasks here. Add a task to get started!; the tabs switch through onSelectTab in the router."}
 {"type":"assumption","feature":"TS-01","text":"The browser was not available here, so creating a fresh account in a real browser could not be exercised; the same flow is proven from the app's code paths."}
 {"type":"step_done","step":"T01"}
+{"type":"step_started","step":"T02"}
+{"type":"feature_started","feature":"TS-02"}
+{"type":"step_done","step":"T02"}
