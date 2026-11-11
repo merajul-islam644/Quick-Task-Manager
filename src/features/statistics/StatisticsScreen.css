@@ -1,0 +1,116 @@
+/* Ported by Studio from the agreed design .studio/designs/screens/statistics.html: its own CSS, as drawn, applied only inside
+   this screen. Change nothing here; the build flattens the wrapper for every browser. */
+:where(.studio-screen-statistics) {
+  .st-head {
+    background: linear-gradient(180deg, hsl(var(--primary) / 0.07), transparent 90%);
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .st-bar {
+    display: flex;
+    align-items: center;
+    gap: calc(12px * var(--space-scale, 1));
+    padding-top: calc(16px * var(--space-scale, 1));
+    padding-bottom: calc(16px * var(--space-scale, 1));
+  }
+  .st-page-head {
+    padding-top: calc(24px * var(--space-scale, 1));
+    padding-bottom: calc(32px * var(--space-scale, 1));
+  }
+  .st-eyebrow { margin-bottom: calc(8px * var(--space-scale, 1)); display: inline-block; }
+  .st-sub { margin: calc(6px * var(--space-scale, 1)) 0 0; }
+  .st-figures {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: calc(16px * var(--space-scale, 1));
+  }
+  .st-figure {
+    position: relative;
+    padding: calc(24px * var(--space-scale, 1));
+    display: flex;
+    flex-direction: column;
+    gap: calc(8px * var(--space-scale, 1));
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--card-radius, var(--radius));
+    box-shadow: var(--shadow);
+    overflow: visible;
+  }
+  .st-figure-key {
+    background: linear-gradient(160deg, hsl(var(--primary)), hsl(var(--primary) / 0.82));
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+  .st-figure-key .ds-stat-label,
+  .st-figure-key .st-note { color: hsl(var(--primary-foreground) / 0.82); }
+  .st-figure-done { border-top: 3px solid hsl(var(--success)); }
+  .st-figure-pending { border-top: 3px solid hsl(var(--primary)); }
+  .st-big {
+    font-family: var(--font-heading);
+    font-size: clamp(40px, 6vw, 56px);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .st-note { font-size: 13px; }
+  .st-share {
+    margin-top: calc(32px * var(--space-scale, 1));
+    padding: calc(24px * var(--space-scale, 1));
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--card-radius, var(--radius));
+    box-shadow: var(--shadow);
+  }
+  .st-share-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: calc(16px * var(--space-scale, 1));
+    margin-bottom: calc(16px * var(--space-scale, 1));
+  }
+  .st-share-line {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .st-share-pct {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: hsl(var(--success));
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .st-share .ds-progress { height: 12px; }
+  .st-share .ds-progress span { background: hsl(var(--success)); }
+  .st-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(24px * var(--space-scale, 1));
+    margin-top: calc(16px * var(--space-scale, 1));
+  }
+  .st-key { display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1)); font-size: 14px; }
+  .st-dot { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .st-dot-done { background: hsl(var(--success)); }
+  .st-dot-open { background: hsl(var(--muted-foreground) / 0.35); }
+  .st-foot {
+    margin-top: calc(32px * var(--space-scale, 1));
+    padding-top: calc(16px * var(--space-scale, 1));
+    border-top: 1px solid hsl(var(--border));
+    display: flex;
+    align-items: center;
+    gap: calc(12px * var(--space-scale, 1));
+    flex-wrap: wrap;
+  }
+  .st-empty-wrap { padding-top: calc(16px * var(--space-scale, 1)); }
+  @media (max-width: 860px) {
+    .st-figures { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .st-share-top { flex-direction: column; align-items: flex-start; gap: calc(8px * var(--space-scale, 1)); }
+  }
+}

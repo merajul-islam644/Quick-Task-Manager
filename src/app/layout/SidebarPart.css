@@ -1,0 +1,14 @@
+/* Ported by Studio from the agreed design .studio/designs/parts/sidebar.html: its own CSS, as drawn, applied only inside
+   this shared part. Change nothing here; the build flattens the wrapper for every browser. */
+:where(.studio-part-sidebar) {
+  .qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding: 24px 16px 16px; }
+  .qs-side-brand { padding: 0 8px 24px; }
+  .qs-side-nav { display: flex; flex-direction: column; gap: 4px; }
+  .qs-side-nav .ds-nav-item { min-height: 44px; }
+  .qs-side-art { margin-top: auto; padding: 24px 8px 16px; }
+  .qs-side-art-box { position: relative; overflow: hidden; border-radius: var(--radius); background: linear-gradient(160deg, hsl(var(--primary) / 0.10), hsl(var(--accent) / 0.16)); padding: 16px; }
+  .qs-side-art svg { display: block; width: 100%; height: auto; }
+  .qs-side-art-line { margin: 12px 0 0; font-family: var(--font-heading); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: hsl(var(--primary-text)); }
+  .qs-side-person { border-top: 1px solid hsl(var(--border)); padding: 16px 8px 0; margin-top: 16px; }
+  .qs-side-signout { margin-top: 12px; width: 100%; justify-content: flex-start; }
+}

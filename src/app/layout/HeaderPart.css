@@ -1,0 +1,15 @@
+/* Ported by Studio from the agreed design .studio/designs/parts/header.html: its own CSS, as drawn, applied only inside
+   this shared part. Change nothing here; the build flattens the wrapper for every browser. */
+:where(.studio-part-header) {
+  .qs-top { background: hsl(var(--card)); border-bottom: 1px solid hsl(var(--border)); }
+  .qs-top-bar { display: flex; align-items: center; gap: calc(16px * var(--space-scale, 1)); padding-top: 12px; padding-bottom: 12px; }
+  .qs-top-nowrap { display: flex; align-items: center; gap: calc(12px * var(--space-scale, 1)); flex: none; }
+  .qs-top-trail { display: flex; align-items: center; gap: calc(12px * var(--space-scale, 1)); }
+  .qs-top .ds-brand-link { display: inline-flex; align-items: center; }
+  .qs-menu-theme { padding: 8px 4px 4px; display: flex; justify-content: flex-start; }
+  .qs-menu-signout { display: none; }
+  @media (max-width: 760px) {
+    .qs-top-bar { gap: calc(8px * var(--space-scale, 1)); }
+    .qs-menu-signout { display: block; }
+  }
+}

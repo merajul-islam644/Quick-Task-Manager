@@ -1,0 +1,30 @@
+/* Ported by Studio from the agreed design .studio/designs/screens/settings.html: its own CSS, as drawn, applied only inside
+   this screen. Change nothing here; the build flattens the wrapper for every browser. */
+:where(.studio-screen-settings) {
+  .qs-shell-head { display: flex; align-items: center; gap: calc(12px * var(--space-scale, 1)); }
+  .qs-account { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: calc(24px * var(--space-scale, 1)); align-items: start; }
+  .qs-id-card { position: relative; overflow: visible; padding: calc(24px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+  .qs-id-top { display: flex; align-items: center; gap: calc(16px * var(--space-scale, 1)); }
+  .qs-id-name { font-family: var(--font-heading); font-size: 19px; font-weight: 650; letter-spacing: -0.01em; margin: 0; color: hsl(var(--foreground)); }
+  .qs-id-mail { margin: calc(4px * var(--space-scale, 1)) 0 0; color: hsl(var(--muted-foreground)); font-size: 15px; word-break: break-word; }
+  .qs-avatar-big { width: 64px; height: 64px; font-size: 22px; }
+  .qs-facts { display: grid; gap: 0; margin: calc(24px * var(--space-scale, 1)) 0 0; }
+  .qs-facts > div { display: grid; grid-template-columns: minmax(0, 140px) minmax(0, 1fr); gap: calc(16px * var(--space-scale, 1)); padding: calc(12px * var(--space-scale, 1)) 0; border-top: 1px solid hsl(var(--border)); }
+  .qs-facts dt { margin: 0; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: hsl(var(--muted-foreground)); }
+  .qs-facts dd { margin: 0; font-size: 15px; color: hsl(var(--foreground)); word-break: break-word; }
+  .qs-side { display: grid; gap: calc(16px * var(--space-scale, 1)); padding: calc(24px * var(--space-scale, 1)); background: linear-gradient(165deg, hsl(var(--primary) / 0.10), hsl(var(--primary) / 0.02) 70%); border: 1px solid hsl(var(--primary) / 0.22); border-radius: var(--card-radius, var(--radius)); }
+  .qs-side h2 { margin: 0; font-family: var(--font-heading); font-size: 17px; font-weight: 650; color: hsl(var(--foreground)); }
+  .qs-side p { margin: 0; color: hsl(var(--muted-foreground)); font-size: 15px; line-height: 1.55; }
+  .qs-side-actions { display: flex; flex-wrap: wrap; gap: calc(12px * var(--space-scale, 1)); align-items: center; }
+  .qs-band-note { margin-top: calc(32px * var(--space-scale, 1)); display: flex; align-items: center; gap: calc(16px * var(--space-scale, 1)); flex-wrap: wrap; padding: calc(16px * var(--space-scale, 1)) calc(24px * var(--space-scale, 1)); border-radius: var(--radius); background: hsl(var(--muted)); border: 1px solid hsl(var(--border)); }
+  .qs-band-note svg { width: 18px; height: 18px; color: hsl(var(--primary-text)); flex: none; }
+  .qs-band-note p { margin: 0; font-size: 15px; color: hsl(var(--foreground)); }
+  .qs-band-note span.qs-sp { flex: 1 1 auto; }
+  @media (max-width: 900px) {
+    .qs-account { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 520px) {
+    .qs-facts > div { grid-template-columns: minmax(0, 1fr); gap: calc(4px * var(--space-scale, 1)); }
+    .qs-avatar-big { width: 56px; height: 56px; font-size: 18px; }
+  }
+}

@@ -1,0 +1,209 @@
+/* Ported by Studio from the agreed design .studio/designs/screens/compact-header-with-a-menu-on-phones.html: its own CSS, as drawn, applied only inside
+   this screen. Change nothing here; the build flattens the wrapper for every browser. */
+:where(.studio-screen-compact-header-with-a-menu-on-phones) {
+  /* Phone navigation screen: art direction for the GN-01 walkthrough */
+
+  /* Sidebar mock (desktop/tablet) */
+  .gn-side {
+    width: 252px;
+    flex: none;
+    background: hsl(var(--card));
+    border-right: 1px solid hsl(var(--border));
+    padding: calc(20px * var(--space-scale, 1));
+    display: flex;
+    flex-direction: column;
+    gap: calc(20px * var(--space-scale, 1));
+    position: relative;
+    overflow: hidden;
+  }
+  .gn-side-brand { display: flex; align-items: center; gap: calc(10px * var(--space-scale, 1)); }
+  .gn-side-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: hsl(var(--foreground));
+    line-height: 1.15;
+  }
+  .gn-nav { display: flex; flex-direction: column; gap: calc(2px * var(--space-scale, 1)); }
+  .gn-nav .ds-nav-item { justify-content: flex-start; gap: calc(10px * var(--space-scale, 1)); min-height: 44px; }
+  .gn-nav .ds-nav-item svg { width: 18px; height: 18px; flex: none; }
+  .gn-side-foot {
+    margin-top: auto;
+    padding-top: calc(16px * var(--space-scale, 1));
+    border-top: 1px dashed hsl(var(--border));
+    display: flex;
+    flex-direction: column;
+    gap: calc(8px * var(--space-scale, 1));
+  }
+  .gn-side-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--primary-text));
+  }
+
+  /* Illustration: a small checklist, drawn from simple shapes */
+  .gn-illo { width: 100%; height: auto; display: block; }
+
+  /* The showcase: a framed phone beside the explanation */
+  .gn-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: calc(48px * var(--space-scale, 1));
+    align-items: center;
+    margin-top: calc(8px * var(--space-scale, 1));
+  }
+  .gn-phone-wrap { position: relative; display: flex; justify-content: center; }
+  .gn-phone {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) * 4);
+    background: hsl(var(--card));
+    box-shadow: 0 30px 60px -30px hsl(var(--main-900) / 0.35), 0 3px 8px -2px hsl(var(--main-900) / 0.12);
+    padding: calc(12px * var(--space-scale, 1));
+    position: relative;
+  }
+  .gn-notch {
+    width: 96px; height: 6px; border-radius: 99px;
+    background: hsl(var(--border));
+    margin: 0 auto calc(10px * var(--space-scale, 1));
+  }
+  .gn-ph-top {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    padding-bottom: calc(10px * var(--space-scale, 1));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .gn-ph-title {
+    font-family: var(--font-heading); font-weight: 700; font-size: 15px;
+    color: hsl(var(--foreground)); letter-spacing: -0.01em; line-height: 1.2;
+    flex: 1; min-width: 0;
+  }
+  .gn-ph-top .ds-menu-button { flex: none; border: 1px solid hsl(var(--border)); background: hsl(var(--muted)); border-radius: var(--radius-button); display: grid; place-items: center; width: 44px; height: 44px; }
+  .gn-ph-top .ds-menu-button svg { width: 20px; height: 20px; }
+  .gn-open {
+    margin-top: calc(10px * var(--space-scale, 1));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    background: hsl(var(--background));
+    padding: calc(8px * var(--space-scale, 1));
+    box-shadow: var(--shadow);
+  }
+  .gn-open-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    padding: 0 calc(8px * var(--space-scale, 1)) calc(6px * var(--space-scale, 1));
+  }
+  .gn-open .ds-nav-item { justify-content: flex-start; gap: calc(10px * var(--space-scale, 1)); min-height: 44px; width: 100%; }
+  .gn-open .ds-nav-item svg { width: 18px; height: 18px; flex: none; }
+  .gn-open .ds-theme-switch { margin: calc(6px * var(--space-scale, 1)) calc(8px * var(--space-scale, 1)) 0; }
+
+  /* Explanation column */
+  .gn-explain { display: flex; flex-direction: column; gap: calc(20px * var(--space-scale, 1)); }
+
+  /* Width ruler: a mini diagram with three breakpoint cards */
+  .gn-breaks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(12px * var(--space-scale, 1)); }
+  .gn-break {
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    background: hsl(var(--card));
+    padding: calc(14px * var(--space-scale, 1));
+    display: flex; flex-direction: column; gap: calc(8px * var(--space-scale, 1));
+  }
+  .gn-break-figure { height: 54px; display: flex; align-items: flex-end; justify-content: center; }
+  .gn-break-screen {
+    border-radius: 4px 4px 0 0;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    border-bottom: 0;
+    display: flex; gap: 3px; padding: 4px;
+    height: 46px;
+    align-items: stretch;
+  }
+  .gn-break-bar {
+    width: 4px; border-radius: 2px; background: hsl(var(--primary) / 0.5); align-self: stretch;
+  }
+  .gn-break-col { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+  .gn-break-line { height: 4px; border-radius: 2px; background: hsl(var(--border)); }
+  .gn-break h3 { margin: 0; font-size: 14px; font-weight: 650; color: hsl(var(--foreground)); }
+  .gn-break p { margin: 0; font-size: 13px; line-height: 1.4; color: hsl(var(--muted-foreground)); }
+  .gn-break .gn-bp-name { font-family: var(--font-heading); font-weight: 700; font-size: 12px; color: hsl(var(--primary-text)); letter-spacing: 0.04em; }
+
+  /* Tap-size rule card */
+  .gn-rule {
+    display: grid; grid-template-columns: auto 1fr; gap: calc(20px * var(--space-scale, 1));
+    align-items: center;
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    padding: calc(16px * var(--space-scale, 1));
+    background: hsl(var(--card));
+  }
+  .gn-tap {
+    width: 64px; height: 64px; border-radius: var(--radius);
+    display: grid; place-items: center;
+    background: hsl(var(--primary) / 0.1);
+    border: 1px dashed hsl(var(--primary) / 0.5);
+    color: hsl(var(--primary-text));
+    font-family: var(--font-heading); font-weight: 700; font-size: 15px;
+  }
+  .gn-rule h3 { margin: 0 0 4px; font-size: 15px; font-weight: 650; color: hsl(var(--foreground)); }
+  .gn-rule p { margin: 0; font-size: 14px; line-height: 1.45; color: hsl(var(--muted-foreground)); }
+
+  /* Desktop shell showcase: banner showing the sidebar layout */
+  .gn-shot {
+    display: flex;
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) * 2);
+    overflow: hidden;
+    background: hsl(var(--background));
+    box-shadow: var(--shadow);
+    min-height: 220px;
+  }
+  .gn-shot-main { flex: 1; min-width: 0; padding: calc(16px * var(--space-scale, 1)); display: flex; flex-direction: column; gap: calc(12px * var(--space-scale, 1)); }
+  .gn-shot-top {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    padding-bottom: calc(10px * var(--space-scale, 1));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .gn-shot-name { font-weight: 650; font-size: 14px; color: hsl(var(--foreground)); }
+  .gn-shot-top .ds-avatar { margin-left: auto; }
+  .gn-shot-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(8px * var(--space-scale, 1)); }
+  .gn-shot-card {
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    padding: calc(10px * var(--space-scale, 1)); background: hsl(var(--card));
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .gn-shot-card span:first-child { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: hsl(var(--muted-foreground)); }
+  .gn-shot-card span:last-child { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: hsl(var(--foreground)); }
+  .gn-shot-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid hsl(var(--border)); }
+  .gn-shot-row .gn-dot { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid hsl(var(--border)); flex: none; }
+  .gn-shot-row .gn-bar { height: 6px; border-radius: 3px; background: hsl(var(--muted)); flex: 1; }
+  .gn-shot-row .gn-bar.short { flex: 0 0 40%; }
+
+  .gn-caption {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    font-size: 13px; color: hsl(var(--muted-foreground));
+  }
+  .gn-caption svg { width: 16px; height: 16px; flex: none; color: hsl(var(--primary-text)); }
+
+  .gn-note {
+    background: hsl(var(--primary) / 0.06);
+    border: 1px solid hsl(var(--primary) / 0.2);
+    border-radius: var(--radius);
+    padding: calc(14px * var(--space-scale, 1)) calc(16px * var(--space-scale, 1));
+    display: flex; gap: calc(12px * var(--space-scale, 1)); align-items: flex-start;
+  }
+  .gn-note svg { width: 18px; height: 18px; flex: none; color: hsl(var(--primary-text)); margin-top: 1px; }
+  .gn-note p { margin: 0; font-size: 14px; line-height: 1.5; color: hsl(var(--foreground)); }
+
+  @media (max-width: 960px) {
+    .gn-stage { grid-template-columns: 1fr; gap: calc(32px * var(--space-scale, 1)); }
+    .gn-phone-wrap { justify-content: flex-start; }
+  }
+  @media (max-width: 560px) {
+    .gn-breaks { grid-template-columns: 1fr; }
+    .gn-shot { display: none; }
+    .gn-rule { grid-template-columns: 1fr; justify-items: start; }
+    .gn-phone { max-width: 100%; }
+  }
+}

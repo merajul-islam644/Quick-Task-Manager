@@ -1,0 +1,66 @@
+/* Ported by Studio from the agreed design .studio/designs/screens/home.html: its own CSS, as drawn, applied only inside
+   this screen. Change nothing here; the build flattens the wrapper for every browser. */
+:where(.studio-screen-home) {
+  /* ---------- Shell & page ---------- */
+  .q-page { padding-top: calc(24px * var(--space-scale, 1)); padding-bottom: calc(64px * var(--space-scale, 1)); }
+
+  /* ---------- Page head ---------- */
+  .q-head { display: grid; gap: calc(8px * var(--space-scale, 1)); }
+  .q-head h1 { margin: 0; letter-spacing: -0.02em; }
+  .q-head p { margin: 0; max-width: 56ch; }
+
+  /* ---------- Summary cards ---------- */
+  .q-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(16px * var(--space-scale, 1)); margin-top: calc(24px * var(--space-scale, 1)); }
+  .q-stat { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: calc(4px * var(--space-scale, 1)); padding: calc(16px * var(--space-scale, 1)) calc(20px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+  .q-stat .ds-stat-value { font-size: 34px; line-height: 1.05; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .q-stat-note { font-size: 13px; color: hsl(var(--muted-foreground)); }
+  .q-stat-total .ds-stat-value { color: hsl(var(--primary-text)); }
+  .q-stat-done { background: hsl(var(--success-soft)); border-color: hsl(var(--success) / 0.35); }
+  /* Readable on the tint in light and dark: use the foreground role, not a soft shade */
+  .q-stat-done .ds-stat-label { color: hsl(var(--foreground)); }
+  .q-stat-done .q-stat-note { color: hsl(var(--muted-foreground)); }
+  .q-stat-done .ds-stat-value { color: hsl(var(--success-soft-foreground)); }
+  .q-stat-open .ds-stat-value { color: hsl(var(--foreground)); }
+  .q-stat-mark { position: absolute; right: calc(14px * var(--space-scale, 1)); top: calc(14px * var(--space-scale, 1)); width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; color: hsl(var(--success-soft-foreground)); background: hsl(var(--success) / 0.16); }
+
+  /* ---------- Add task card ---------- */
+  .q-add { margin-top: calc(16px * var(--space-scale, 1)); padding: calc(16px * var(--space-scale, 1)) calc(20px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+  .q-add-head { display: flex; align-items: baseline; gap: calc(8px * var(--space-scale, 1)); margin-bottom: calc(12px * var(--space-scale, 1)); }
+  .q-add-head h2 { margin: 0; }
+  .q-add-row { display: flex; flex-wrap: wrap; gap: calc(12px * var(--space-scale, 1)); align-items: flex-end; }
+  .q-add-title { flex: 1 1 240px; min-width: 0; }
+  .q-add-date { flex: 0 0 auto; width: 190px; }
+  .q-add-row .ds-label { font-size: 13px; }
+
+  /* ---------- Task list ---------- */
+  .q-list-head { display: flex; flex-wrap: wrap; align-items: center; gap: calc(12px * var(--space-scale, 1)); margin-top: calc(32px * var(--space-scale, 1)); margin-bottom: calc(12px * var(--space-scale, 1)); }
+  .q-clear { color: hsl(var(--destructive)); }
+  .q-tasks { display: flex; flex-direction: column; gap: calc(8px * var(--space-scale, 1)); }
+  .q-task { display: flex; align-items: center; gap: calc(12px * var(--space-scale, 1)); padding: calc(12px * var(--space-scale, 1)) calc(14px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); transition: background 0.15s ease, border-color 0.15s ease; }
+  .q-task-body { min-width: 0; flex: 1 1 auto; display: flex; flex-direction: column; gap: calc(4px * var(--space-scale, 1)); }
+  .q-task-title { font-size: 15px; font-weight: 600; color: hsl(var(--foreground)); word-break: break-word; }
+  .q-task-meta { display: flex; flex-wrap: wrap; align-items: center; gap: calc(8px * var(--space-scale, 1)); font-size: 13px; color: hsl(var(--muted-foreground)); }
+  .q-task-meta .q-date { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+  .q-task.is-done { background: hsl(var(--success-soft)); border-color: hsl(var(--success) / 0.4); }
+  /* Struck done text stays readable: foreground role with line-through, not a pale green */
+  .q-task.is-done .q-task-title { text-decoration: line-through; color: hsl(var(--foreground) / 0.72); }
+  .q-check { flex: none; width: 28px; height: 44px; display: grid; place-items: center; background: none; border: 0; cursor: pointer; padding: 0; color: hsl(var(--muted-foreground)); }
+  .q-check span { width: 24px; height: 24px; border-radius: 50%; border: 2px solid hsl(var(--border)); background: hsl(var(--card)); display: grid; place-items: center; transition: background 0.15s ease, border-color 0.15s ease; }
+  .q-task.is-done .q-check span { background: hsl(var(--success)); border-color: hsl(var(--success)); color: hsl(var(--success-foreground)); }
+  .q-check svg { width: 14px; height: 14px; opacity: 0; }
+  .q-task.is-done .q-check svg { opacity: 1; }
+  .q-row-actions { flex: none; display: flex; align-items: center; gap: calc(4px * var(--space-scale, 1)); }
+
+  /* ---------- Empty state ---------- */
+  .q-empty-wrap { margin-top: calc(32px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 760px) {
+    .q-stats { grid-template-columns: 1fr; }
+    .q-add-date { width: 100%; }
+    .q-add-row .ds-btn { width: 100%; }
+    .q-task { flex-wrap: wrap; }
+    .q-task-body { flex-basis: calc(100% - 28px - 12px - 44px); }
+    .q-row-actions { margin-left: auto; }
+  }
+}
