@@ -5,6 +5,8 @@ import { useTasks } from "../tasks/useTasks";
 import "./HomeScreen.css";
 import { TaskList } from "./TaskList";
 import { AddTaskCard } from "./AddTaskCard";
+import { useToggleTask } from "../tasks/useToggleTask";
+import type { Task } from "../tasks/tasksApi";
 
 /** The situations the design shows: the screen as it usually is, then each one drawn. Show the one the real data or request is in. */
 export type HomeScreenSituation = "normal" | "empty" | "no-matches";
@@ -27,6 +29,8 @@ const TABS: { key: TabKey; labelKey: "tasks.filterAll" | "tasks.filterPending" |
 export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props) {
   const { t } = useT();
   const view = useTasks();
+  const toggle = useToggleTask();
+  const taskActions = { onToggle: (task: Task) => toggle.mutate(task) };
   const counts = view.state === "ready" ? view.counts : { all: 0, pending: 0, completed: 0 };
   const tasks = view.state === "ready" ? view.tasks : [];
   const pending = tasks.filter((task) => task.done !== true);
@@ -150,7 +154,7 @@ export function HomeScreen({ onNavigate, activeTab = "all", onSelectTab }: Props
                   </div>
                 ) : null}
                 {view.state === "ready" && visible.length > 0 ? (
-                  <TaskList tasks={visible} panel={activePanel} buttonId={activeButtonId} />
+                  <TaskList tasks={visible} actions={taskActions} panel={activePanel} buttonId={activeButtonId} />
                 ) : null}
               </div>
             </div>

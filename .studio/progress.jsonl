@@ -19,3 +19,9 @@
 {"type":"step_started","step":"T02"}
 {"type":"feature_started","feature":"TS-02"}
 {"type":"step_done","step":"T02"}
+{"type":"step_started","step":"T03"}
+{"type":"feature_started","feature":"TS-03"}
+{"type":"check_verified","check":"TS-03 AC1","by":"ran","how":"node checks/toggle.test.ts applied the app's own optimistic flip (the rule in useToggleTask) to the 3 sample tasks with the second one clicked: order stayed a,b,c and the counts read all 3, completed 1, pending 2; the built bundle contains the updateTask save and the rollback path."}
+{"type":"check_verified","check":"TS-03 AC2","by":"ran","how":"Same script read useToggleTask: a done task clicked sends done false (task.done !== true), the list flips back to Pending and Completed drops by one; the checkbox label reads Reopen for done tasks and Complete for pending ones."}
+{"type":"assumption","feature":"TS-03","text":"Checking a task saves straight away with an optimistic flip; if the gateway refuses, the card flips back and the list reloads, so a failed save is never shown as done."}
+{"type":"step_done","step":"T03"}

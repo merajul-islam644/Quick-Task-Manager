@@ -61,3 +61,13 @@ export async function createTask(input: { title: string; dueDate: string; done: 
   if (!result?.acknowledged) throw new Error(result?.message || "The task could not be saved.");
   return String(result.itemId);
 }
+
+export async function setTaskDone(itemId: string, done: boolean): Promise<void> {
+  const response = (await tasks.update(itemId, { done })) as {
+    data?: { updateTask?: { acknowledged?: boolean; message?: string } | null };
+  };
+  const failure = gatewayError(response);
+  const result = response.data?.updateTask;
+  if (failure) throw new Error(failure);
+  if (!result?.acknowledged) throw new Error(result?.message || "The task could not be saved.");
+}
