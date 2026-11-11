@@ -1,0 +1,905 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compact header with a menu on phones</title><style data-studio-kit>@font-face {
+  font-family: "Public Sans Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("fonts/public-sans.woff2") format("woff2-variations"), url("fonts/public-sans.woff2") format("woff2");
+}
+:root {
+  --font-sans: "Public Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: "Public Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --border-width: 1px;
+  --motion-duration: 150ms;
+  --surface-blur: 0px;
+  --surface-opacity: 1;
+  --heading-weight: 650;
+  --heading-tracking: -0.01em;
+  --label-transform: none;
+  --background: 220 75% 98.4%;
+  --foreground: 220 39.1% 4.5%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 39.1% 4.5%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 39.1% 4.5%;
+  --primary: 221 83.3% 53.1%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 217.5 44.4% 96.5%;
+  --secondary-foreground: 220 24% 9.8%;
+  --muted: 217.5 44.4% 96.5%;
+  --muted-foreground: 220 10.3% 34.1%;
+  --accent: 218 100% 94.1%;
+  --accent-foreground: 221.2 83.3% 35.3%;
+  --destructive: 357.3 71% 51.4%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 26.1% 91%;
+  --input: 218.8 21% 84.1%;
+  --ring: 221 83.3% 53.1%;
+  --brand: 221 83.3% 53.1%;
+  --brand-foreground: 0 0% 100%;
+  --band: 221 83.3% 53.1%;
+  --band-foreground: 0 0% 100%;
+  --bar: 0 0% 100%;
+  --bar-foreground: 220 39.1% 4.5%;
+  --primary-soft: 218 100% 94.1%;
+  --primary-soft-foreground: 221.2 83.3% 35.3%;
+  --primary-text: 220.9 79.6% 44.1%;
+  --action-2: 0 0% 100%;
+  --action-2-foreground: 220 39.1% 4.5%;
+  --action-2-border: 220 26.1% 91%;
+  --tint-surface: 221 22% 12.5%;
+  --tint-deep: 221 32% 5%;
+  --tint-lit: 221 18% 19.5%;
+  --tint-muted: 221 18% 16.5%;
+  --tint-border: 221 14% 21%;
+  --success: 147 100% 25.3%;
+  --success-foreground: 0 0% 100%;
+  --success-soft: 130.9 44% 90.2%;
+  --success-soft-foreground: 145.5 100% 17.1%;
+  --warning: 40.8 100% 45.3%;
+  --warning-foreground: 220 39.1% 4.5%;
+  --warning-soft: 34.7 91.8% 90.4%;
+  --warning-soft-foreground: 32.6 100% 22.7%;
+  --danger: 357.3 71% 51.4%;
+  --danger-foreground: 0 0% 100%;
+  --danger-soft: 6.2 100% 94.3%;
+  --danger-soft-foreground: 353.2 89.8% 30.8%;
+  --info: 205.2 100% 36.9%;
+  --info-foreground: 0 0% 100%;
+  --info-soft: 211.7 100% 92.9%;
+  --info-soft-foreground: 205.8 100% 25.1%;
+  --chart-1: 221 83.3% 53.1%;
+  --chart-2: 43.9 100% 33.5%;
+  --chart-3: 16.3 61.1% 51.6%;
+  --chart-4: 171.5 100% 30.6%;
+  --chart-5: 282.4 43.4% 58.4%;
+  --main-50: 220 100% 97.6%;
+  --main-100: 218 100% 94.1%;
+  --main-200: 219 100% 88.2%;
+  --main-300: 219.2 100% 80.2%;
+  --main-400: 219.9 100% 71.4%;
+  --main-500: 220.6 100% 62.9%;
+  --main-600: 221 83.3% 53.1%;
+  --main-700: 220.9 79.6% 44.1%;
+  --main-800: 221.2 83.3% 35.3%;
+  --main-900: 221 85.4% 26.9%;
+  --main-950: 222.4 91.4% 18.2%;
+  --accent-50: 220 100% 97.6%;
+  --accent-100: 218 100% 94.1%;
+  --accent-200: 219 100% 88.2%;
+  --accent-300: 219.2 100% 80.2%;
+  --accent-400: 219.9 100% 71.4%;
+  --accent-500: 220.6 100% 62.9%;
+  --accent-600: 221 83.3% 53.1%;
+  --accent-700: 220.9 79.6% 44.1%;
+  --accent-800: 221.2 83.3% 35.3%;
+  --accent-900: 221 85.4% 26.9%;
+  --accent-950: 222.4 91.4% 18.2%;
+  --neutral-50: 220 75% 98.4%;
+  --neutral-100: 217.5 44.4% 96.5%;
+  --neutral-200: 220 26.1% 91%;
+  --neutral-300: 218.8 21% 84.1%;
+  --neutral-400: 219 11% 64.3%;
+  --neutral-500: 216.7 7.6% 46.3%;
+  --neutral-600: 220 10.3% 34.1%;
+  --neutral-700: 217.5 11.9% 26.3%;
+  --neutral-800: 218.6 16.3% 16.9%;
+  --neutral-900: 220 24% 9.8%;
+  --neutral-950: 220 39.1% 4.5%;
+  --radius: 8px;
+  --radius-button: min(8px, 12px);
+  --radius-input: min(8px, 12px);
+  --space-scale: 1;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.05), 0 1px 3px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 8px 24px -10px rgb(0 0 0 / 0.16);
+  --type-ratio: 1.28;
+  --text-h3: 18.6px;
+  --text-h2: 23.8px;
+  --text-h1: 35.3px;
+  --icon-stroke: 2;
+  --btn-bg: hsl(var(--primary));
+  --btn-fg: hsl(var(--primary-foreground));
+  --btn-border: hsl(var(--primary));
+  --btn-shadow: 0 1px 2px rgb(0 0 0 / 0.1), inset 0 1px 0 rgb(255 255 255 / 0.12);
+  --btn-transform: none;
+  --btn-tracking: -0.005em;
+  --card-bg: hsl(var(--card));
+  --card-border: max(1px, var(--border-width, 1px)) solid hsl(var(--border));
+  --card-border-top: max(1px, var(--border-width, 1px)) solid hsl(var(--border));
+  --card-shadow: var(--shadow);
+  --card-blur: none;
+  --card-radius: 8px;
+  --card-pad-x: 1;
+  --input-bg: hsl(var(--background));
+  --input-border: max(1px, var(--border-width, 1px)) solid hsl(var(--input));
+  --input-border-bottom: max(1px, var(--border-width, 1px)) solid hsl(var(--input));
+  --input-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+  --nav-active-bg: hsl(var(--accent));
+  --nav-active-fg: hsl(var(--accent-foreground));
+  --nav-active-shadow: none;
+  --nav-active-weight: 600;
+  --nav-radius: min(8px, 10px);
+  --table-head-bg: hsl(var(--muted) / 0.5);
+  --table-line: hsl(var(--border));
+  --table-stripe: transparent;
+  --table-pad-y: 12px;
+  --badge-bg: hsl(var(--accent));
+  --badge-fg: hsl(var(--accent-foreground));
+  --badge-border: transparent;
+  --bar-link: hsl(var(--muted-foreground));
+  --bar-nav-bg: hsl(var(--accent));
+  --bar-nav-fg: hsl(var(--accent-foreground));
+  --bar-nav-shadow: none;
+  --bar-btn-bg: hsl(var(--primary));
+  --bar-btn-fg: hsl(var(--primary-foreground));
+  --bar-btn-border: hsl(var(--primary));
+  --page-bg: hsl(var(--background));
+  --label-font: inherit;
+  --figure-font: var(--font-heading);
+  --num-font: inherit;
+}
+.dark {
+  --background: 220 39.1% 4.5%;
+  --foreground: 220 75% 98.4%;
+  --card: 220 24% 9.8%;
+  --card-foreground: 220 75% 98.4%;
+  --popover: 220 24% 9.8%;
+  --popover-foreground: 220 75% 98.4%;
+  --primary: 220.6 100% 62.9%;
+  --primary-foreground: 220 39.1% 4.5%;
+  --secondary: 218.6 16.3% 16.9%;
+  --secondary-foreground: 217.5 44.4% 96.5%;
+  --muted: 218.6 16.3% 16.9%;
+  --muted-foreground: 219 11% 64.3%;
+  --accent: 222.4 91.4% 18.2%;
+  --accent-foreground: 219 100% 88.2%;
+  --destructive: 359.7 90.6% 62.5%;
+  --destructive-foreground: 220 39.1% 4.5%;
+  --border: 218.6 16.3% 16.9%;
+  --input: 217.5 11.9% 26.3%;
+  --ring: 220.6 100% 62.9%;
+  --brand: 221 83.3% 53.1%;
+  --brand-foreground: 0 0% 100%;
+  --band: 221 83.3% 53.1%;
+  --band-foreground: 0 0% 100%;
+  --bar: 220 24% 9.8%;
+  --bar-foreground: 220 75% 98.4%;
+  --primary-soft: 222.4 91.4% 18.2%;
+  --primary-soft-foreground: 219 100% 88.2%;
+  --primary-text: 219.2 100% 80.2%;
+  --action-2: 220 24% 9.8%;
+  --action-2-foreground: 220 75% 98.4%;
+  --action-2-border: 218.6 16.3% 16.9%;
+  --tint-surface: 221 22% 12.5%;
+  --tint-deep: 221 32% 5%;
+  --tint-lit: 221 18% 19.5%;
+  --tint-muted: 221 18% 16.5%;
+  --tint-border: 221 14% 21%;
+  --success: 140.9 60.8% 37.1%;
+  --success-foreground: 220 39.1% 4.5%;
+  --success-soft: 141.3 100% 8.8%;
+  --success-soft-foreground: 130.2 40.6% 80.2%;
+  --warning: 40.8 100% 45.3%;
+  --warning-foreground: 220 39.1% 4.5%;
+  --warning-soft: 25 100% 11.8%;
+  --warning-soft-foreground: 34.6 89.5% 81.4%;
+  --danger: 359.7 90.6% 62.5%;
+  --danger-foreground: 220 39.1% 4.5%;
+  --danger-soft: 355.2 100% 14.7%;
+  --danger-soft-foreground: 5.3 100% 88.8%;
+  --info: 207.9 69% 49.4%;
+  --info-foreground: 220 39.1% 4.5%;
+  --info-soft: 208.3 100% 13.7%;
+  --info-soft-foreground: 210.4 94.7% 85.3%;
+  --chart-1: 220.6 100% 62.9%;
+  --chart-2: 42.2 73.2% 46.9%;
+  --chart-3: 15.5 79.9% 64.9%;
+  --chart-4: 171.5 100% 37.5%;
+  --chart-5: 282.3 58.7% 70.6%;
+  --main-50: 220 100% 97.6%;
+  --main-100: 218 100% 94.1%;
+  --main-200: 219 100% 88.2%;
+  --main-300: 219.2 100% 80.2%;
+  --main-400: 219.9 100% 71.4%;
+  --main-500: 220.6 100% 62.9%;
+  --main-600: 221 83.3% 53.1%;
+  --main-700: 220.9 79.6% 44.1%;
+  --main-800: 221.2 83.3% 35.3%;
+  --main-900: 221 85.4% 26.9%;
+  --main-950: 222.4 91.4% 18.2%;
+  --accent-50: 220 100% 97.6%;
+  --accent-100: 218 100% 94.1%;
+  --accent-200: 219 100% 88.2%;
+  --accent-300: 219.2 100% 80.2%;
+  --accent-400: 219.9 100% 71.4%;
+  --accent-500: 220.6 100% 62.9%;
+  --accent-600: 221 83.3% 53.1%;
+  --accent-700: 220.9 79.6% 44.1%;
+  --accent-800: 221.2 83.3% 35.3%;
+  --accent-900: 221 85.4% 26.9%;
+  --accent-950: 222.4 91.4% 18.2%;
+  --neutral-50: 220 75% 98.4%;
+  --neutral-100: 217.5 44.4% 96.5%;
+  --neutral-200: 220 26.1% 91%;
+  --neutral-300: 218.8 21% 84.1%;
+  --neutral-400: 219 11% 64.3%;
+  --neutral-500: 216.7 7.6% 46.3%;
+  --neutral-600: 220 10.3% 34.1%;
+  --neutral-700: 217.5 11.9% 26.3%;
+  --neutral-800: 218.6 16.3% 16.9%;
+  --neutral-900: 220 24% 9.8%;
+  --neutral-950: 220 39.1% 4.5%;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 2px 4px rgb(0 0 0 / 0.3), 0 10px 24px -8px rgb(0 0 0 / 0.5);
+  --input-shadow: none;
+}
+
+.ds-root { margin: 0; font-family: var(--font-sans); font-size: 14.5px; line-height: 1.55; color: hsl(var(--foreground)); background: var(--page-bg, hsl(var(--background))); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.ds-root *, .ds-root *::before, .ds-root *::after { box-sizing: border-box; }
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
+/* Base text: what designs are drawn with, kept in apps whose CSS resets it; any class rule wins over it. */
+:where(.ds-root) :is(h1, h2, h3, h4, h5, h6) { font-family: var(--font-heading); font-weight: var(--heading-weight, 700); line-height: 1.15; }
+:where(.ds-root) h1 { font-size: 2em; margin: 0.67em 0; }
+:where(.ds-root) h2 { font-size: 1.5em; margin: 0.83em 0; }
+:where(.ds-root) h3 { font-size: 1.17em; margin: 1em 0; }
+:where(.ds-root) h4 { font-size: 1em; margin: 1.33em 0; }
+:where(.ds-root) :is(p, blockquote, figure, dl) { margin: 1em 0; }
+:where(.ds-root) :is(ul, ol) { margin: 1em 0; padding-left: 40px; }
+:where(.ds-root) ul { list-style: disc; }
+:where(.ds-root) ol { list-style: decimal; }
+:where(.ds-root) :is(b, strong) { font-weight: bolder; }
+.ds-h1, .ds-h2, .ds-h3 { margin: 0; font-family: var(--font-heading); font-weight: var(--heading-weight, 650); letter-spacing: var(--heading-tracking, -0.02em); line-height: 1.15; color: hsl(var(--foreground)); }
+.ds-h1 { font-size: clamp(24px, 3vw, var(--text-h1, 32px)); }
+.ds-h2 { font-size: clamp(18px, 2.2vw, var(--text-h2, 22px)); }
+.ds-h3 { font-size: var(--text-h3, 15.5px); letter-spacing: -0.01em; }
+.ds-text { margin: 0; }
+.ds-muted { color: hsl(var(--muted-foreground)); }
+.ds-label-caps { font-family: var(--label-font, inherit); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: var(--label-transform, uppercase); color: hsl(var(--muted-foreground)); }
+.ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 7px; height: 36px; padding: 0 14px; font: 600 13.5px/1 var(--font-sans); letter-spacing: var(--btn-tracking, -0.005em); border-radius: var(--radius-button, var(--radius)); border: max(1px, var(--border-width, 1px)) solid var(--btn-border, hsl(var(--primary))); background: var(--btn-bg, hsl(var(--primary))); color: var(--btn-fg, hsl(var(--primary-foreground))); box-shadow: var(--btn-shadow, 0 1px 2px rgb(0 0 0 / 0.1)); text-transform: var(--btn-transform, none); cursor: pointer; text-decoration: none; white-space: nowrap; transition: filter 120ms, background-color 120ms, box-shadow 120ms; }
+.ds-btn:hover { filter: brightness(0.96); }
+.ds-btn:focus-visible { outline: none; box-shadow: 0 0 0 3px hsl(var(--ring, var(--primary)) / 0.3); }
+.ds-btn svg { width: 16px; height: 16px; }
+.ds-btn-sm { height: 30px; padding: 0 11px; font-size: 12.5px; }
+.ds-btn-lg { height: 44px; padding: 0 20px; font-size: 15px; gap: 8px; }
+.ds-btn-lg svg { width: 18px; height: 18px; }
+/* Sizes in px, so a kit button is known by its kit size; none is under the 24 px a finger needs. */
+.ds-btn-icon { width: 36px; padding: 0; flex: none; }
+.ds-btn-icon.ds-btn-sm { width: 30px; }
+.ds-btn-icon.ds-btn-lg { width: 44px; }
+.ds-btn-secondary { background: hsl(var(--action-2)); color: hsl(var(--action-2-foreground)); border-color: hsl(var(--action-2-border)); box-shadow: 0 1px 2px rgb(0 0 0 / 0.05); }
+.ds-btn-secondary:hover { filter: brightness(0.97); }
+.ds-btn-ghost { background: transparent; color: hsl(var(--muted-foreground)); border-color: transparent; box-shadow: none; }
+.ds-btn-ghost:hover { filter: none; background: hsl(var(--muted)); color: hsl(var(--foreground)); }
+.ds-btn-danger { background: hsl(var(--destructive)); color: hsl(var(--destructive-foreground)); border-color: hsl(var(--destructive)); }
+.ds-card { background: var(--card-bg, hsl(var(--card))); color: hsl(var(--card-foreground)); border: var(--card-border, 1px solid hsl(var(--border))); border-top: var(--card-border-top, var(--card-border, 1px solid hsl(var(--border)))); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--card-shadow, var(--shadow, none)); backdrop-filter: var(--card-blur, none); -webkit-backdrop-filter: var(--card-blur, none); padding: calc(20px * var(--space-scale, 1)) calc(20px * var(--space-scale, 1) * var(--card-pad-x, 1)); }
+.ds-panel { background: hsl(var(--muted) / 0.6); border-radius: var(--radius); padding: 16px; }
+.ds-field { display: flex; flex-direction: column; gap: 6px; }
+.ds-label { font-size: 13px; font-weight: 600; color: hsl(var(--foreground)); }
+.ds-input, .ds-select, .ds-textarea { width: 100%; height: 38px; padding: 0 12px; font: 14px/1.4 var(--font-sans); color: hsl(var(--foreground)); background: var(--input-bg, hsl(var(--background))); border: var(--input-border, 1px solid hsl(var(--input))); border-bottom: var(--input-border-bottom, var(--input-border, 1px solid hsl(var(--input)))); border-radius: var(--radius-input, min(var(--radius), 12px)); box-shadow: var(--input-shadow, 0 1px 2px rgb(0 0 0 / 0.04)); transition: border-color 120ms, box-shadow 120ms; }
+.ds-input, .ds-select { flex-shrink: 0; min-height: 38px; max-height: 38px; }
+.ds-input-sm { height: 32px; min-height: 32px; max-height: 32px; padding-inline: 10px; font-size: 13px; }
+.ds-input-lg { height: 44px; min-height: 44px; max-height: 44px; padding-inline: 14px; font-size: 15px; }
+.ds-select.ds-input-sm { padding-right: 30px; }
+.ds-select.ds-input-lg { padding-right: 38px; }
+.ds-select { appearance: none; -webkit-appearance: none; padding-right: 34px; cursor: pointer; text-overflow: ellipsis; background-image: linear-gradient(45deg, transparent 50%, hsl(var(--muted-foreground)) 50%), linear-gradient(135deg, hsl(var(--muted-foreground)) 50%, transparent 50%); background-position: calc(100% - 18px) 52%, calc(100% - 13px) 52%; background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; }
+.ds-select:hover, .ds-input:hover { border-color: hsl(var(--foreground) / 0.25); }
+.ds-select option { color: hsl(var(--foreground)); background: hsl(var(--popover, var(--card))); }
+@supports (appearance: base-select) {
+  .ds-select, .ds-select::picker(select) { appearance: base-select; }
+  .ds-select { display: inline-flex; align-items: center; }
+  .ds-select::picker-icon { display: none; }
+  .ds-select::picker(select) { margin-block: 4px; padding: 4px; color: hsl(var(--foreground)); background: hsl(var(--popover, var(--card))); border: 1px solid hsl(var(--border)); border-radius: var(--radius-input, min(var(--radius), 12px)); box-shadow: 0 12px 32px rgb(0 0 0 / 0.18); }
+  .ds-select option { display: flex; align-items: center; gap: 8px; min-height: 36px; padding: 6px 10px; border-radius: calc(var(--radius-input, min(var(--radius), 12px)) - 2px); background: transparent; cursor: pointer; }
+  .ds-select option:hover, .ds-select option:focus-visible { background: hsl(var(--muted)); outline: none; }
+  .ds-select option:checked { font-weight: 600; }
+  .ds-select option::checkmark { order: 1; margin-left: auto; color: hsl(var(--primary)); }
+}
+.ds-input:focus, .ds-select:focus, .ds-textarea:focus { outline: none; border-color: hsl(var(--primary)); box-shadow: 0 0 0 3px hsl(var(--primary) / 0.15); }
+.ds-textarea { height: auto; min-height: 96px; padding: 10px 12px; resize: vertical; }
+.ds-hint { font-size: 12.5px; color: hsl(var(--muted-foreground)); }
+.ds-error { font-size: 12.5px; color: hsl(var(--destructive)); }
+.ds-badge { font-family: var(--label-font, inherit); display: inline-flex; align-items: center; gap: 6px; height: 22px; padding: 0 9px; font-size: 12px; font-weight: 600; line-height: 1; border-radius: 999px; border: 1px solid var(--badge-border, transparent); background: var(--badge-bg, hsl(var(--primary) / 0.1)); color: var(--badge-fg, hsl(var(--primary))); white-space: nowrap; }
+.ds-badge-success, .ds-badge-warning, .ds-badge-danger, .ds-badge-info, .ds-badge-quiet { gap: 6px; }
+.ds-badge-success::before, .ds-badge-warning::before, .ds-badge-danger::before, .ds-badge-info::before, .ds-badge-quiet::before { content: ""; width: 6px; height: 6px; border-radius: 999px; background: currentColor; }
+.ds-badge-quiet { background: hsl(var(--muted)); color: hsl(var(--muted-foreground)); }
+.ds-badge-success { background: var(--badge-success-bg, hsl(var(--success-soft))); color: hsl(var(--success-soft-foreground)); }
+.ds-badge-warning { background: var(--badge-warning-bg, hsl(var(--warning-soft))); color: hsl(var(--warning-soft-foreground)); }
+.ds-badge-danger { background: var(--badge-danger-bg, hsl(var(--danger-soft))); color: hsl(var(--danger-soft-foreground)); }
+.ds-badge-info { background: var(--badge-info-bg, hsl(var(--info-soft))); color: hsl(var(--info-soft-foreground)); }
+.ds-table-wrap { background: var(--card-bg, hsl(var(--card))); border: var(--card-border, 1px solid hsl(var(--border))); border-top: var(--card-border-top, var(--card-border, 1px solid hsl(var(--border)))); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--card-shadow, var(--shadow, none)); overflow-x: auto; overflow-y: hidden; }
+.ds-table { width: 100%; border-collapse: collapse; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.ds-table th { font-family: var(--label-font, inherit); text-align: left; font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em; text-transform: var(--label-transform, none); color: hsl(var(--muted-foreground)); background: var(--table-head-bg, hsl(var(--muted) / 0.5)); padding: 10px 14px; border-bottom: 1px solid var(--table-line, hsl(var(--border))); white-space: nowrap; }
+.ds-table td { padding: calc(var(--table-pad-y, 12px) * var(--space-scale, 1)) 14px; border-top: 1px solid var(--table-line, hsl(var(--border))); vertical-align: middle; }
+.ds-table tbody tr:nth-child(even) td { background: var(--table-stripe, transparent); }
+.ds-table tbody tr:first-child td { border-top: 0; }
+.ds-table tbody tr:hover td { background: hsl(var(--muted) / 0.35); }
+.ds-table td:first-child { font-weight: 500; }
+.ds-table-compact { font-size: 13px; }
+.ds-table-compact th { padding: 7px 12px; }
+.ds-table-compact td { padding: calc(7px * var(--space-scale, 1)) 12px; }
+.ds-list { list-style: none; margin: 0; padding: 0; }
+.ds-list-item { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid hsl(var(--border)); }
+.ds-list-item:first-child { border-top: 0; }
+.ds-list-item > :only-child { flex: 1 1 auto; min-width: 0; }
+.ds-row-actions { display: inline-flex; align-items: center; justify-content: flex-end; gap: 8px; white-space: nowrap; }
+.ds-list-item > .ds-row-actions:last-child, .ds-list-item > .ds-menu:last-child { margin-left: auto; }
+.ds-table td:has(> .ds-row-actions:only-child), .ds-table td:has(> .ds-menu:only-child) { width: 1%; white-space: nowrap; text-align: right; }
+@media (max-width: 640px) { .ds-row-actions > :not(.ds-menu) { display: none; } }
+.ds-nav { display: flex; align-items: center; gap: 2px; }
+.ds-nav-item { display: flex; align-items: center; gap: 8px; white-space: nowrap; padding: 7px 11px; border-radius: min(var(--radius), 10px); color: hsl(var(--muted-foreground)); text-decoration: none; font-size: 13.5px; font-weight: 500; }
+.ds-nav-item:hover { color: hsl(var(--foreground)); background: hsl(var(--muted) / 0.6); }
+.ds-nav-item.ds-active { color: var(--nav-active-fg, hsl(var(--primary))); background: var(--nav-active-bg, hsl(var(--primary) / 0.08)); box-shadow: var(--nav-active-shadow, none); border-radius: var(--nav-radius, min(var(--radius), 10px)); font-weight: var(--nav-active-weight, 600); }
+.ds-nav-item svg { width: 16px; height: 16px; }
+.ds-tabs { display: inline-flex; gap: 2px; padding: 3px; background: hsl(var(--muted)); border-radius: min(var(--radius), 10px); }
+.ds-menu { position: relative; display: inline-block; }
+.ds-menu > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.ds-menu > summary::-webkit-details-marker { display: none; }
+.ds-menu-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 30; min-width: 200px; padding: 6px; display: grid; gap: 2px; background: hsl(var(--popover, var(--card))); color: hsl(var(--popover-foreground, var(--foreground))); border: 1px solid hsl(var(--border)); border-radius: min(var(--radius), 12px); box-shadow: 0 16px 40px -16px rgb(0 0 0 / 0.3); }
+.ds-menu-left .ds-menu-list { right: auto; left: 0; }
+.ds-menu-list > a, .ds-menu-list > button { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border: 0; border-radius: min(var(--radius), 8px); background: none; font: 500 13.5px/1.3 var(--font-sans); color: inherit; text-align: left; text-decoration: none; cursor: pointer; }
+.ds-menu-list > a:hover, .ds-menu-list > button:hover { background: hsl(var(--muted)); }
+.ds-menu-list > hr { height: 1px; margin: 4px 2px; border: 0; background: hsl(var(--border)); }
+.ds-tab, .ds-chip { appearance: none; -webkit-appearance: none; border: 0; background: none; font-family: inherit; line-height: 1.2; cursor: pointer; }
+.ds-tab:hover:not(.ds-active) { color: hsl(var(--foreground)); }
+.ds-tab { padding: 6px 12px; font-size: 13px; font-weight: 500; color: hsl(var(--muted-foreground)); border-radius: min(var(--radius), 8px); text-decoration: none; white-space: nowrap; }
+.ds-tab.ds-active { background: hsl(var(--card)); color: hsl(var(--foreground)); box-shadow: 0 1px 2px rgb(0 0 0 / 0.08); }
+.ds-chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px; font-size: 13px; font-weight: 500; color: hsl(var(--foreground)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 999px; }
+.ds-stat { display: flex; flex-direction: column; gap: 4px; }
+.ds-stat-label { font-size: 12.5px; color: hsl(var(--muted-foreground)); }
+.ds-stat-value { font-family: var(--figure-font, var(--font-heading)); font-size: 26px; font-weight: var(--heading-weight, 650); letter-spacing: -0.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.ds-avatar { display: inline-grid; place-items: center; flex: none; width: 32px; height: 32px; border-radius: 999px; background: hsl(var(--primary) / 0.12); color: hsl(var(--primary-text, var(--primary))); font-size: 12px; font-weight: 700; }
+.ds-avatar-sm { width: 24px; height: 24px; font-size: 10px; }
+.ds-avatar-lg { width: 44px; height: 44px; font-size: 15px; }
+.ds-avatar-xl { width: 64px; height: 64px; font-size: 21px; }
+.ds-divider { border: 0; border-top: 1px solid hsl(var(--border)); margin: 16px 0; }
+.ds-empty { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 48px 16px; text-align: center; color: hsl(var(--muted-foreground)); }
+.ds-empty-icon { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 4px; border-radius: 999px; background: hsl(var(--primary) / 0.08); color: hsl(var(--primary-text, var(--primary))); }
+.ds-img { display: block; width: 100%; min-height: 120px; border-radius: min(var(--radius), 14px); background-color: hsl(var(--muted)); background-image: repeating-linear-gradient(135deg, hsl(var(--border) / 0.55) 0 1px, transparent 1px 12px); }
+/* The side gutter is the width and side margins, not padding, so a screen's own `padding: 20px 0` can't take it away. */
+.ds-page { width: min(calc(100% - 48px), 1072px); margin-inline: auto; padding: calc(32px * var(--space-scale, 1)) 0 calc(56px * var(--space-scale, 1)); }
+.ds-page-narrow { width: min(calc(100% - 48px), 672px); margin-inline: auto; padding: calc(32px * var(--space-scale, 1)) 0 calc(56px * var(--space-scale, 1)); }
+/* Sized by width and side margins, not padding, so a bar's own `padding: 14px 0` can't take its gutter away. */
+.ds-bar { width: min(calc(100% - 48px), 1072px); margin-inline: auto; }
+:where(header, footer) > :where(.ds-bar) { padding-block: calc(12px * var(--space-scale, 1)); }
+.ds-page-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; margin-bottom: 24px; }
+.ds-section { margin-top: 48px; }
+.ds-stack { display: flex; flex-direction: column; gap: calc(16px * var(--space-scale, 1)); }
+.ds-stack-tight { display: flex; flex-direction: column; gap: 8px; }
+.ds-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.ds-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.ds-spacer { flex: 1; }
+@media (max-width: 640px) { .ds-page, .ds-page-narrow { width: calc(100% - 32px); padding: 20px 0 40px; } .ds-bar { width: calc(100% - 32px); } .ds-section { margin-top: 32px; } }
+.ds-shell { display: grid; grid-template-columns: auto minmax(0, 1fr); min-height: 100vh; align-items: stretch; }
+.ds-shell > [data-part-root] > aside, .ds-shell > aside { width: 248px; max-width: 280px; margin: 0; }
+.ds-shell-main { min-width: 0; display: flex; flex-direction: column; }
+.ds-shell:not(:has(aside)) { display: block; }
+@media (max-width: 860px) { .ds-shell { grid-template-columns: minmax(0, 1fr); } .ds-shell > [data-part-root] > aside, .ds-shell > aside { display: none; } }
+.ds-theme-switch { display: inline-flex !important; flex-direction: row !important; align-items: center; gap: 2px; height: 32px; padding: 3px; border-radius: 999px; background: hsl(var(--muted)); flex: none; }
+.ds-theme-switch > * { display: grid; place-items: center; width: 28px; height: 26px; padding: 0; border: 0; border-radius: 999px; background: transparent; color: hsl(var(--muted-foreground)); cursor: pointer; }
+.ds-theme-switch > .ds-active { background: hsl(var(--card)); color: hsl(var(--foreground)); box-shadow: 0 1px 2px rgb(0 0 0 / 0.12); }
+.ds-theme-switch svg { width: 14px; height: 14px; }
+.ds-lang-switch { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 10px; border: 1px solid hsl(var(--border)); border-radius: 999px; background: hsl(var(--card)); color: hsl(var(--foreground)); font: 600 12.5px/1 var(--font-sans); cursor: pointer; flex: none; }
+.ds-lang-switch svg { width: 14px; height: 14px; color: hsl(var(--muted-foreground)); }
+.ds-menu-button { display: none; place-items: center; width: 36px; height: 36px; padding: 0; border: 1px solid hsl(var(--border)); border-radius: min(var(--radius), 10px); background: hsl(var(--card)); color: hsl(var(--foreground)); cursor: pointer; flex: none; }
+.ds-menu-button svg { width: 18px; height: 18px; }
+.ds-menu > summary.ds-menu-button { display: none; }
+.ds-menu-list > .ds-theme-switch, .ds-menu-list > .ds-lang-switch { justify-self: start; margin: 4px 6px; }
+.ds-corner { display: flex; justify-content: flex-end; align-items: center; gap: 8px; padding: 14px 24px 0; }
+@media (max-width: 640px) { .ds-corner { padding: 12px 16px 0; } }
+.ds-user { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.ds-user-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.ds-user-name { font-size: 13.5px; font-weight: 600; color: hsl(var(--foreground)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ds-user-role { font-size: 12px; color: hsl(var(--muted-foreground)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ds-only-narrow { display: none !important; }
+@media (max-width: 860px) { .ds-menu-button, .ds-menu > summary.ds-menu-button { display: inline-grid; } .ds-only-wide { display: none !important; } .ds-only-narrow { display: revert !important; } }
+.ds-display { margin: 0; font-family: var(--font-heading); font-weight: var(--heading-weight, 700); font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -0.035em; }
+.ds-eyebrow { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: hsl(var(--primary-text, var(--primary))); }
+.ds-band-bold { background: hsl(var(--band)); color: hsl(var(--band-foreground)); }
+.ds-num { font-family: var(--num-font, inherit); font-variant-numeric: tabular-nums; }
+.ds-root input[type="checkbox"], .ds-root input[type="radio"] { accent-color: hsl(var(--primary)); }
+.ds-check { width: 16px; height: 16px; margin: 0; flex: none; }
+.ds-switch { position: relative; flex: none; width: 34px; height: 20px; padding: 0; border: 0; border-radius: 999px; background: hsl(var(--input)); cursor: pointer; transition: background-color var(--motion-duration, 150ms); }
+.ds-switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 999px; background: hsl(var(--card)); box-shadow: 0 1px 2px rgb(0 0 0 / 0.2); transition: transform var(--motion-duration, 150ms); }
+.ds-switch[aria-checked="true"] { background: hsl(var(--primary)); }
+.ds-switch[aria-checked="true"]::after { transform: translateX(14px); background: hsl(var(--primary-foreground)); }
+.ds-progress { height: 6px; border-radius: 999px; background: hsl(var(--muted)); overflow: hidden; }
+.ds-progress > span { display: block; height: 100%; border-radius: inherit; background: hsl(var(--primary)); }
+.ds-notice { display: flex; align-items: flex-start; gap: 8px; padding: calc(10px * var(--space-scale, 1)) 12px; border-radius: min(var(--radius), 12px); font-size: 13px; background: hsl(var(--muted)); color: hsl(var(--foreground)); }
+.ds-notice-success { background: var(--badge-success-bg, hsl(var(--success-soft))); color: hsl(var(--success-soft-foreground)); }
+.ds-notice-info { background: var(--badge-info-bg, hsl(var(--info-soft))); color: hsl(var(--info-soft-foreground)); }
+.ds-notice-warning { background: var(--badge-warning-bg, hsl(var(--warning-soft))); color: hsl(var(--warning-soft-foreground)); }
+.ds-notice-danger { background: var(--badge-danger-bg, hsl(var(--danger-soft))); color: hsl(var(--danger-soft-foreground)); }
+.ds-bar-surface { background: hsl(var(--bar)); color: hsl(var(--bar-foreground)); }
+.dark .ds-tab.ds-active, .dark .ds-theme-switch > .ds-active { background: hsl(var(--foreground) / 0.12); box-shadow: none; }
+.ds-bar-surface .ds-nav-item { color: var(--bar-link, hsl(var(--muted-foreground))); }
+.ds-bar-surface .ds-nav-item.ds-active { background: var(--bar-nav-bg, var(--nav-active-bg)); color: var(--bar-nav-fg, var(--nav-active-fg)); box-shadow: var(--bar-nav-shadow, none); }
+.ds-band-bold .ds-btn:not(.ds-btn-secondary, .ds-btn-ghost, .ds-btn-danger) { background: hsl(var(--band-foreground)); border-color: hsl(var(--band-foreground)); color: hsl(var(--band)); box-shadow: none; }
+.ds-bar-surface .ds-btn:not(.ds-btn-secondary, .ds-btn-ghost, .ds-btn-danger) { background: var(--bar-btn-bg, var(--btn-bg)); color: var(--bar-btn-fg, var(--btn-fg)); border-color: var(--bar-btn-border, var(--btn-border)); }
+:is(.ds-btn, .ds-nav-item, .ds-empty-icon, .ds-menu-button, .ds-chip, .ds-tab, .ds-theme-switch, .ds-lang-switch) svg { stroke-width: var(--icon-stroke, 2); }
+.ds-band { background: linear-gradient(180deg, hsl(var(--primary) / 0.07), hsl(var(--accent) / 0.05)); border-block: 1px solid hsl(var(--border)); }
+.ds-band-dark { background: hsl(var(--foreground)); color: hsl(var(--background)); }
+.ds-band-dark .ds-muted { color: hsl(var(--background) / 0.7); }
+.ds-bento { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: minmax(140px, auto); gap: 14px; }
+.ds-bento > .ds-span-2 { grid-column: span 2; }
+.ds-bento > .ds-tall { grid-row: span 2; }
+.ds-tile { position: relative; overflow: hidden; padding: calc(20px * var(--space-scale, 1)); background: var(--card-bg, hsl(var(--card))); border: var(--card-border, 1px solid hsl(var(--border))); border-radius: calc(var(--card-radius, var(--radius)) + 4px); box-shadow: var(--card-shadow, var(--shadow, none)); backdrop-filter: var(--card-blur, none); }
+.ds-glow { position: relative; isolation: isolate; }
+.ds-glow::before { content: ""; position: absolute; inset: -20%; z-index: -1; background: radial-gradient(closest-side, hsl(var(--primary) / 0.22), transparent); filter: blur(24px); }
+.ds-deco { position: absolute; z-index: -1 !important; pointer-events: none; }
+.ds-deco:has(a, button, input, select, textarea, label) { z-index: auto !important; pointer-events: auto; }
+:where(:has(> .ds-deco)) { position: relative; isolation: isolate; }
+.ds-root { overflow-x: clip; }
+@media (max-width: 900px) { .ds-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .ds-bento { grid-template-columns: 1fr; } .ds-bento > .ds-span-2 { grid-column: auto; } }
+.ds-brand-link { display: inline-flex; align-items: center; gap: 10px; flex: none; color: inherit; text-decoration: none; }
+.ds-brand { display: block; height: var(--brand-height, 28px); width: auto; max-width: 200px; object-fit: contain; }
+.ds-brand-dark { display: none; }
+.dark .ds-brand-light { display: none; }
+.dark .ds-brand.ds-brand-dark { display: block; }
+.ds-brand-text { font-family: var(--font-heading); font-weight: var(--heading-weight, 700); font-size: 17px; letter-spacing: -0.01em; white-space: nowrap; }
+.dark .ds-brand-text.ds-brand-dark { display: inline; }
+/* Everyday pieces: a search and filter bar, a form, a detail page, page actions and a toolbar, steps, a table in a card. */
+.ds-filter-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: calc(16px * var(--space-scale, 1)); }
+.ds-filter-bar > .ds-select { width: auto; min-width: 140px; }
+.ds-search { position: relative; display: flex; align-items: center; flex: 1 1 240px; min-width: 0; max-width: 420px; }
+.ds-search > svg { position: absolute; left: 12px; width: 16px; height: 16px; color: hsl(var(--muted-foreground)); pointer-events: none; }
+.ds-search > .ds-input { padding-left: 36px; }
+.ds-form { display: flex; flex-direction: column; gap: calc(16px * var(--space-scale, 1)); }
+.ds-form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: calc(16px * var(--space-scale, 1)); }
+.ds-form-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 8px; padding-top: 8px; }
+.ds-detail { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: calc(24px * var(--space-scale, 1)); align-items: start; }
+.ds-detail-main, .ds-detail-side { min-width: 0; display: flex; flex-direction: column; gap: calc(16px * var(--space-scale, 1)); }
+@media (max-width: 860px) { .ds-detail { grid-template-columns: minmax(0, 1fr); } }
+.ds-facts { display: grid; gap: 12px; margin: 0; }
+.ds-facts > div { display: grid; grid-template-columns: minmax(96px, 40%) minmax(0, 1fr); gap: 12px; align-items: baseline; }
+.ds-facts dt { font-size: 12.5px; color: hsl(var(--muted-foreground)); }
+.ds-facts dd { margin: 0; font-weight: 500; min-width: 0; overflow-wrap: anywhere; }
+.ds-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ds-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 8px 12px; margin-bottom: 12px; font-size: 13px; background: hsl(var(--muted) / 0.6); border-radius: min(var(--radius), 12px); }
+.ds-steps { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0; padding: 0; list-style: none; }
+.ds-step { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: hsl(var(--muted-foreground)); }
+.ds-step + .ds-step::before { content: ""; width: 24px; height: 1px; background: hsl(var(--border)); }
+.ds-step-mark { display: grid; place-items: center; flex: none; width: 24px; height: 24px; border-radius: 999px; border: 1px solid hsl(var(--border)); background: hsl(var(--card)); font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.ds-step.ds-active { color: hsl(var(--foreground)); font-weight: 600; }
+.ds-step.ds-active .ds-step-mark { background: hsl(var(--primary)); border-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+.ds-step.ds-done .ds-step-mark { background: hsl(var(--primary) / 0.12); border-color: transparent; color: hsl(var(--primary-text, var(--primary))); }
+.ds-table-card { background: var(--card-bg, hsl(var(--card))); color: hsl(var(--card-foreground)); border: var(--card-border, 1px solid hsl(var(--border))); border-top: var(--card-border-top, var(--card-border, 1px solid hsl(var(--border)))); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--card-shadow, var(--shadow, none)); overflow: hidden; }
+.ds-table-card > .ds-table-wrap { border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+.ds-table-card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding: calc(14px * var(--space-scale, 1)) 14px; border-bottom: 1px solid var(--table-line, hsl(var(--border))); }
+.ds-table-card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; padding: 10px 14px; border-top: 1px solid var(--table-line, hsl(var(--border))); font-size: 13px; color: hsl(var(--muted-foreground)); }
+[data-goto] { cursor: pointer; }
+section[data-state]:not([data-ds-shown]), [data-state][hidden] { display: none !important; }
+[data-ds-replaced] { display: none !important; }
+[data-part-root] { display: contents; }</style></head><body class="ds-root"><style>
+  /* Phone navigation screen: art direction for the GN-01 walkthrough */
+
+  /* Sidebar mock (desktop/tablet) */
+  .gn-side {
+    width: 252px;
+    flex: none;
+    background: hsl(var(--card));
+    border-right: 1px solid hsl(var(--border));
+    padding: calc(20px * var(--space-scale, 1));
+    display: flex;
+    flex-direction: column;
+    gap: calc(20px * var(--space-scale, 1));
+    position: relative;
+    overflow: hidden;
+  }
+  .gn-side-brand { display: flex; align-items: center; gap: calc(10px * var(--space-scale, 1)); }
+  .gn-side-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: hsl(var(--foreground));
+    line-height: 1.15;
+  }
+  .gn-nav { display: flex; flex-direction: column; gap: calc(2px * var(--space-scale, 1)); }
+  .gn-nav .ds-nav-item { justify-content: flex-start; gap: calc(10px * var(--space-scale, 1)); min-height: 44px; }
+  .gn-nav .ds-nav-item svg { width: 18px; height: 18px; flex: none; }
+  .gn-side-foot {
+    margin-top: auto;
+    padding-top: calc(16px * var(--space-scale, 1));
+    border-top: 1px dashed hsl(var(--border));
+    display: flex;
+    flex-direction: column;
+    gap: calc(8px * var(--space-scale, 1));
+  }
+  .gn-side-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--primary-text));
+  }
+
+  /* Illustration: a small checklist, drawn from simple shapes */
+  .gn-illo { width: 100%; height: auto; display: block; }
+
+  /* The showcase: a framed phone beside the explanation */
+  .gn-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: calc(48px * var(--space-scale, 1));
+    align-items: center;
+    margin-top: calc(8px * var(--space-scale, 1));
+  }
+  .gn-phone-wrap { position: relative; display: flex; justify-content: center; }
+  .gn-phone {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) * 4);
+    background: hsl(var(--card));
+    box-shadow: 0 30px 60px -30px hsl(var(--main-900) / 0.35), 0 3px 8px -2px hsl(var(--main-900) / 0.12);
+    padding: calc(12px * var(--space-scale, 1));
+    position: relative;
+  }
+  .gn-notch {
+    width: 96px; height: 6px; border-radius: 99px;
+    background: hsl(var(--border));
+    margin: 0 auto calc(10px * var(--space-scale, 1));
+  }
+  .gn-ph-top {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    padding-bottom: calc(10px * var(--space-scale, 1));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .gn-ph-title {
+    font-family: var(--font-heading); font-weight: 700; font-size: 15px;
+    color: hsl(var(--foreground)); letter-spacing: -0.01em; line-height: 1.2;
+    flex: 1; min-width: 0;
+  }
+  .gn-ph-top .ds-menu-button { flex: none; border: 1px solid hsl(var(--border)); background: hsl(var(--muted)); border-radius: var(--radius-button); display: grid; place-items: center; width: 44px; height: 44px; }
+  .gn-ph-top .ds-menu-button svg { width: 20px; height: 20px; }
+  .gn-open {
+    margin-top: calc(10px * var(--space-scale, 1));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    background: hsl(var(--background));
+    padding: calc(8px * var(--space-scale, 1));
+    box-shadow: var(--shadow);
+  }
+  .gn-open-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    padding: 0 calc(8px * var(--space-scale, 1)) calc(6px * var(--space-scale, 1));
+  }
+  .gn-open .ds-nav-item { justify-content: flex-start; gap: calc(10px * var(--space-scale, 1)); min-height: 44px; width: 100%; }
+  .gn-open .ds-nav-item svg { width: 18px; height: 18px; flex: none; }
+  .gn-open .ds-theme-switch { margin: calc(6px * var(--space-scale, 1)) calc(8px * var(--space-scale, 1)) 0; }
+
+  /* Explanation column */
+  .gn-explain { display: flex; flex-direction: column; gap: calc(20px * var(--space-scale, 1)); }
+
+  /* Width ruler: a mini diagram with three breakpoint cards */
+  .gn-breaks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(12px * var(--space-scale, 1)); }
+  .gn-break {
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    background: hsl(var(--card));
+    padding: calc(14px * var(--space-scale, 1));
+    display: flex; flex-direction: column; gap: calc(8px * var(--space-scale, 1));
+  }
+  .gn-break-figure { height: 54px; display: flex; align-items: flex-end; justify-content: center; }
+  .gn-break-screen {
+    border-radius: 4px 4px 0 0;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    border-bottom: 0;
+    display: flex; gap: 3px; padding: 4px;
+    height: 46px;
+    align-items: stretch;
+  }
+  .gn-break-bar {
+    width: 4px; border-radius: 2px; background: hsl(var(--primary) / 0.5); align-self: stretch;
+  }
+  .gn-break-col { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+  .gn-break-line { height: 4px; border-radius: 2px; background: hsl(var(--border)); }
+  .gn-break h3 { margin: 0; font-size: 14px; font-weight: 650; color: hsl(var(--foreground)); }
+  .gn-break p { margin: 0; font-size: 13px; line-height: 1.4; color: hsl(var(--muted-foreground)); }
+  .gn-break .gn-bp-name { font-family: var(--font-heading); font-weight: 700; font-size: 12px; color: hsl(var(--primary-text)); letter-spacing: 0.04em; }
+
+  /* Tap-size rule card */
+  .gn-rule {
+    display: grid; grid-template-columns: auto 1fr; gap: calc(20px * var(--space-scale, 1));
+    align-items: center;
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    padding: calc(16px * var(--space-scale, 1));
+    background: hsl(var(--card));
+  }
+  .gn-tap {
+    width: 64px; height: 64px; border-radius: var(--radius);
+    display: grid; place-items: center;
+    background: hsl(var(--primary) / 0.1);
+    border: 1px dashed hsl(var(--primary) / 0.5);
+    color: hsl(var(--primary-text));
+    font-family: var(--font-heading); font-weight: 700; font-size: 15px;
+  }
+  .gn-rule h3 { margin: 0 0 4px; font-size: 15px; font-weight: 650; color: hsl(var(--foreground)); }
+  .gn-rule p { margin: 0; font-size: 14px; line-height: 1.45; color: hsl(var(--muted-foreground)); }
+
+  /* Desktop shell showcase: banner showing the sidebar layout */
+  .gn-shot {
+    display: flex;
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) * 2);
+    overflow: hidden;
+    background: hsl(var(--background));
+    box-shadow: var(--shadow);
+    min-height: 220px;
+  }
+  .gn-shot-main { flex: 1; min-width: 0; padding: calc(16px * var(--space-scale, 1)); display: flex; flex-direction: column; gap: calc(12px * var(--space-scale, 1)); }
+  .gn-shot-top {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    padding-bottom: calc(10px * var(--space-scale, 1));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .gn-shot-name { font-weight: 650; font-size: 14px; color: hsl(var(--foreground)); }
+  .gn-shot-top .ds-avatar { margin-left: auto; }
+  .gn-shot-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(8px * var(--space-scale, 1)); }
+  .gn-shot-card {
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    padding: calc(10px * var(--space-scale, 1)); background: hsl(var(--card));
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .gn-shot-card span:first-child { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: hsl(var(--muted-foreground)); }
+  .gn-shot-card span:last-child { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: hsl(var(--foreground)); }
+  .gn-shot-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid hsl(var(--border)); }
+  .gn-shot-row .gn-dot { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid hsl(var(--border)); flex: none; }
+  .gn-shot-row .gn-bar { height: 6px; border-radius: 3px; background: hsl(var(--muted)); flex: 1; }
+  .gn-shot-row .gn-bar.short { flex: 0 0 40%; }
+
+  .gn-caption {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    font-size: 13px; color: hsl(var(--muted-foreground));
+  }
+  .gn-caption svg { width: 16px; height: 16px; flex: none; color: hsl(var(--primary-text)); }
+
+  .gn-note {
+    background: hsl(var(--primary) / 0.06);
+    border: 1px solid hsl(var(--primary) / 0.2);
+    border-radius: var(--radius);
+    padding: calc(14px * var(--space-scale, 1)) calc(16px * var(--space-scale, 1));
+    display: flex; gap: calc(12px * var(--space-scale, 1)); align-items: flex-start;
+  }
+  .gn-note svg { width: 18px; height: 18px; flex: none; color: hsl(var(--primary-text)); margin-top: 1px; }
+  .gn-note p { margin: 0; font-size: 14px; line-height: 1.5; color: hsl(var(--foreground)); }
+
+  @media (max-width: 960px) {
+    .gn-stage { grid-template-columns: 1fr; gap: calc(32px * var(--space-scale, 1)); }
+    .gn-phone-wrap { justify-content: flex-start; }
+  }
+  @media (max-width: 560px) {
+    .gn-breaks { grid-template-columns: 1fr; }
+    .gn-shot { display: none; }
+    .gn-rule { grid-template-columns: 1fr; justify-items: start; }
+    .gn-phone { max-width: 100%; }
+  }
+</style><main data-screen="compact-header-with-a-menu-on-phones" data-eid="e1">
+  <div class="ds-shell" data-eid="e2">
+    <div data-part="sidebar" data-eid="e3"></div>
+    <div class="ds-shell-main" data-eid="e4">
+      <div data-part="header" data-eid="e5"></div>
+
+      <div data-eid="content">
+        <div class="ds-page" style="padding-top: calc(24px * var(--space-scale, 1)); padding-bottom: calc(48px * var(--space-scale, 1))" data-eid="e6">
+          <div class="ds-page-head" data-eid="e7">
+            <div data-eid="e8">
+              <span class="ds-eyebrow" data-sample="GN-01.label" data-eid="e9">Move around on a phone</span>
+              <h1 class="ds-h1" style="margin-top: calc(8px * var(--space-scale, 1))" data-eid="e10">The same list, fitted to the screen</h1>
+              <p class="ds-muted" style="margin: calc(6px * var(--space-scale, 1)) 0 0; max-width: 560px" data-eid="e11">A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.</p>
+            </div>
+            <a class="ds-btn" data-goto="home" data-eid="e12">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+              Go to Home
+            </a>
+          </div>
+
+          <div class="gn-stage" data-eid="e13">
+            <!-- LEFT: framed phone with the compact header and the open menu -->
+            <div class="gn-phone-wrap" data-eid="e14">
+              <div class="ds-deco" style="left: -8%; top: 6%; width: 116%; height: 88%; border-radius: 50%; background: radial-gradient(circle at 50% 30%, hsl(var(--primary) / 0.14), transparent 68%);" data-eid="e15"></div>
+              <div class="gn-phone" data-eid="e16">
+                <div class="gn-notch" aria-hidden="true" data-eid="e17"></div>
+                <div class="gn-ph-top" data-eid="e18">
+                  <a class="ds-brand-link" data-goto="home" aria-label="Quick Task Manager" data-eid="e19">
+                    <img class="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" data-eid="e20">
+                    <img class="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" data-eid="e21">
+                  </a>
+                  <span class="gn-ph-title" data-sample data-eid="e22">Quick Task Manager</span>
+                  <button class="ds-menu-button" aria-label="Open the menu" title="Open the menu" data-eid="e23">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                  </button>
+                </div>
+
+                <div class="gn-open" data-eid="e24">
+                  <div class="gn-open-label" data-sample data-eid="e25">Menu</div>
+                  <nav class="ds-nav" data-eid="e26">
+                    <a class="ds-nav-item ds-active" data-goto="home" data-eid="e27">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+                      Home
+                    </a>
+                    <a class="ds-nav-item" data-goto="statistics" data-eid="e28">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+                      Statistics
+                    </a>
+                    <a class="ds-nav-item" data-goto="settings" data-eid="e29">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+                      Settings
+                    </a>
+                  </nav>
+                  <div class="ds-theme-switch" role="group" aria-label="Colour mode" data-eid="e30">
+                    <button aria-label="Light" data-eid="e31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg></button>
+                    <button class="ds-active" aria-label="Dark" data-eid="e32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+                    <button aria-label="Auto" data-eid="e33"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></svg></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: explanation of the whole move -->
+            <div class="gn-explain" data-eid="e34">
+              <div data-eid="e35">
+                <h2 class="ds-h2" style="margin: 0 0 calc(8px * var(--space-scale, 1))" data-eid="e36">One layout, three widths</h2>
+                <p class="ds-text" style="margin: 0; color: hsl(var(--muted-foreground)); max-width: 520px" data-eid="e37">The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.</p>
+              </div>
+
+              <div class="gn-breaks" data-eid="e38">
+                <div class="gn-break" data-eid="e39">
+                  <div class="gn-break-figure" data-eid="e40">
+                    <div class="gn-break-screen" aria-hidden="true" style="width: 100%" data-eid="e41">
+                      <div class="gn-break-bar" data-eid="e42"></div>
+                      <div class="gn-break-col" data-eid="e43"><div class="gn-break-line" style="width: 70%" data-eid="e44"></div><div class="gn-break-line" data-eid="e45"></div><div class="gn-break-line" data-eid="e46"></div></div>
+                    </div>
+                  </div>
+                  <span class="gn-bp-name" data-eid="e47">Desktop</span>
+                  <h3 data-eid="e48">Sidebar stays</h3>
+                  <p data-eid="e49">Fixed on the left. Cards sit in columns.</p>
+                </div>
+                <div class="gn-break" data-eid="e50">
+                  <div class="gn-break-figure" data-eid="e51">
+                    <div class="gn-break-screen" aria-hidden="true" style="width: 78%" data-eid="e52">
+                      <div class="gn-break-bar" data-eid="e53"></div>
+                      <div class="gn-break-col" data-eid="e54"><div class="gn-break-line" style="width: 60%" data-eid="e55"></div><div class="gn-break-line" data-eid="e56"></div></div>
+                    </div>
+                  </div>
+                  <span class="gn-bp-name" data-eid="e57">Tablet</span>
+                  <h3 data-eid="e58">Sidebar, fewer columns</h3>
+                  <p data-eid="e59">Navigation holds. Cards wrap into fewer columns.</p>
+                </div>
+                <div class="gn-break" data-eid="e60">
+                  <div class="gn-break-figure" data-eid="e61">
+                    <div class="gn-break-screen" aria-hidden="true" style="width: 52%" data-eid="e62">
+                      <div class="gn-break-col" data-eid="e63"><div class="gn-break-line" style="width: 50%" data-eid="e64"></div><div class="gn-break-line" data-eid="e65"></div><div class="gn-break-line" style="width: 80%" data-eid="e66"></div></div>
+                    </div>
+                  </div>
+                  <span class="gn-bp-name" data-eid="e67">Phone</span>
+                  <h3 data-eid="e68">Compact header</h3>
+                  <p data-eid="e69">App name and a menu button. Cards stack, one column.</p>
+                </div>
+              </div>
+
+              <div class="gn-rule" data-eid="e70">
+                <div class="gn-tap" aria-hidden="true" data-eid="e71">44 px</div>
+                <div data-eid="e72">
+                  <h3 data-eid="e73">Easy to tap</h3>
+                  <p data-eid="e74">Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.</p>
+                </div>
+              </div>
+
+              <div class="gn-shot" aria-hidden="true" data-eid="e75">
+                <div class="gn-side" data-eid="e76">
+                  <div class="gn-side-brand" data-eid="e77">
+                    <img class="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="" data-eid="e78">
+                    <img class="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="" data-eid="e79">
+                    <span class="gn-side-name" data-eid="e80">Quick Task Manager</span>
+                  </div>
+                  <div class="gn-nav" data-eid="e81">
+                    <span class="ds-nav-item ds-active" data-eid="e82"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Home</span>
+                    <span class="ds-nav-item" data-eid="e83"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Statistics</span>
+                    <span class="ds-nav-item" data-eid="e84"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9 2 2 0 1 1-2.8 2.8 1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5 2 2 0 1 1-4 0 1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3 2 2 0 1 1-2.8-2.8 1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1 2 2 0 1 1 0-4 1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9 2 2 0 1 1 2.8-2.8 1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5 2 2 0 1 1 4 0 1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3 2 2 0 1 1 2.8 2.8 1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.5 1 2 2 0 1 1 0 4 1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</span>
+                  </div>
+                  <div class="gn-side-foot" data-eid="e85">
+                    <svg class="gn-illo" viewBox="0 0 180 96" fill="none" aria-hidden="true">
+                      <rect x="6" y="12" width="120" height="18" rx="5" fill="hsl(var(--primary) / 0.12)"/>
+                      <circle cx="18" cy="21" r="5" fill="hsl(var(--success))"/>
+                      <path d="M15.5 21l2 2 3-4" stroke="hsl(var(--success-foreground))" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="28" y="18" width="72" height="6" rx="3" fill="hsl(var(--primary) / 0.3)"/>
+                      <rect x="6" y="40" width="120" height="18" rx="5" fill="hsl(var(--muted))"/>
+                      <circle cx="18" cy="49" r="5" stroke="hsl(var(--border))" stroke-width="1.75"/>
+                      <rect x="28" y="46" width="58" height="6" rx="3" fill="hsl(var(--border))"/>
+                      <rect x="6" y="68" width="120" height="18" rx="5" fill="hsl(var(--muted))"/>
+                      <circle cx="18" cy="77" r="5" stroke="hsl(var(--border))" stroke-width="1.75"/>
+                      <rect x="28" y="74" width="84" height="6" rx="3" fill="hsl(var(--border))"/>
+                      <circle cx="150" cy="48" r="22" fill="hsl(var(--primary) / 0.1)"/>
+                      <path d="M143 48l5 5 10-11" stroke="hsl(var(--primary-text))" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="gn-side-tag" data-eid="e86">Plan. Focus. Achieve.</span>
+                  </div>
+                </div>
+                <div class="gn-shot-main" data-eid="e87">
+                  <div class="gn-shot-top" data-eid="e88">
+                    <span class="gn-shot-name" data-eid="e89">Home</span>
+                    <span class="ds-avatar ds-avatar-sm" data-sample data-eid="e90">MH</span>
+                  </div>
+                  <div class="gn-shot-cards" data-eid="e91">
+                    <div class="gn-shot-card" data-eid="e92"><span data-eid="e93">Total</span><span data-eid="e94">4</span></div>
+                    <div class="gn-shot-card" data-eid="e95"><span data-eid="e96">Completed</span><span data-eid="e97">1</span></div>
+                    <div class="gn-shot-card" data-eid="e98"><span data-eid="e99">Pending</span><span data-eid="e100">3</span></div>
+                  </div>
+                  <div class="gn-shot-row" data-eid="e101"><span class="gn-dot" data-eid="e102"></span><span class="gn-bar" data-eid="e103"></span></div>
+                  <div class="gn-shot-row" data-eid="e104"><span class="gn-dot" style="border-color: hsl(var(--success)); background: hsl(var(--success) / 0.18)" data-eid="e105"></span><span class="gn-bar short" data-eid="e106"></span></div>
+                </div>
+              </div>
+
+              <div class="gn-caption" data-eid="e107">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+                <span data-eid="e108">The menu on a phone also holds the colour mode switch, so no screen loses its toggle.</span>
+              </div>
+
+              <div class="gn-note" data-eid="e109">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+                <p data-eid="e110">Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.</p>
+              </div>
+
+              <div class="ds-actions" data-eid="e111">
+                <a class="ds-btn ds-btn-ghost" data-goto="statistics" data-eid="e112">See Statistics</a>
+                <a class="ds-btn ds-btn-secondary" data-goto="settings" data-eid="e113">Open Settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Situation: an empty task list, so the same layout holds up when there is nothing to show -->
+      <section data-state="empty" data-replaces="content" hidden data-eid="e114">
+        <div class="ds-page" style="padding-top: calc(24px * var(--space-scale, 1)); padding-bottom: calc(48px * var(--space-scale, 1))" data-eid="e115">
+          <div class="ds-page-head" data-eid="e116">
+            <div data-eid="e117">
+              <span class="ds-eyebrow" data-sample="GN-01.label" data-eid="e118">Move around on a phone</span>
+              <h1 class="ds-h1" style="margin-top: calc(8px * var(--space-scale, 1))" data-eid="e119">The same list, fitted to the screen</h1>
+              <p class="ds-muted" style="margin: calc(6px * var(--space-scale, 1)) 0 0; max-width: 560px" data-eid="e120">A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.</p>
+            </div>
+            <a class="ds-btn" data-goto="home" data-eid="e121">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+              Go to Home
+            </a>
+          </div>
+
+          <div class="ds-card" style="margin-top: calc(24px * var(--space-scale, 1))" data-eid="e122">
+            <div class="ds-empty" style="padding: calc(32px * var(--space-scale, 1)) calc(16px * var(--space-scale, 1))" data-eid="e123">
+              <span class="ds-empty-icon" data-eid="e124">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+              </span>
+              <b style="color: hsl(var(--foreground))">No tasks here. Add a task to get started!</b>
+              <span data-eid="e125">Home is on the menu. Add your first task and the layout settles into place at every width.</span>
+              <a class="ds-btn ds-btn-sm" style="margin-top: calc(8px * var(--space-scale, 1))" data-goto="home" data-eid="e126">Add a task</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main></body></html>

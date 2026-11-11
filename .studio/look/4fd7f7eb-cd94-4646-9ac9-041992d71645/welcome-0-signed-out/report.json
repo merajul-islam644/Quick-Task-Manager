@@ -1,0 +1,2555 @@
+{
+  "version": 1,
+  "target": ".studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/welcome-0.html",
+  "kind": "file",
+  "situation": "signed-out",
+  "startedAt": "2026-11-11T05:53:29.184Z",
+  "views": [
+    {
+      "width": 390,
+      "mode": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Opening screen",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/welcome-0.html",
+      "situation": {
+        "name": "signed-out",
+        "found": true,
+        "replaced": true
+      },
+      "document": {
+        "width": 470,
+        "height": 1018,
+        "title": "Opening screen",
+        "rootClass": "is-signed-out",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": true,
+        "by": 80,
+        "scrollable": false,
+        "elements": [
+          {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 50,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            },
+            "beyond": 80,
+            "controlsBeyond": []
+          }
+        ]
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 50,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            }
+          },
+          "kind": "viewport",
+          "fully": false,
+          "by": null
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": null
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Plan. Focus.Achieve.",
+          "text": "Plan. Focus.Achieve.",
+          "classes": "ds-h1 wl-promise",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "mainAction": {
+          "tag": "button",
+          "role": "button",
+          "name": "Sign in or create an account",
+          "text": "Sign in or create an account",
+          "classes": "ds-btn ds-btn-lg",
+          "eid": "e25",
+          "control": true,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "columns": null,
+        "themeSwitch": {
+          "count": 1,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [
+          "signed-out"
+        ],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "",
+          "classes": "wl-top",
+          "eid": "e2",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": {
+          "tag": "footer",
+          "role": "generic",
+          "name": "",
+          "text": "Plan. Focus. Achieve.",
+          "classes": "",
+          "eid": "e76",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 895,
+            "width": 390,
+            "height": 76
+          },
+          "atBottom": false
+        },
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": "Personal task list Plan. Focus.Achieve. Add what needs doing, set a due date, c…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 971
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 16,
+            "right": 371
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Plan. Focus. Achieve.",
+          "box": {
+            "x": 16,
+            "y": 135,
+            "width": 358,
+            "height": 86
+          },
+          "content": {
+            "left": 16,
+            "right": 254
+          }
+        },
+        {
+          "kind": "footer",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 895,
+            "width": 390,
+            "height": 76
+          },
+          "content": {
+            "left": 16,
+            "right": 374
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Sign in or create an account",
+            "primary": false,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "signed-out",
+          "hidden": false,
+          "replaces": "content",
+          "rootClass": "is-signed-out"
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Sign in or create an account"
+        },
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Plan. Focus. Achieve.",
+          "level": 1,
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "button",
+          "name": "Sign in or create an account",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Personal task list",
+        "Plan. Focus.",
+        "Achieve.",
+        "Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.",
+        "You're signed out.",
+        "Sign in or create an account",
+        "Today's list",
+        "2 of 3 done",
+        "Finish project report",
+        "Yesterday",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Completed",
+        "Plan. Focus. Achieve."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - img \"Quick Task Manager\"\n  - group \"Colour mode\":\n    - button \"Light\":\n      - img\n    - button \"Dark\":\n      - img\n    - button \"Auto\":\n      - img\n  - text: Personal task list\n  - heading \"Plan. Focus. Achieve.\" [level=1]\n  - paragraph: Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.\n  - text: You're signed out.\n  - button \"Sign in or create an account\":\n    - text: Sign in or create an account\n    - img\n  - text: Today's list 2 of 3 done Finish project report Yesterday Completed Read a book Today Pending Go for a walk Tomorrow Completed\n  - img \"Quick Task Manager\"\n  - text: Plan. Focus. Achieve.",
+      "screenshot": "w390-light.png",
+      "thumbnail": "thumb-w390-light.webp",
+      "modelImage": "model-w390-light.jpg"
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Opening screen",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/welcome-0.html",
+      "situation": {
+        "name": "signed-out",
+        "found": true,
+        "replaced": true
+      },
+      "document": {
+        "width": 470,
+        "height": 1018,
+        "title": "Opening screen",
+        "rootClass": "dark is-signed-out",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": true,
+        "by": 80,
+        "scrollable": false,
+        "elements": [
+          {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 50,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            },
+            "beyond": 80,
+            "controlsBeyond": []
+          }
+        ]
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 50,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            }
+          },
+          "kind": "viewport",
+          "fully": false,
+          "by": null
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": null
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#070a10",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Plan. Focus.Achieve.",
+          "text": "Plan. Focus.Achieve.",
+          "classes": "ds-h1 wl-promise",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "mainAction": {
+          "tag": "button",
+          "role": "button",
+          "name": "Sign in or create an account",
+          "text": "Sign in or create an account",
+          "classes": "ds-btn ds-btn-lg",
+          "eid": "e25",
+          "control": true,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "columns": null,
+        "themeSwitch": {
+          "count": 1,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [
+          "signed-out"
+        ],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "",
+          "classes": "wl-top",
+          "eid": "e2",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": {
+          "tag": "footer",
+          "role": "generic",
+          "name": "",
+          "text": "Plan. Focus. Achieve.",
+          "classes": "",
+          "eid": "e76",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 895,
+            "width": 390,
+            "height": 76
+          },
+          "atBottom": false
+        },
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": "Personal task list Plan. Focus.Achieve. Add what needs doing, set a due date, c…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 971
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 16,
+            "right": 371
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Plan. Focus. Achieve.",
+          "box": {
+            "x": 16,
+            "y": 135,
+            "width": 358,
+            "height": 86
+          },
+          "content": {
+            "left": 16,
+            "right": 254
+          }
+        },
+        {
+          "kind": "footer",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 895,
+            "width": 390,
+            "height": 76
+          },
+          "content": {
+            "left": 16,
+            "right": 374
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Sign in or create an account",
+            "primary": false,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "signed-out",
+          "hidden": false,
+          "replaces": "content",
+          "rootClass": "is-signed-out"
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Sign in or create an account"
+        },
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Plan. Focus. Achieve.",
+          "level": 1,
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "button",
+          "name": "Sign in or create an account",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Personal task list",
+        "Plan. Focus.",
+        "Achieve.",
+        "Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.",
+        "You're signed out.",
+        "Sign in or create an account",
+        "Today's list",
+        "2 of 3 done",
+        "Finish project report",
+        "Yesterday",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Completed",
+        "Plan. Focus. Achieve."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - img \"Quick Task Manager\"\n  - group \"Colour mode\":\n    - button \"Light\":\n      - img\n    - button \"Dark\":\n      - img\n    - button \"Auto\":\n      - img\n  - text: Personal task list\n  - heading \"Plan. Focus. Achieve.\" [level=1]\n  - paragraph: Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.\n  - text: You're signed out.\n  - button \"Sign in or create an account\":\n    - text: Sign in or create an account\n    - img\n  - text: Today's list 2 of 3 done Finish project report Yesterday Completed Read a book Today Pending Go for a walk Tomorrow Completed\n  - img \"Quick Task Manager\"\n  - text: Plan. Focus. Achieve.",
+      "screenshot": "w390-dark.png",
+      "thumbnail": "thumb-w390-dark.webp",
+      "modelImage": "model-w390-dark.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "light",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Opening screen",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/welcome-0.html",
+      "situation": {
+        "name": "signed-out",
+        "found": true,
+        "replaced": true
+      },
+      "document": {
+        "width": 914,
+        "height": 1112,
+        "title": "Opening screen",
+        "rootClass": "is-signed-out",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": true,
+        "by": 80,
+        "scrollable": false,
+        "elements": [
+          {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 494,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            },
+            "beyond": 80,
+            "controlsBeyond": []
+          }
+        ]
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 494,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            }
+          },
+          "kind": "viewport",
+          "fully": false,
+          "by": null
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": null
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Plan. Focus.Achieve.",
+          "text": "Plan. Focus.Achieve.",
+          "classes": "ds-h1 wl-promise",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "mainAction": {
+          "tag": "button",
+          "role": "button",
+          "name": "Sign in or create an account",
+          "text": "Sign in or create an account",
+          "classes": "ds-btn ds-btn-lg",
+          "eid": "e25",
+          "control": true,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "columns": null,
+        "themeSwitch": {
+          "count": 1,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [
+          "signed-out"
+        ],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "",
+          "classes": "wl-top",
+          "eid": "e2",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": {
+          "tag": "footer",
+          "role": "generic",
+          "name": "",
+          "text": "Plan. Focus. Achieve.",
+          "classes": "",
+          "eid": "e76",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 884,
+            "width": 834,
+            "height": 76
+          },
+          "atBottom": false
+        },
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": "Personal task list Plan. Focus.Achieve. Add what needs doing, set a due date, c…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1112
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 24,
+            "right": 807
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Plan. Focus. Achieve.",
+          "box": {
+            "x": 24,
+            "y": 159,
+            "width": 786,
+            "height": 118
+          },
+          "content": {
+            "left": 24,
+            "right": 349
+          }
+        },
+        {
+          "kind": "footer",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 884,
+            "width": 834,
+            "height": 76
+          },
+          "content": {
+            "left": 24,
+            "right": 810
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Sign in or create an account",
+            "primary": false,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "signed-out",
+          "hidden": false,
+          "replaces": "content",
+          "rootClass": "is-signed-out"
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Sign in or create an account"
+        },
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Plan. Focus. Achieve.",
+          "level": 1,
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "button",
+          "name": "Sign in or create an account",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Personal task list",
+        "Plan. Focus.",
+        "Achieve.",
+        "Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.",
+        "You're signed out.",
+        "Sign in or create an account",
+        "Today's list",
+        "2 of 3 done",
+        "Finish project report",
+        "Yesterday",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Completed",
+        "Plan. Focus. Achieve."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - img \"Quick Task Manager\"\n  - group \"Colour mode\":\n    - button \"Light\":\n      - img\n    - button \"Dark\":\n      - img\n    - button \"Auto\":\n      - img\n  - text: Personal task list\n  - heading \"Plan. Focus. Achieve.\" [level=1]\n  - paragraph: Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.\n  - text: You're signed out.\n  - button \"Sign in or create an account\":\n    - text: Sign in or create an account\n    - img\n  - text: Today's list 2 of 3 done Finish project report Yesterday Completed Read a book Today Pending Go for a walk Tomorrow Completed\n  - img \"Quick Task Manager\"\n  - text: Plan. Focus. Achieve.",
+      "screenshot": "w834-light.png",
+      "thumbnail": "thumb-w834-light.webp",
+      "modelImage": "model-w834-light.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "dark",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Opening screen",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/welcome-0.html",
+      "situation": {
+        "name": "signed-out",
+        "found": true,
+        "replaced": true
+      },
+      "document": {
+        "width": 914,
+        "height": 1112,
+        "title": "Opening screen",
+        "rootClass": "dark is-signed-out",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": true,
+        "by": 80,
+        "scrollable": false,
+        "elements": [
+          {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 494,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            },
+            "beyond": 80,
+            "controlsBeyond": []
+          }
+        ]
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 494,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            }
+          },
+          "kind": "viewport",
+          "fully": false,
+          "by": null
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": null
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#070a10",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Plan. Focus.Achieve.",
+          "text": "Plan. Focus.Achieve.",
+          "classes": "ds-h1 wl-promise",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "mainAction": {
+          "tag": "button",
+          "role": "button",
+          "name": "Sign in or create an account",
+          "text": "Sign in or create an account",
+          "classes": "ds-btn ds-btn-lg",
+          "eid": "e25",
+          "control": true,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "columns": null,
+        "themeSwitch": {
+          "count": 1,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [
+          "signed-out"
+        ],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "",
+          "classes": "wl-top",
+          "eid": "e2",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": {
+          "tag": "footer",
+          "role": "generic",
+          "name": "",
+          "text": "Plan. Focus. Achieve.",
+          "classes": "",
+          "eid": "e76",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 884,
+            "width": 834,
+            "height": 76
+          },
+          "atBottom": false
+        },
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": "Personal task list Plan. Focus.Achieve. Add what needs doing, set a due date, c…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1112
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 24,
+            "right": 807
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Plan. Focus. Achieve.",
+          "box": {
+            "x": 24,
+            "y": 159,
+            "width": 786,
+            "height": 118
+          },
+          "content": {
+            "left": 24,
+            "right": 349
+          }
+        },
+        {
+          "kind": "footer",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 884,
+            "width": 834,
+            "height": 76
+          },
+          "content": {
+            "left": 24,
+            "right": 810
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Sign in or create an account",
+            "primary": false,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "signed-out",
+          "hidden": false,
+          "replaces": "content",
+          "rootClass": "is-signed-out"
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Sign in or create an account"
+        },
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Plan. Focus. Achieve.",
+          "level": 1,
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "button",
+          "name": "Sign in or create an account",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Personal task list",
+        "Plan. Focus.",
+        "Achieve.",
+        "Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.",
+        "You're signed out.",
+        "Sign in or create an account",
+        "Today's list",
+        "2 of 3 done",
+        "Finish project report",
+        "Yesterday",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Completed",
+        "Plan. Focus. Achieve."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - img \"Quick Task Manager\"\n  - group \"Colour mode\":\n    - button \"Light\":\n      - img\n    - button \"Dark\":\n      - img\n    - button \"Auto\":\n      - img\n  - text: Personal task list\n  - heading \"Plan. Focus. Achieve.\" [level=1]\n  - paragraph: Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.\n  - text: You're signed out.\n  - button \"Sign in or create an account\":\n    - text: Sign in or create an account\n    - img\n  - text: Today's list 2 of 3 done Finish project report Yesterday Completed Read a book Today Pending Go for a walk Tomorrow Completed\n  - img \"Quick Task Manager\"\n  - text: Plan. Focus. Achieve.",
+      "screenshot": "w834-dark.png",
+      "thumbnail": "thumb-w834-dark.webp",
+      "modelImage": "model-w834-dark.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Opening screen",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/welcome-0.html",
+      "situation": {
+        "name": "signed-out",
+        "found": true,
+        "replaced": true
+      },
+      "document": {
+        "width": 1360,
+        "height": 800,
+        "title": "Opening screen",
+        "rootClass": "is-signed-out",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": true,
+        "by": 80,
+        "scrollable": false,
+        "elements": [
+          {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 940,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            },
+            "beyond": 80,
+            "controlsBeyond": []
+          }
+        ]
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 940,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            }
+          },
+          "kind": "viewport",
+          "fully": false,
+          "by": null
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": null
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Plan. Focus.Achieve.",
+          "text": "Plan. Focus.Achieve.",
+          "classes": "ds-h1 wl-promise",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "mainAction": {
+          "tag": "button",
+          "role": "button",
+          "name": "Sign in or create an account",
+          "text": "Sign in or create an account",
+          "classes": "ds-btn ds-btn-lg",
+          "eid": "e25",
+          "control": true,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "columns": null,
+        "themeSwitch": {
+          "count": 1,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [
+          "signed-out"
+        ],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "",
+          "classes": "wl-top",
+          "eid": "e2",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": {
+          "tag": "footer",
+          "role": "generic",
+          "name": "",
+          "text": "Plan. Focus. Achieve.",
+          "classes": "",
+          "eid": "e76",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 580,
+            "width": 1280,
+            "height": 76
+          },
+          "atBottom": false
+        },
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": "Personal task list Plan. Focus.Achieve. Add what needs doing, set a due date, c…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 800
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 61
+          },
+          "content": {
+            "left": 104,
+            "right": 1173
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Plan. Focus. Achieve.",
+          "box": {
+            "x": 104,
+            "y": 178,
+            "width": 538,
+            "height": 165
+          },
+          "content": {
+            "left": 104,
+            "right": 558
+          }
+        },
+        {
+          "kind": "footer",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 580,
+            "width": 1280,
+            "height": 76
+          },
+          "content": {
+            "left": 104,
+            "right": 1176
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Sign in or create an account",
+            "primary": false,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "signed-out",
+          "hidden": false,
+          "replaces": "content",
+          "rootClass": "is-signed-out"
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Sign in or create an account"
+        },
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Plan. Focus. Achieve.",
+          "level": 1,
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "button",
+          "name": "Sign in or create an account",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Personal task list",
+        "Plan. Focus.",
+        "Achieve.",
+        "Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.",
+        "You're signed out.",
+        "Sign in or create an account",
+        "Today's list",
+        "2 of 3 done",
+        "Finish project report",
+        "Yesterday",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Completed",
+        "Plan. Focus. Achieve."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - img \"Quick Task Manager\"\n  - group \"Colour mode\":\n    - button \"Light\":\n      - img\n    - button \"Dark\":\n      - img\n    - button \"Auto\":\n      - img\n  - text: Personal task list\n  - heading \"Plan. Focus. Achieve.\" [level=1]\n  - paragraph: Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.\n  - text: You're signed out.\n  - button \"Sign in or create an account\":\n    - text: Sign in or create an account\n    - img\n  - text: Today's list 2 of 3 done Finish project report Yesterday Completed Read a book Today Pending Go for a walk Tomorrow Completed\n  - img \"Quick Task Manager\"\n  - text: Plan. Focus. Achieve.",
+      "screenshot": "w1280-light.png",
+      "thumbnail": "thumb-w1280-light.webp",
+      "modelImage": "model-w1280-light.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Opening screen",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/welcome-0.html",
+      "situation": {
+        "name": "signed-out",
+        "found": true,
+        "replaced": true
+      },
+      "document": {
+        "width": 1360,
+        "height": 800,
+        "title": "Opening screen",
+        "rootClass": "dark is-signed-out",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": true,
+        "by": 80,
+        "scrollable": false,
+        "elements": [
+          {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 940,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            },
+            "beyond": 80,
+            "controlsBeyond": []
+          }
+        ]
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e85",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": null,
+            "box": {
+              "x": 940,
+              "y": -59,
+              "width": 420,
+              "height": 420
+            }
+          },
+          "kind": "viewport",
+          "fully": false,
+          "by": null
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": null
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#070a10",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Plan. Focus.Achieve.",
+          "text": "Plan. Focus.Achieve.",
+          "classes": "ds-h1 wl-promise",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "mainAction": {
+          "tag": "button",
+          "role": "button",
+          "name": "Sign in or create an account",
+          "text": "Sign in or create an account",
+          "classes": "ds-btn ds-btn-lg",
+          "eid": "e25",
+          "control": true,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "shown": false
+        },
+        "columns": null,
+        "themeSwitch": {
+          "count": 1,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [
+          "signed-out"
+        ],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "",
+          "classes": "wl-top",
+          "eid": "e2",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": {
+          "tag": "footer",
+          "role": "generic",
+          "name": "",
+          "text": "Plan. Focus. Achieve.",
+          "classes": "",
+          "eid": "e76",
+          "control": false,
+          "decorative": false,
+          "heading": "Plan. Focus.Achieve.",
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 580,
+            "width": 1280,
+            "height": 76
+          },
+          "atBottom": false
+        },
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": "Personal task list Plan. Focus.Achieve. Add what needs doing, set a due date, c…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 800
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 61
+          },
+          "content": {
+            "left": 104,
+            "right": 1173
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Plan. Focus. Achieve.",
+          "box": {
+            "x": 104,
+            "y": 178,
+            "width": 538,
+            "height": 165
+          },
+          "content": {
+            "left": 104,
+            "right": 558
+          }
+        },
+        {
+          "kind": "footer",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 580,
+            "width": 1280,
+            "height": 76
+          },
+          "content": {
+            "left": 104,
+            "right": 1176
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Sign in or create an account",
+            "primary": false,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "signed-out",
+          "hidden": false,
+          "replaces": "content",
+          "rootClass": "is-signed-out"
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Sign in or create an account"
+        },
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Plan. Focus. Achieve.",
+          "level": 1,
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "button",
+          "name": "Sign in or create an account",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1,
+          "state": "signed-out"
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Personal task list",
+        "Plan. Focus.",
+        "Achieve.",
+        "Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.",
+        "You're signed out.",
+        "Sign in or create an account",
+        "Today's list",
+        "2 of 3 done",
+        "Finish project report",
+        "Yesterday",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Completed",
+        "Plan. Focus. Achieve."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - img \"Quick Task Manager\"\n  - group \"Colour mode\":\n    - button \"Light\":\n      - img\n    - button \"Dark\":\n      - img\n    - button \"Auto\":\n      - img\n  - text: Personal task list\n  - heading \"Plan. Focus. Achieve.\" [level=1]\n  - paragraph: Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.\n  - text: You're signed out.\n  - button \"Sign in or create an account\":\n    - text: Sign in or create an account\n    - img\n  - text: Today's list 2 of 3 done Finish project report Yesterday Completed Read a book Today Pending Go for a walk Tomorrow Completed\n  - img \"Quick Task Manager\"\n  - text: Plan. Focus. Achieve.",
+      "screenshot": "w1280-dark.png",
+      "thumbnail": "thumb-w1280-dark.webp",
+      "modelImage": "model-w1280-dark.jpg"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-11T05:53:40.949Z"
+}

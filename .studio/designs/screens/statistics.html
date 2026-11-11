@@ -1,0 +1,212 @@
+<style>
+  .st-head {
+    background: linear-gradient(180deg, hsl(var(--primary) / 0.07), transparent 90%);
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .st-bar {
+    display: flex;
+    align-items: center;
+    gap: calc(12px * var(--space-scale, 1));
+    padding-top: calc(16px * var(--space-scale, 1));
+    padding-bottom: calc(16px * var(--space-scale, 1));
+  }
+  .st-page-head {
+    padding-top: calc(24px * var(--space-scale, 1));
+    padding-bottom: calc(32px * var(--space-scale, 1));
+  }
+  .st-eyebrow { margin-bottom: calc(8px * var(--space-scale, 1)); display: inline-block; }
+  .st-sub { margin: calc(6px * var(--space-scale, 1)) 0 0; }
+  .st-figures {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: calc(16px * var(--space-scale, 1));
+  }
+  .st-figure {
+    position: relative;
+    padding: calc(24px * var(--space-scale, 1));
+    display: flex;
+    flex-direction: column;
+    gap: calc(8px * var(--space-scale, 1));
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--card-radius, var(--radius));
+    box-shadow: var(--shadow);
+    overflow: visible;
+  }
+  .st-figure-key {
+    background: linear-gradient(160deg, hsl(var(--primary)), hsl(var(--primary) / 0.82));
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+  .st-figure-key .ds-stat-label,
+  .st-figure-key .st-note { color: hsl(var(--primary-foreground) / 0.82); }
+  .st-figure-done { border-top: 3px solid hsl(var(--success)); }
+  .st-figure-pending { border-top: 3px solid hsl(var(--primary)); }
+  .st-big {
+    font-family: var(--font-heading);
+    font-size: clamp(40px, 6vw, 56px);
+    line-height: 1;
+    letter-spacing: -0.035em;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .st-note { font-size: 13px; }
+  .st-share {
+    margin-top: calc(32px * var(--space-scale, 1));
+    padding: calc(24px * var(--space-scale, 1));
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--card-radius, var(--radius));
+    box-shadow: var(--shadow);
+  }
+  .st-share-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: calc(16px * var(--space-scale, 1));
+    margin-bottom: calc(16px * var(--space-scale, 1));
+  }
+  .st-share-line {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .st-share-pct {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: hsl(var(--success));
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .st-share .ds-progress { height: 12px; }
+  .st-share .ds-progress span { background: hsl(var(--success)); }
+  .st-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(24px * var(--space-scale, 1));
+    margin-top: calc(16px * var(--space-scale, 1));
+  }
+  .st-key { display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1)); font-size: 14px; }
+  .st-dot { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .st-dot-done { background: hsl(var(--success)); }
+  .st-dot-open { background: hsl(var(--muted-foreground) / 0.35); }
+  .st-foot {
+    margin-top: calc(32px * var(--space-scale, 1));
+    padding-top: calc(16px * var(--space-scale, 1));
+    border-top: 1px solid hsl(var(--border));
+    display: flex;
+    align-items: center;
+    gap: calc(12px * var(--space-scale, 1));
+    flex-wrap: wrap;
+  }
+  .st-empty-wrap { padding-top: calc(16px * var(--space-scale, 1)); }
+  @media (max-width: 860px) {
+    .st-figures { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .st-share-top { flex-direction: column; align-items: flex-start; gap: calc(8px * var(--space-scale, 1)); }
+  }
+</style><main data-screen="statistics" data-eid="e1">
+  <div class="ds-shell" data-eid="e2">
+    <div data-part="sidebar" data-eid="e3"></div>
+    <div class="ds-shell-main" data-eid="e4">
+      <div data-part="header" data-eid="e5"></div>
+
+      <div data-eid="content">
+        <div class="st-head" data-eid="e6">
+          <div class="ds-page" data-eid="e7">
+            <div class="ds-page-head st-page-head" data-eid="e8">
+              <div data-eid="e9">
+                <span class="ds-eyebrow st-eyebrow" data-eid="e10">Overview</span>
+                <h1 class="ds-h1" data-eid="e11">Statistics</h1>
+                <p class="ds-muted st-sub" data-eid="e12">Live counts for your own tasks, worked out from your list the moment you open this screen.</p>
+              </div>
+              <div class="ds-actions" data-eid="e13">
+                <a class="ds-btn ds-btn-secondary" data-goto="home" data-eid="e14">Go to Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ds-page" data-eid="figures">
+          <section class="ds-section" style="margin-top: calc(32px * var(--space-scale, 1))" data-eid="e15">
+            <div class="st-figures" data-eid="e16">
+              <div class="st-figure st-figure-key" data-eid="e17">
+                <span class="ds-stat-label" data-eid="e18">Total tasks</span>
+                <span class="st-big" data-sample data-eid="e19">5</span>
+                <span class="st-note" data-eid="e20">Every task on your list</span>
+              </div>
+              <div class="st-figure st-figure-done" data-eid="e21">
+                <span class="ds-stat-label" data-eid="e22">Completed</span>
+                <span class="st-big" data-sample data-eid="e23">2</span>
+                <span class="ds-note ds-muted" data-eid="e24">Checked off so far</span>
+              </div>
+              <div class="st-figure st-figure-pending" data-eid="e25">
+                <span class="ds-stat-label" data-eid="e26">Pending</span>
+                <span class="st-big" data-sample data-eid="e27">3</span>
+                <span class="ds-note ds-muted" data-eid="e28">Still waiting for you</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="ds-section" data-eid="e29">
+            <div class="st-share" data-eid="e30">
+              <div class="st-share-top" data-eid="e31">
+                <div data-eid="e32">
+                  <span class="ds-label-caps" data-eid="e33">Completed share</span>
+                  <p class="st-share-line" data-sample data-eid="e34">2 of 5 tasks done</p>
+                </div>
+                <span class="st-share-pct" data-sample data-eid="e35">40%</span>
+              </div>
+              <div class="ds-progress" data-eid="e36"><span style="width: 40%" data-eid="e37"></span></div>
+              <div class="st-legend" data-eid="e38">
+                <span class="st-key" data-eid="e39"><span class="st-dot st-dot-done" data-eid="e40"></span><span class="ds-muted" data-eid="e41">Done</span></span>
+                <span class="st-key" data-eid="e42"><span class="st-dot st-dot-open" data-eid="e43"></span><span class="ds-muted" data-eid="e44">Pending</span></span>
+              </div>
+            </div>
+          </section>
+
+          <div class="st-foot" data-eid="e45">
+            <span class="ds-muted" data-eid="e46">Mark a task done on Home and these numbers change with it.</span>
+            <span class="ds-spacer" data-eid="e47"></span>
+            <a class="ds-btn ds-btn-ghost" data-goto="home" data-eid="e48">Back to my tasks</a>
+          </div>
+        </div>
+      </div>
+
+      <section data-state="empty" data-replaces="content" hidden data-eid="e49">
+        <div class="st-head" data-eid="e50">
+          <div class="ds-page" data-eid="e51">
+            <div class="ds-page-head st-page-head" data-eid="e52">
+              <div data-eid="e53">
+                <span class="ds-eyebrow st-eyebrow" data-eid="e54">Overview</span>
+                <h1 class="ds-h1" data-eid="e55">Statistics</h1>
+                <p class="ds-muted st-sub" data-eid="e56">Live counts for your own tasks, worked out from your list the moment you open this screen.</p>
+              </div>
+              <div class="ds-actions" data-eid="e57">
+                <a class="ds-btn ds-btn-secondary" data-goto="home" data-eid="e58">Go to Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ds-page st-empty-wrap" data-eid="e59">
+          <div class="ds-card" data-eid="e60">
+            <div class="ds-empty" data-eid="e61">
+              <span class="ds-empty-icon" data-eid="e62">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+              </span>
+              <b style="color: hsl(var(--foreground))">No tasks here. Add a task to get started!</b>
+              <span data-eid="e63">Add your first task on Home and your numbers appear here.</span>
+              <a class="ds-btn" style="margin-top: calc(8px * var(--space-scale, 1))" data-goto="home" data-eid="e64">Go to Home</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

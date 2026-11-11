@@ -4,8 +4,12 @@
 // then `git diff` shows what to carry over.
 import type { MouseEvent } from "react";
 import "./SidebarPart.css";
+import { useSignOut } from "../../features/auth/useSignOut";
+import { useMe } from "../../features/profile/useMe";
 
 export function SidebarPart({ onNavigate }: { onNavigate?: (path: string) => void }) {
+  const signOut = useSignOut(onNavigate);
+  const me = useMe();
   const goTo = (path: string) => (event: MouseEvent) => {
     if (!onNavigate) return;
     event.preventDefault();
@@ -16,8 +20,8 @@ export function SidebarPart({ onNavigate }: { onNavigate?: (path: string) => voi
       <aside className="qs-side" aria-label="Quick Task Manager">
         <div className="qs-side-brand">
           <a href="/" className="ds-brand-link" data-goto="home" onClick={goTo("/")}>
-            <img className="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" />
-            <img className="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" />
+            <img className="ds-brand ds-brand-light" src="/brand/logo.png" alt="Quick Task Manager" />
+            <img className="ds-brand ds-brand-dark" src="/brand/logo-dark.png" alt="Quick Task Manager" />
           </a>
         </div>
         <nav className="ds-nav qs-side-nav" aria-label="Main">
@@ -64,17 +68,17 @@ export function SidebarPart({ onNavigate }: { onNavigate?: (path: string) => voi
         </div>
         <div className="qs-side-person">
           <div className="ds-user">
-            <span className="ds-avatar" data-sample="">PS</span>
+            <span className="ds-avatar">{me.initials}</span>
             {" "}
             <span className="ds-user-text">
               {" "}
-              <b className="ds-user-name" data-sample="me.name">Priya Shah</b>
+              <b className="ds-user-name">{me.name}</b>
               {" "}
-              <span className="ds-user-role" data-sample="me.role">Task owner</span>
+              <span className="ds-user-role">Task owner</span>
               {" "}
             </span>
           </div>
-          <a href="/welcome" className="ds-btn ds-btn-ghost ds-btn-sm qs-side-signout" data-goto="welcome" onClick={goTo("/welcome")}>Sign out</a>
+          <button type="button" className="ds-btn ds-btn-ghost ds-btn-sm qs-side-signout" onClick={() => void signOut()}>Sign out</button>
         </div>
       </aside>
     </div>

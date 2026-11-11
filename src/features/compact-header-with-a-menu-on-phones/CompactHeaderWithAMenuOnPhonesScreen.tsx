@@ -73,9 +73,9 @@ export function CompactHeaderWithAMenuOnPhonesScreen({ situation = "normal", onN
                         <div className="gn-ph-top">
                           <a href="/" className="ds-brand-link" data-goto="home" aria-label="Quick Task Manager" onClick={goTo("/")}>
                             {" "}
-                            <img className="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" />
+                            <img className="ds-brand ds-brand-light" src="/brand/logo.png" alt="Quick Task Manager" />
                             {" "}
-                            <img className="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" />
+                            <img className="ds-brand ds-brand-dark" src="/brand/logo-dark.png" alt="Quick Task Manager" />
                             {" "}
                           </a>
                           {" "}
@@ -182,9 +182,9 @@ export function CompactHeaderWithAMenuOnPhonesScreen({ situation = "normal", onN
                       <div className="gn-shot" aria-hidden="true">
                         <div className="gn-side">
                           <div className="gn-side-brand">
-                            <img className="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="" />
+                            <img className="ds-brand ds-brand-light" src="/brand/logo.png" alt="" />
                             {" "}
-                            <img className="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="" />
+                            <img className="ds-brand ds-brand-dark" src="/brand/logo-dark.png" alt="" />
                             {" "}
                             <span className="gn-side-name">Quick Task Manager</span>
                           </div>

@@ -1,0 +1,2223 @@
+{
+  "version": 1,
+  "target": ".studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/settings-0.html",
+  "kind": "file",
+  "situation": null,
+  "startedAt": "2026-11-11T05:54:09.550Z",
+  "views": [
+    {
+      "width": 390,
+      "mode": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Settings",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/settings-0.html",
+      "situation": null,
+      "document": {
+        "width": 390,
+        "height": 1122,
+        "title": "Settings",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": null,
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Settings",
+          "text": "Settings",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 93,
+            "width": 349,
+            "height": 28
+          },
+          "shown": true
+        },
+        "mainAction": null,
+        "columns": {
+          "bar": {
+            "x": 16,
+            "y": 0,
+            "width": 358,
+            "height": 60
+          },
+          "page": {
+            "x": 16,
+            "y": 61,
+            "width": 358,
+            "height": 1061
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1122
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 60,
+            "right": 87
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Settings",
+          "box": {
+            "x": 16,
+            "y": 93,
+            "width": 358,
+            "height": 106
+          },
+          "content": {
+            "left": 16,
+            "right": 365
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Priya Shah",
+          "box": {
+            "x": 16,
+            "y": 231,
+            "width": 358,
+            "height": 650
+          },
+          "content": {
+            "left": 33,
+            "right": 345
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#db2b33",
+            "part": null
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Back to Home",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "See my statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "not-allowed",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Back to Home"
+        },
+        {
+          "target": "statistics",
+          "text": "See my statistics"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Settings",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Priya Shah",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Signed in on this device",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Settings",
+        "The account you are signed in with, and the way out.",
+        "Sign out",
+        "PS",
+        "Priya Shah",
+        "priya.shah@northgate-studio.co.uk",
+        "Signed in",
+        "Name",
+        "Priya Shah",
+        "Email address",
+        "priya.shah@northgate-studio.co.uk",
+        "Member since",
+        "3 Nov 2026",
+        "Role",
+        "Task owner",
+        "Signed in on this device",
+        "Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.",
+        "Sign out",
+        "Back to Home",
+        "Your tasks are private to this account. Nobody else in the app can see them.",
+        "See my statistics"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Settings\" [level=1]\n  - paragraph: The account you are signed in with, and the way out.\n  - button \"Sign out\"\n  - text: PS\n  - heading \"Priya Shah\" [level=2]\n  - paragraph: priya.shah@northgate-studio.co.uk\n  - text: Signed in\n  - term: Name\n  - definition: Priya Shah\n  - term: Email address\n  - definition: priya.shah@northgate-studio.co.uk\n  - term: Member since\n  - definition: 3 Nov 2026\n  - term: Role\n  - definition: Task owner\n  - heading \"Signed in on this device\" [level=2]\n  - paragraph: Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.\n  - button \"Sign out\"\n  - text: Back to Home\n  - paragraph: Your tasks are private to this account. Nobody else in the app can see them.\n  - text: See my statistics",
+      "screenshot": "w390-light.png",
+      "thumbnail": "thumb-w390-light.webp",
+      "modelImage": "model-w390-light.jpg"
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Settings",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/settings-0.html",
+      "situation": null,
+      "document": {
+        "width": 390,
+        "height": 1122,
+        "title": "Settings",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": null,
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Settings",
+          "text": "Settings",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 93,
+            "width": 349,
+            "height": 28
+          },
+          "shown": true
+        },
+        "mainAction": null,
+        "columns": {
+          "bar": {
+            "x": 16,
+            "y": 0,
+            "width": 358,
+            "height": 60
+          },
+          "page": {
+            "x": 16,
+            "y": 61,
+            "width": 358,
+            "height": 1061
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1122
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 60,
+            "right": 87
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Settings",
+          "box": {
+            "x": 16,
+            "y": 93,
+            "width": 358,
+            "height": 106
+          },
+          "content": {
+            "left": 16,
+            "right": 365
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Priya Shah",
+          "box": {
+            "x": 16,
+            "y": 231,
+            "width": 358,
+            "height": 650
+          },
+          "content": {
+            "left": 33,
+            "right": 345
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#f6494a",
+            "part": null
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          },
+          {
+            "name": "Back to Home",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "See my statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "not-allowed",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Back to Home"
+        },
+        {
+          "target": "statistics",
+          "text": "See my statistics"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Settings",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Priya Shah",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Signed in on this device",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Settings",
+        "The account you are signed in with, and the way out.",
+        "Sign out",
+        "PS",
+        "Priya Shah",
+        "priya.shah@northgate-studio.co.uk",
+        "Signed in",
+        "Name",
+        "Priya Shah",
+        "Email address",
+        "priya.shah@northgate-studio.co.uk",
+        "Member since",
+        "3 Nov 2026",
+        "Role",
+        "Task owner",
+        "Signed in on this device",
+        "Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.",
+        "Sign out",
+        "Back to Home",
+        "Your tasks are private to this account. Nobody else in the app can see them.",
+        "See my statistics"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Settings\" [level=1]\n  - paragraph: The account you are signed in with, and the way out.\n  - button \"Sign out\"\n  - text: PS\n  - heading \"Priya Shah\" [level=2]\n  - paragraph: priya.shah@northgate-studio.co.uk\n  - text: Signed in\n  - term: Name\n  - definition: Priya Shah\n  - term: Email address\n  - definition: priya.shah@northgate-studio.co.uk\n  - term: Member since\n  - definition: 3 Nov 2026\n  - term: Role\n  - definition: Task owner\n  - heading \"Signed in on this device\" [level=2]\n  - paragraph: Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.\n  - button \"Sign out\"\n  - text: Back to Home\n  - paragraph: Your tasks are private to this account. Nobody else in the app can see them.\n  - text: See my statistics",
+      "screenshot": "w390-dark.png",
+      "thumbnail": "thumb-w390-dark.webp",
+      "modelImage": "model-w390-dark.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "light",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Settings",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/settings-0.html",
+      "situation": null,
+      "document": {
+        "width": 834,
+        "height": 1112,
+        "title": "Settings",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": null,
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Settings",
+          "text": "Settings",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 93,
+            "width": 349,
+            "height": 29
+          },
+          "shown": true
+        },
+        "mainAction": null,
+        "columns": {
+          "bar": {
+            "x": 24,
+            "y": 0,
+            "width": 786,
+            "height": 60
+          },
+          "page": {
+            "x": 24,
+            "y": 61,
+            "width": 786,
+            "height": 782
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1112
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 76,
+            "right": 103
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Settings",
+          "box": {
+            "x": 24,
+            "y": 93,
+            "width": 786,
+            "height": 59
+          },
+          "content": {
+            "left": 24,
+            "right": 810
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Priya Shah",
+          "box": {
+            "x": 24,
+            "y": 200,
+            "width": 786,
+            "height": 499
+          },
+          "content": {
+            "left": 41,
+            "right": 781
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#db2b33",
+            "part": null
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Back to Home",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "See my statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "not-allowed",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Back to Home"
+        },
+        {
+          "target": "statistics",
+          "text": "See my statistics"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Settings",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Priya Shah",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Signed in on this device",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Settings",
+        "The account you are signed in with, and the way out.",
+        "Sign out",
+        "PS",
+        "Priya Shah",
+        "priya.shah@northgate-studio.co.uk",
+        "Signed in",
+        "Name",
+        "Priya Shah",
+        "Email address",
+        "priya.shah@northgate-studio.co.uk",
+        "Member since",
+        "3 Nov 2026",
+        "Role",
+        "Task owner",
+        "Signed in on this device",
+        "Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.",
+        "Sign out",
+        "Back to Home",
+        "Your tasks are private to this account. Nobody else in the app can see them.",
+        "See my statistics"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Settings\" [level=1]\n  - paragraph: The account you are signed in with, and the way out.\n  - button \"Sign out\"\n  - text: PS\n  - heading \"Priya Shah\" [level=2]\n  - paragraph: priya.shah@northgate-studio.co.uk\n  - text: Signed in\n  - term: Name\n  - definition: Priya Shah\n  - term: Email address\n  - definition: priya.shah@northgate-studio.co.uk\n  - term: Member since\n  - definition: 3 Nov 2026\n  - term: Role\n  - definition: Task owner\n  - heading \"Signed in on this device\" [level=2]\n  - paragraph: Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.\n  - button \"Sign out\"\n  - text: Back to Home\n  - paragraph: Your tasks are private to this account. Nobody else in the app can see them.\n  - text: See my statistics",
+      "screenshot": "w834-light.png",
+      "thumbnail": "thumb-w834-light.webp",
+      "modelImage": "model-w834-light.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "dark",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Settings",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/settings-0.html",
+      "situation": null,
+      "document": {
+        "width": 834,
+        "height": 1112,
+        "title": "Settings",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": null,
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Settings",
+          "text": "Settings",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 93,
+            "width": 349,
+            "height": 29
+          },
+          "shown": true
+        },
+        "mainAction": null,
+        "columns": {
+          "bar": {
+            "x": 24,
+            "y": 0,
+            "width": 786,
+            "height": 60
+          },
+          "page": {
+            "x": 24,
+            "y": 61,
+            "width": 786,
+            "height": 782
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1112
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 76,
+            "right": 103
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Settings",
+          "box": {
+            "x": 24,
+            "y": 93,
+            "width": 786,
+            "height": 59
+          },
+          "content": {
+            "left": 24,
+            "right": 810
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Priya Shah",
+          "box": {
+            "x": 24,
+            "y": 200,
+            "width": 786,
+            "height": 499
+          },
+          "content": {
+            "left": 41,
+            "right": 781
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#f6494a",
+            "part": null
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          },
+          {
+            "name": "Back to Home",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "See my statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "not-allowed",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Back to Home"
+        },
+        {
+          "target": "statistics",
+          "text": "See my statistics"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Settings",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Priya Shah",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Signed in on this device",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Settings",
+        "The account you are signed in with, and the way out.",
+        "Sign out",
+        "PS",
+        "Priya Shah",
+        "priya.shah@northgate-studio.co.uk",
+        "Signed in",
+        "Name",
+        "Priya Shah",
+        "Email address",
+        "priya.shah@northgate-studio.co.uk",
+        "Member since",
+        "3 Nov 2026",
+        "Role",
+        "Task owner",
+        "Signed in on this device",
+        "Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.",
+        "Sign out",
+        "Back to Home",
+        "Your tasks are private to this account. Nobody else in the app can see them.",
+        "See my statistics"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Settings\" [level=1]\n  - paragraph: The account you are signed in with, and the way out.\n  - button \"Sign out\"\n  - text: PS\n  - heading \"Priya Shah\" [level=2]\n  - paragraph: priya.shah@northgate-studio.co.uk\n  - text: Signed in\n  - term: Name\n  - definition: Priya Shah\n  - term: Email address\n  - definition: priya.shah@northgate-studio.co.uk\n  - term: Member since\n  - definition: 3 Nov 2026\n  - term: Role\n  - definition: Task owner\n  - heading \"Signed in on this device\" [level=2]\n  - paragraph: Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.\n  - button \"Sign out\"\n  - text: Back to Home\n  - paragraph: Your tasks are private to this account. Nobody else in the app can see them.\n  - text: See my statistics",
+      "screenshot": "w834-dark.png",
+      "thumbnail": "thumb-w834-dark.webp",
+      "modelImage": "model-w834-dark.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Settings",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/settings-0.html",
+      "situation": null,
+      "document": {
+        "width": 1280,
+        "height": 800,
+        "title": "Settings",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e12",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": "sidebar",
+            "box": {
+              "x": 151,
+              "y": 457,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "kind": "ancestor",
+          "fully": false,
+          "by": {
+            "tag": "div",
+            "classes": "qs-side-art-box",
+            "text": "Plan. Focus. Achieve.",
+            "box": {
+              "x": 25,
+              "y": 489,
+              "width": 198,
+              "height": 171
+            }
+          }
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": null,
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Settings",
+          "text": "Settings",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 89,
+            "width": 349,
+            "height": 41
+          },
+          "shown": true
+        },
+        "mainAction": null,
+        "columns": {
+          "bar": {
+            "x": 272,
+            "y": 0,
+            "width": 984,
+            "height": 56
+          },
+          "page": {
+            "x": 272,
+            "y": 57,
+            "width": 984,
+            "height": 634
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "atTop": true,
+          "fullWidth": false
+        },
+        "footer": null,
+        "sidebar": {
+          "tag": "aside",
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "text": "Home Statistics Settings Plan. Focus. Achieve. PS Priya Shah Task owner Sign out",
+          "classes": "qs-side",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "sidebar",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 800
+          },
+          "besideContent": true
+        },
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 800
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "content": {
+            "left": 1165,
+            "right": 1253
+          }
+        },
+        {
+          "kind": "sidebar",
+          "name": "Quick Task Manager",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 800
+          },
+          "content": {
+            "left": 25,
+            "right": 201
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Settings",
+          "box": {
+            "x": 272,
+            "y": 89,
+            "width": 984,
+            "height": 71
+          },
+          "content": {
+            "left": 272,
+            "right": 1256
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Priya Shah",
+          "box": {
+            "x": 272,
+            "y": 208,
+            "width": 984,
+            "height": 339
+          },
+          "content": {
+            "left": 297,
+            "right": 1233
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": "sidebar"
+          },
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": "header"
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#db2b33",
+            "part": null
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Back to Home",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "See my statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "not-allowed",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "welcome",
+          "text": "Sign out"
+        },
+        {
+          "target": "home",
+          "text": "Back to Home"
+        },
+        {
+          "target": "statistics",
+          "text": "See my statistics"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 2
+        },
+        {
+          "role": "navigation",
+          "name": "Main",
+          "depth": 2
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Settings",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Priya Shah",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Signed in on this device",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Home",
+        "Statistics",
+        "Settings",
+        "Plan. Focus. Achieve.",
+        "PS",
+        "Priya Shah",
+        "Task owner",
+        "Sign out",
+        "Settings",
+        "The account you are signed in with, and the way out.",
+        "Sign out",
+        "PS",
+        "Priya Shah",
+        "priya.shah@northgate-studio.co.uk",
+        "Signed in",
+        "Name",
+        "Priya Shah",
+        "Email address",
+        "priya.shah@northgate-studio.co.uk",
+        "Member since",
+        "3 Nov 2026",
+        "Role",
+        "Task owner",
+        "Signed in on this device",
+        "Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.",
+        "Sign out",
+        "Back to Home",
+        "Your tasks are private to this account. Nobody else in the app can see them.",
+        "See my statistics"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - complementary \"Quick Task Manager\":\n    - img \"Quick Task Manager\"\n    - navigation \"Main\": Home Statistics Settings\n    - text: PS Priya Shah Task owner Sign out\n  - group \"Colour mode\":\n    - button \"Light\"\n    - button \"Dark\"\n    - button \"Auto\"\n  - heading \"Settings\" [level=1]\n  - paragraph: The account you are signed in with, and the way out.\n  - button \"Sign out\"\n  - text: PS\n  - heading \"Priya Shah\" [level=2]\n  - paragraph: priya.shah@northgate-studio.co.uk\n  - text: Signed in\n  - term: Name\n  - definition: Priya Shah\n  - term: Email address\n  - definition: priya.shah@northgate-studio.co.uk\n  - term: Member since\n  - definition: 3 Nov 2026\n  - term: Role\n  - definition: Task owner\n  - heading \"Signed in on this device\" [level=2]\n  - paragraph: Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.\n  - button \"Sign out\"\n  - text: Back to Home\n  - paragraph: Your tasks are private to this account. Nobody else in the app can see them.\n  - text: See my statistics",
+      "screenshot": "w1280-light.png",
+      "thumbnail": "thumb-w1280-light.webp",
+      "modelImage": "model-w1280-light.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Settings",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/settings-0.html",
+      "situation": null,
+      "document": {
+        "width": 1280,
+        "height": 800,
+        "title": "Settings",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e12",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": "sidebar",
+            "box": {
+              "x": 151,
+              "y": 457,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "kind": "ancestor",
+          "fully": false,
+          "by": {
+            "tag": "div",
+            "classes": "qs-side-art-box",
+            "text": "Plan. Focus. Achieve.",
+            "box": {
+              "x": 25,
+              "y": 489,
+              "width": 198,
+              "height": 171
+            }
+          }
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": null,
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Settings",
+          "text": "Settings",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 89,
+            "width": 349,
+            "height": 41
+          },
+          "shown": true
+        },
+        "mainAction": null,
+        "columns": {
+          "bar": {
+            "x": 272,
+            "y": 0,
+            "width": 984,
+            "height": 56
+          },
+          "page": {
+            "x": 272,
+            "y": 57,
+            "width": 984,
+            "height": 634
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "atTop": true,
+          "fullWidth": false
+        },
+        "footer": null,
+        "sidebar": {
+          "tag": "aside",
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "text": "Home Statistics Settings Plan. Focus. Achieve. PS Priya Shah Task owner Sign out",
+          "classes": "qs-side",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "sidebar",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 800
+          },
+          "besideContent": true
+        },
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 800
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "content": {
+            "left": 1165,
+            "right": 1253
+          }
+        },
+        {
+          "kind": "sidebar",
+          "name": "Quick Task Manager",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 800
+          },
+          "content": {
+            "left": 25,
+            "right": 201
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Settings",
+          "box": {
+            "x": 272,
+            "y": 89,
+            "width": 984,
+            "height": 71
+          },
+          "content": {
+            "left": 272,
+            "right": 1256
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Priya Shah",
+          "box": {
+            "x": 272,
+            "y": 208,
+            "width": 984,
+            "height": 339
+          },
+          "content": {
+            "left": 297,
+            "right": 1233
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": "sidebar"
+          },
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": "header"
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#f6494a",
+            "part": null
+          },
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          },
+          {
+            "name": "Back to Home",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "See my statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "not-allowed",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "welcome",
+          "text": "Sign out"
+        },
+        {
+          "target": "home",
+          "text": "Back to Home"
+        },
+        {
+          "target": "statistics",
+          "text": "See my statistics"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 2
+        },
+        {
+          "role": "navigation",
+          "name": "Main",
+          "depth": 2
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Settings",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Priya Shah",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Signed in on this device",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Sign out",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Home",
+        "Statistics",
+        "Settings",
+        "Plan. Focus. Achieve.",
+        "PS",
+        "Priya Shah",
+        "Task owner",
+        "Sign out",
+        "Settings",
+        "The account you are signed in with, and the way out.",
+        "Sign out",
+        "PS",
+        "Priya Shah",
+        "priya.shah@northgate-studio.co.uk",
+        "Signed in",
+        "Name",
+        "Priya Shah",
+        "Email address",
+        "priya.shah@northgate-studio.co.uk",
+        "Member since",
+        "3 Nov 2026",
+        "Role",
+        "Task owner",
+        "Signed in on this device",
+        "Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.",
+        "Sign out",
+        "Back to Home",
+        "Your tasks are private to this account. Nobody else in the app can see them.",
+        "See my statistics"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - complementary \"Quick Task Manager\":\n    - img \"Quick Task Manager\"\n    - navigation \"Main\": Home Statistics Settings\n    - text: PS Priya Shah Task owner Sign out\n  - group \"Colour mode\":\n    - button \"Light\"\n    - button \"Dark\"\n    - button \"Auto\"\n  - heading \"Settings\" [level=1]\n  - paragraph: The account you are signed in with, and the way out.\n  - button \"Sign out\"\n  - text: PS\n  - heading \"Priya Shah\" [level=2]\n  - paragraph: priya.shah@northgate-studio.co.uk\n  - text: Signed in\n  - term: Name\n  - definition: Priya Shah\n  - term: Email address\n  - definition: priya.shah@northgate-studio.co.uk\n  - term: Member since\n  - definition: 3 Nov 2026\n  - term: Role\n  - definition: Task owner\n  - heading \"Signed in on this device\" [level=2]\n  - paragraph: Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.\n  - button \"Sign out\"\n  - text: Back to Home\n  - paragraph: Your tasks are private to this account. Nobody else in the app can see them.\n  - text: See my statistics",
+      "screenshot": "w1280-dark.png",
+      "thumbnail": "thumb-w1280-dark.webp",
+      "modelImage": "model-w1280-dark.jpg"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-11T05:54:19.573Z"
+}

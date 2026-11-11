@@ -1,0 +1,125 @@
+<style>
+  .qs-shell-head { display: flex; align-items: center; gap: calc(12px * var(--space-scale, 1)); }
+  .qs-account { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: calc(24px * var(--space-scale, 1)); align-items: start; }
+  .qs-id-card { position: relative; overflow: visible; padding: calc(24px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+  .qs-id-top { display: flex; align-items: center; gap: calc(16px * var(--space-scale, 1)); }
+  .qs-id-name { font-family: var(--font-heading); font-size: 19px; font-weight: 650; letter-spacing: -0.01em; margin: 0; color: hsl(var(--foreground)); }
+  .qs-id-mail { margin: calc(4px * var(--space-scale, 1)) 0 0; color: hsl(var(--muted-foreground)); font-size: 15px; word-break: break-word; }
+  .qs-avatar-big { width: 64px; height: 64px; font-size: 22px; }
+  .qs-facts { display: grid; gap: 0; margin: calc(24px * var(--space-scale, 1)) 0 0; }
+  .qs-facts > div { display: grid; grid-template-columns: minmax(0, 140px) minmax(0, 1fr); gap: calc(16px * var(--space-scale, 1)); padding: calc(12px * var(--space-scale, 1)) 0; border-top: 1px solid hsl(var(--border)); }
+  .qs-facts dt { margin: 0; font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: hsl(var(--muted-foreground)); }
+  .qs-facts dd { margin: 0; font-size: 15px; color: hsl(var(--foreground)); word-break: break-word; }
+  .qs-side { display: grid; gap: calc(16px * var(--space-scale, 1)); padding: calc(24px * var(--space-scale, 1)); background: linear-gradient(165deg, hsl(var(--primary) / 0.10), hsl(var(--primary) / 0.02) 70%); border: 1px solid hsl(var(--primary) / 0.22); border-radius: var(--card-radius, var(--radius)); }
+  .qs-side h2 { margin: 0; font-family: var(--font-heading); font-size: 17px; font-weight: 650; color: hsl(var(--foreground)); }
+  .qs-side p { margin: 0; color: hsl(var(--muted-foreground)); font-size: 15px; line-height: 1.55; }
+  .qs-side-actions { display: flex; flex-wrap: wrap; gap: calc(12px * var(--space-scale, 1)); align-items: center; }
+  .qs-band-note { margin-top: calc(32px * var(--space-scale, 1)); display: flex; align-items: center; gap: calc(16px * var(--space-scale, 1)); flex-wrap: wrap; padding: calc(16px * var(--space-scale, 1)) calc(24px * var(--space-scale, 1)); border-radius: var(--radius); background: hsl(var(--muted)); border: 1px solid hsl(var(--border)); }
+  .qs-band-note svg { width: 18px; height: 18px; color: hsl(var(--primary-text)); flex: none; }
+  .qs-band-note p { margin: 0; font-size: 15px; color: hsl(var(--foreground)); }
+  .qs-band-note span.qs-sp { flex: 1 1 auto; }
+  @media (max-width: 900px) {
+    .qs-account { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 520px) {
+    .qs-facts > div { grid-template-columns: minmax(0, 1fr); gap: calc(4px * var(--space-scale, 1)); }
+    .qs-avatar-big { width: 56px; height: 56px; font-size: 18px; }
+  }
+</style><main data-screen="settings" data-eid="e1">
+  <div class="ds-shell" data-eid="e2">
+    <div data-part="sidebar" data-eid="e3"></div>
+    <div class="ds-shell-main" data-eid="e4">
+      <div data-part="header" data-eid="e5"></div>
+
+      <div data-eid="content">
+        <div class="ds-page" style="padding-top: calc(32px * var(--space-scale, 1)); padding-bottom: calc(48px * var(--space-scale, 1))" data-eid="e6">
+          <div class="ds-page-head" data-eid="e7">
+            <div data-eid="e8">
+              <h1 class="ds-h1" data-eid="e9">Settings</h1>
+              <p class="ds-muted" style="margin: calc(8px * var(--space-scale, 1)) 0 0" data-eid="e10">The account you are signed in with, and the way out.</p>
+            </div>
+            <div class="ds-actions" data-eid="e11">
+              <button class="ds-btn ds-btn-danger" data-eid="e12">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M15 4h4v16h-4M11 8l-4 4 4 4M7 12h9"/></svg>
+                Sign out
+              </button>
+            </div>
+          </div>
+
+          <div class="ds-section qs-account" data-eid="e13">
+            <div class="qs-id-card" data-eid="e14">
+              <div class="qs-id-top" data-eid="e15">
+                <span class="ds-avatar qs-avatar-big" data-sample data-eid="e16">PS</span>
+                <div data-eid="e17">
+                  <h2 class="qs-id-name" data-sample="me.name" data-eid="e18">Priya Shah</h2>
+                  <p class="qs-id-mail" data-sample="me.email" data-eid="e19">priya.shah@northgate-studio.co.uk</p>
+                </div>
+                <span class="ds-spacer" data-eid="e20"></span>
+                <span class="ds-badge ds-badge-success" data-eid="e21">Signed in</span>
+              </div>
+
+              <dl class="qs-facts" data-eid="e22">
+                <div data-eid="e23">
+                  <dt data-eid="e24">Name</dt>
+                  <dd data-sample="me.name" data-eid="e25">Priya Shah</dd>
+                </div>
+                <div data-eid="e26">
+                  <dt data-eid="e27">Email address</dt>
+                  <dd data-sample="me.email" data-eid="e28">priya.shah@northgate-studio.co.uk</dd>
+                </div>
+                <div data-eid="e29">
+                  <dt data-eid="e30">Member since</dt>
+                  <dd data-sample="me.memberSince" data-eid="e31">3 Nov 2026</dd>
+                </div>
+                <div data-eid="e32">
+                  <dt data-eid="e33">Role</dt>
+                  <dd data-sample="me.role" data-eid="e34">Task owner</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="qs-side" data-eid="e35">
+              <h2 data-eid="e36">Signed in on this device</h2>
+              <p data-eid="e37">Your name and email address are set by the account you signed in with. To use a different account, sign out and sign in again.</p>
+              <div class="qs-side-actions" data-eid="e38">
+                <button class="ds-btn ds-btn-secondary" data-eid="e39">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M15 4h4v16h-4M11 8l-4 4 4 4M7 12h9"/></svg>
+                  Sign out
+                </button>
+                <a class="ds-btn ds-btn-ghost" data-goto="home" data-eid="e40">Back to Home</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="qs-band-note" data-eid="e41">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+            <p data-eid="e42">Your tasks are private to this account. Nobody else in the app can see them.</p>
+            <span class="qs-sp" data-eid="e43"></span>
+            <a class="ds-btn ds-btn-ghost ds-btn-sm" data-goto="statistics" data-eid="e44">See my statistics</a>
+          </div>
+        </div>
+      </div>
+
+      <section data-state="not-allowed" data-replaces="content" hidden data-eid="e45">
+        <div class="ds-page" style="padding-top: calc(32px * var(--space-scale, 1)); padding-bottom: calc(48px * var(--space-scale, 1))" data-eid="e46">
+          <div class="ds-page-head" data-eid="e47">
+            <div data-eid="e48">
+              <h1 class="ds-h1" data-eid="e49">Settings</h1>
+              <p class="ds-muted" style="margin: calc(8px * var(--space-scale, 1)) 0 0" data-eid="e50">You are not signed in.</p>
+            </div>
+          </div>
+          <div class="ds-card" style="padding: calc(32px * var(--space-scale, 1));" data-eid="e51">
+            <div class="ds-empty" data-eid="e52">
+              <span class="ds-empty-icon" data-eid="e53">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              </span>
+              <b style="color: hsl(var(--foreground))">Sign in to see your account</b>
+              <span data-eid="e54">Your name, email address and the date you joined show here once you are signed in.</span>
+              <a class="ds-btn" style="margin-top: calc(8px * var(--space-scale, 1))" data-goto="welcome" data-eid="e55">Sign in or create an account</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

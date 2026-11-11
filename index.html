@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Task Manager</title>
+    <meta name="description" content="A personal task list: add what needs doing, set a due date and check it off." />
+    <link rel="icon" type="image/png" href="/brand/favicon.png" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("blocks-app:theme") || "auto";
+          var dark = stored === "dark" || (stored === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="ds-root">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

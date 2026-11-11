@@ -22,7 +22,7 @@ export function SettingsScreen({ situation = "normal", onNavigate }: { situation
         <div className="ds-shell">
           <SidebarPart onNavigate={onNavigate} />
           <div className="ds-shell-main">
-            <HeaderPart onNavigate={onNavigate} />
+            <HeaderPart activePath="/settings" onNavigate={onNavigate} />
             {situation === "not-allowed" ? (
               <section data-state="not-allowed">
                 <div className="ds-page" style={{ paddingTop: "calc(32px * var(--space-scale, 1))", paddingBottom: "calc(48px * var(--space-scale, 1))" }}>
@@ -92,7 +92,7 @@ export function SettingsScreen({ situation = "normal", onNavigate }: { situation
                         </div>
                         <div>
                           <dt>Role</dt>
-                          <dd data-sample="me.role">Task owner</dd>
+                          <dd data-sample="">Task owner</dd>
                         </div>
                       </dl>
                     </div>

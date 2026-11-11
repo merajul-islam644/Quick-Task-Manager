@@ -1,0 +1,481 @@
+<style>
+  [data-screen="welcome"] {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+
+  /* top row */
+  .wl-top {
+    border-bottom: 1px solid hsl(var(--border));
+    background: hsl(var(--card));
+  }
+  .wl-top-bar {
+    display: flex;
+    align-items: center;
+    gap: calc(16px * var(--space-scale, 1));
+    padding-top: calc(14px * var(--space-scale, 1));
+    padding-bottom: calc(14px * var(--space-scale, 1));
+  }
+  .wl-top-bar .ds-brand-link { display: inline-flex; align-items: center; }
+  .wl-top-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: calc(12px * var(--space-scale, 1));
+  }
+
+  /* hero band */
+  .wl-hero {
+    position: relative;
+    overflow: visible;
+    border-bottom: 1px solid hsl(var(--border));
+    background:
+      radial-gradient(120% 90% at 88% -10%, hsl(var(--primary) / 0.14), transparent 60%),
+      radial-gradient(80% 70% at 4% 110%, hsl(var(--accent) / 0.18), transparent 65%),
+      linear-gradient(180deg, hsl(var(--card)), hsl(var(--background)));
+  }
+  .wl-hero .ds-page {
+    padding-top: calc(64px * var(--space-scale, 1));
+    padding-bottom: calc(64px * var(--space-scale, 1));
+  }
+  .wl-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: calc(48px * var(--space-scale, 1));
+    align-items: center;
+  }
+  .wl-promise {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+    font-size: clamp(44px, 7.2vw, 84px);
+    margin: calc(12px * var(--space-scale, 1)) 0 0;
+    color: hsl(var(--foreground));
+  }
+  .wl-promise .wl-word-accent {
+    display: block;
+    color: hsl(var(--primary-text));
+  }
+  .wl-lede {
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 44ch;
+    margin: calc(24px * var(--space-scale, 1)) 0 0;
+    color: hsl(var(--muted-foreground));
+  }
+  .wl-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: calc(16px * var(--space-scale, 1));
+    margin-top: calc(32px * var(--space-scale, 1));
+  }
+  .wl-note {
+    display: inline-flex;
+    align-items: center;
+    gap: calc(8px * var(--space-scale, 1));
+    font-size: 14px;
+    color: hsl(var(--muted-foreground));
+  }
+  .wl-note svg { width: 18px; height: 18px; flex: none; }
+
+  /* preview of the list */
+  .wl-preview-wrap {
+    position: relative;
+    padding: calc(16px * var(--space-scale, 1));
+  }
+  .wl-preview {
+    position: relative;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--card-radius);
+    background: hsl(var(--card));
+    box-shadow: 0 24px 48px -24px hsl(var(--primary) / 0.35), var(--shadow);
+    padding: calc(24px * var(--space-scale, 1));
+  }
+  .wl-preview-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: calc(12px * var(--space-scale, 1));
+    padding-bottom: calc(16px * var(--space-scale, 1));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .wl-preview-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: hsl(var(--foreground));
+  }
+  .wl-preview-count {
+    font-size: 13px;
+    color: hsl(var(--muted-foreground));
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .wl-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: calc(12px * var(--space-scale, 1));
+    margin-top: calc(16px * var(--space-scale, 1));
+  }
+  .wl-task {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: calc(12px * var(--space-scale, 1));
+    padding: calc(12px * var(--space-scale, 1));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    background: hsl(var(--background));
+  }
+  .wl-task.is-done {
+    border-color: hsl(var(--success) / 0.45);
+    background: hsl(var(--success-soft));
+  }
+  .wl-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid hsl(var(--muted-foreground) / 0.5);
+    display: grid;
+    place-items: center;
+    color: transparent;
+    flex: none;
+  }
+  .wl-task.is-done .wl-box {
+    border-color: hsl(var(--success));
+    background: hsl(var(--success));
+    color: hsl(var(--success-foreground));
+  }
+  .wl-box svg { width: 14px; height: 14px; }
+  .wl-task-text { min-width: 0; }
+  .wl-task-title {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(var(--foreground));
+    overflow-wrap: anywhere;
+  }
+  .wl-task.is-done .wl-task-title {
+    text-decoration: line-through;
+    color: hsl(var(--muted-foreground));
+    font-weight: 500;
+  }
+  .wl-task-sub {
+    display: flex;
+    align-items: center;
+    gap: calc(8px * var(--space-scale, 1));
+    margin-top: calc(4px * var(--space-scale, 1));
+    flex-wrap: wrap;
+  }
+  .wl-task-date {
+    font-size: 13px;
+    color: hsl(var(--muted-foreground));
+    white-space: nowrap;
+  }
+  .wl-trash {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    background: none;
+    border-radius: var(--radius);
+    color: hsl(var(--muted-foreground));
+    padding: calc(6px * var(--space-scale, 1));
+  }
+  .wl-trash svg { width: 16px; height: 16px; }
+
+  .wl-tag {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: calc(6px * var(--space-scale, 1));
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: hsl(var(--primary-text));
+    padding: calc(4px * var(--space-scale, 1)) calc(10px * var(--space-scale, 1));
+    border-radius: 999px;
+    background: hsl(var(--primary) / 0.1);
+    margin-bottom: calc(8px * var(--space-scale, 1));
+  }
+
+  /* features band */
+  .wl-features {
+    position: relative;
+  }
+  .wl-features .ds-page {
+    padding-top: calc(48px * var(--space-scale, 1));
+    padding-bottom: calc(64px * var(--space-scale, 1));
+  }
+  .wl-features-head {
+    max-width: 60ch;
+    margin-bottom: calc(32px * var(--space-scale, 1));
+  }
+  .wl-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: calc(32px * var(--space-scale, 1));
+    border-top: 1px solid hsl(var(--border));
+    padding-top: calc(32px * var(--space-scale, 1));
+  }
+  .wl-feature {
+    display: flex;
+    flex-direction: column;
+    gap: calc(8px * var(--space-scale, 1));
+  }
+  .wl-feature-num {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: hsl(var(--primary-text));
+    font-variant-numeric: tabular-nums;
+  }
+  .wl-feature-title {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: hsl(var(--foreground));
+  }
+  .wl-feature-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: hsl(var(--muted-foreground));
+    margin: 0;
+  }
+
+  /* signed out message sits in the actions area */
+  .wl-signed-out {
+    display: inline-flex;
+    align-items: center;
+    gap: calc(8px * var(--space-scale, 1));
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(var(--success-soft-foreground));
+    background: hsl(var(--success-soft));
+    padding: calc(8px * var(--space-scale, 1)) calc(14px * var(--space-scale, 1));
+    border-radius: var(--radius);
+  }
+  .wl-signed-out svg { width: 18px; height: 18px; flex: none; }
+
+  .wl-foot {
+    display: flex;
+    align-items: center;
+    gap: calc(12px * var(--space-scale, 1));
+    padding-top: calc(24px * var(--space-scale, 1));
+    padding-bottom: calc(24px * var(--space-scale, 1));
+    font-size: 13px;
+    color: hsl(var(--muted-foreground));
+  }
+  .wl-foot .ds-brand-link { display: inline-flex; align-items: center; }
+
+  @media (max-width: 900px) {
+    .wl-hero-grid { grid-template-columns: minmax(0, 1fr); gap: calc(32px * var(--space-scale, 1)); }
+    .wl-preview-wrap { padding: 0; }
+    .wl-features-grid { grid-template-columns: minmax(0, 1fr); gap: calc(24px * var(--space-scale, 1)); }
+    .wl-feature { padding-bottom: calc(24px * var(--space-scale, 1)); border-bottom: 1px solid hsl(var(--border)); }
+    .wl-feature:last-child { padding-bottom: 0; border-bottom: 0; }
+  }
+  @media (max-width: 520px) {
+    .wl-hero .ds-page { padding-top: calc(40px * var(--space-scale, 1)); padding-bottom: calc(48px * var(--space-scale, 1)); }
+    .wl-actions .ds-btn { width: 100%; justify-content: center; }
+    .wl-top-bar { flex-wrap: wrap; }
+    .wl-top-right { gap: calc(8px * var(--space-scale, 1)); }
+    .wl-task { grid-template-columns: 24px minmax(0, 1fr); }
+    .wl-trash { display: none; }
+  }
+</style><main data-screen="welcome" data-eid="e1">
+  <header class="wl-top" data-eid="e2">
+    <div class="ds-bar wl-top-bar" data-eid="e3">
+      <a class="ds-brand-link" data-goto="home" data-eid="e4"><img class="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" data-eid="e5"><img class="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" data-eid="e6"></a>
+      <div class="wl-top-right" data-eid="e7">
+        <div class="ds-theme-switch" role="group" aria-label="Colour mode" data-eid="e8">
+          <button class="ds-active" aria-label="Light" data-eid="e9"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></button>
+          <button aria-label="Dark" data-eid="e10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+          <button aria-label="Auto" data-eid="e11"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div data-eid="content">
+    <section class="wl-hero" data-eid="e12">
+      <div class="ds-page" data-eid="e15">
+        <div class="wl-hero-grid" data-eid="e16">
+          <div data-eid="e17">
+            <span class="ds-eyebrow" data-sample data-eid="e18">A personal task list</span>
+            <h1 class="ds-h1 wl-promise" style="font-size: clamp(44px, 7.2vw, 84px);" data-eid="e19"><span data-sample data-eid="e20">Plan. Focus.</span><span class="wl-word-accent" data-sample data-eid="e21">Achieve.</span></h1>
+            <p class="wl-lede" data-sample data-eid="e22">Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.</p>
+
+            <div id="opening-actions" data-eid="e23">
+              <div class="wl-actions" data-eid="e24">
+                <button class="ds-btn ds-btn-lg" data-goto="home" data-eid="e25">
+                  Sign in or create an account
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+                <span class="wl-note" data-eid="e26">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+                  <span data-sample data-eid="e27">New accounts start with 3 sample tasks.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wl-preview-wrap" data-eid="e28">
+            <div class="wl-preview" aria-label="A sample of your task list" data-eid="e29">
+              <div class="wl-preview-head" data-eid="e30">
+                <span class="wl-preview-title" data-eid="e31">Today's list</span>
+                <span class="wl-preview-count" data-sample data-eid="e32">2 of 3 done</span>
+              </div>
+              <div class="wl-tasks" data-eid="e33">
+                <div class="wl-task is-done" data-eid="e34">
+                  <span class="wl-box" data-eid="e35"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+                  <div class="wl-task-text" data-eid="e36">
+                    <span class="wl-task-title" data-sample data-eid="e37">Finish project report</span>
+                    <div class="wl-task-sub" data-eid="e38">
+                      <span class="wl-task-date" data-sample data-eid="e39">Yesterday</span>
+                      <span class="ds-badge ds-badge-success" data-eid="e40">Completed</span>
+                    </div>
+                  </div>
+                  <span class="wl-trash" aria-hidden="true" data-eid="e41"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+                </div>
+                <div class="wl-task" data-eid="e42">
+                  <span class="wl-box" aria-hidden="true" data-eid="e43"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5 9-10"/></svg></span>
+                  <div class="wl-task-text" data-eid="e44">
+                    <span class="wl-task-title" data-sample data-eid="e45">Read a book</span>
+                    <div class="wl-task-sub" data-eid="e46">
+                      <span class="wl-task-date" data-sample data-eid="e47">Today</span>
+                      <span class="ds-badge ds-badge-info" data-eid="e48">Pending</span>
+                    </div>
+                  </div>
+                  <span class="wl-trash" aria-hidden="true" data-eid="e49"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+                </div>
+                <div class="wl-task is-done" data-eid="e50">
+                  <span class="wl-box" data-eid="e51"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+                  <div class="wl-task-text" data-eid="e52">
+                    <span class="wl-task-title" data-sample data-eid="e53">Go for a walk</span>
+                    <div class="wl-task-sub" data-eid="e54">
+                      <span class="wl-task-date" data-sample data-eid="e55">Tomorrow</span>
+                      <span class="ds-badge ds-badge-success" data-eid="e56">Completed</span>
+                    </div>
+                  </div>
+                  <span class="wl-trash" aria-hidden="true" data-eid="e57"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wl-band wl-features" data-eid="e58">
+      <div class="ds-page" data-eid="e59">
+        <div class="wl-features-head" data-eid="e60">
+          <h2 class="ds-h2" data-eid="e61">A list that keeps up</h2>
+          <p class="ds-muted" style="margin: calc(8px * var(--space-scale, 1)) 0 0" data-eid="e62">Everything you add stays on one dashboard, with the numbers to match.</p>
+        </div>
+        <div class="wl-features-grid" data-eid="e63">
+          <div class="wl-feature" data-eid="e64">
+            <span class="wl-feature-num" data-eid="e65">01</span>
+            <span class="wl-feature-title" data-eid="e66">Add and check off</span>
+            <p class="wl-feature-text" data-eid="e67">Type a task, pick a date, and it lands at the end of your list. One click marks it done in place, green with a check mark.</p>
+          </div>
+          <div class="wl-feature" data-eid="e68">
+            <span class="wl-feature-num" data-eid="e69">02</span>
+            <span class="wl-feature-title" data-eid="e70">Filter in a tap</span>
+            <p class="wl-feature-text" data-eid="e71">Switch between All, Pending and Completed. Each tab shows its count, so you always know what's left.</p>
+          </div>
+          <div class="wl-feature" data-eid="e72">
+            <span class="wl-feature-num" data-eid="e73">03</span>
+            <span class="wl-feature-title" data-eid="e74">Know where you stand</span>
+            <p class="wl-feature-text" data-eid="e75">Statistics reads straight from your list: total tasks, completed and pending, with the share of the day behind you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer data-eid="e76">
+    <div class="ds-bar wl-foot" data-eid="e77">
+      <a class="ds-brand-link" data-goto="home" data-eid="e78"><img class="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" data-eid="e79"><img class="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" data-eid="e80"></a>
+      <span class="ds-spacer" data-eid="e81"></span>
+      <span data-sample data-eid="e82">Plan. Focus. Achieve.</span>
+    </div>
+  </footer>
+
+  <section data-state="signed-out" data-replaces="content" hidden data-root-class="is-signed-out" data-eid="e83">
+    <section class="wl-hero" data-eid="e84">
+      <div class="ds-page" data-eid="e86">
+        <div class="wl-hero-grid" data-eid="e87">
+          <div data-eid="e88">
+            <span class="ds-eyebrow" data-eid="e89">Personal task list</span>
+            <h1 class="ds-h1 wl-promise" style="font-size: clamp(44px, 7.2vw, 84px);" data-eid="e90">Plan. Focus.<span class="wl-word-accent" data-eid="e91">Achieve.</span></h1>
+            <p class="wl-lede" data-eid="e92">Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.</p>
+            <div class="wl-actions" data-eid="e93">
+              <span class="wl-signed-out" data-eid="e94">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+                You're signed out.
+              </span>
+              <button class="ds-btn ds-btn-lg" data-goto="home" data-eid="e95">
+                Sign in or create an account
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="wl-preview-wrap" data-eid="e96">
+            <div class="wl-preview" aria-label="A sample of your task list" data-eid="e97">
+              <div class="wl-preview-head" data-eid="e98">
+                <span class="wl-preview-title" data-eid="e99">Today's list</span>
+                <span class="wl-preview-count" data-eid="e100">2 of 3 done</span>
+              </div>
+              <div class="wl-tasks" data-eid="e101">
+                <div class="wl-task is-done" data-eid="e102">
+                  <span class="wl-box" data-eid="e103"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+                  <div class="wl-task-text" data-eid="e104">
+                    <span class="wl-task-title" data-eid="e105">Finish project report</span>
+                    <div class="wl-task-sub" data-eid="e106">
+                      <span class="wl-task-date" data-eid="e107">Yesterday</span>
+                      <span class="ds-badge ds-badge-success" data-eid="e108">Completed</span>
+                    </div>
+                  </div>
+                  <span class="wl-trash" aria-hidden="true" data-eid="e109"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+                </div>
+                <div class="wl-task" data-eid="e110">
+                  <span class="wl-box" aria-hidden="true" data-eid="e111"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5 9-10"/></svg></span>
+                  <div class="wl-task-text" data-eid="e112">
+                    <span class="wl-task-title" data-eid="e113">Read a book</span>
+                    <div class="wl-task-sub" data-eid="e114">
+                      <span class="wl-task-date" data-eid="e115">Today</span>
+                      <span class="ds-badge ds-badge-info" data-eid="e116">Pending</span>
+                    </div>
+                  </div>
+                  <span class="wl-trash" aria-hidden="true" data-eid="e117"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+                </div>
+                <div class="wl-task is-done" data-eid="e118">
+                  <span class="wl-box" data-eid="e119"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span>
+                  <div class="wl-task-text" data-eid="e120">
+                    <span class="wl-task-title" data-eid="e121">Go for a walk</span>
+                    <div class="wl-task-sub" data-eid="e122">
+                      <span class="wl-task-date" data-eid="e123">Tomorrow</span>
+                      <span class="ds-badge ds-badge-success" data-eid="e124">Completed</span>
+                    </div>
+                  </div>
+                  <span class="wl-trash" aria-hidden="true" data-eid="e125"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5M14 11v5"/></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>

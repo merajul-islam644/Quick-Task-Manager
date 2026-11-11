@@ -1,0 +1,158 @@
+{
+  "plan": 1,
+  "screens": [
+    {
+      "key": "welcome",
+      "name": "Opening screen",
+      "route": "/welcome",
+      "purpose": "Signed-out opening screen: the promise \u0022Plan. Focus. Achieve.\u0022, the \u0022Sign in or create an account\u0022 button that opens the hosted sign-in page, and the \u0022You\u0027re signed out.\u0022 message after signing out",
+      "features": [
+        "AU-01"
+      ],
+      "parts": [],
+      "links": [
+        "home"
+      ],
+      "file": "screens/welcome.html",
+      "changedByThisPlan": true,
+      "situations": [
+        {
+          "name": "signed-out",
+          "replaces": "the element with data-eid=\u0022content\u0022",
+          "rootClass": "is-signed-out"
+        }
+      ]
+    },
+    {
+      "key": "home",
+      "name": "Home",
+      "route": "/",
+      "purpose": "The dashboard: three summary cards, the Add New Task card, and the task list with All/Pending/Completed tabs, per-task check, Edit and trash actions, and Clear All with its confirmation",
+      "features": [
+        "TS-01",
+        "TS-02",
+        "TS-03",
+        "TS-04",
+        "TS-05"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ],
+      "links": [
+        "statistics",
+        "settings",
+        "welcome"
+      ],
+      "file": "screens/home.html",
+      "changedByThisPlan": true,
+      "situations": [
+        {
+          "name": "empty",
+          "replaces": "the element with data-eid=\u0022content\u0022"
+        },
+        {
+          "name": "no-matches",
+          "replaces": "the element with data-eid=\u0022content\u0022"
+        }
+      ]
+    },
+    {
+      "key": "statistics",
+      "name": "Statistics",
+      "route": "/statistics",
+      "purpose": "The person\u0027s live task numbers: Total tasks, Completed and Pending cards, and the green completed-share bar with its \u00222 of 5 tasks done\u0022 line",
+      "features": [
+        "NU-01"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ],
+      "links": [
+        "home",
+        "settings"
+      ],
+      "file": "screens/statistics.html",
+      "changedByThisPlan": true,
+      "situations": [
+        {
+          "name": "empty",
+          "replaces": "the element with data-eid=\u0022content\u0022"
+        }
+      ]
+    },
+    {
+      "key": "settings",
+      "name": "Settings",
+      "route": "/settings",
+      "purpose": "The signed-in person\u0027s own name, email address and \u0022Member since\u0022 line, with the Sign out button",
+      "features": [
+        "AC-01"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ],
+      "links": [
+        "home",
+        "statistics",
+        "welcome"
+      ],
+      "file": "screens/settings.html",
+      "changedByThisPlan": true,
+      "situations": [
+        {
+          "name": "not-allowed",
+          "replaces": "the element with data-eid=\u0022content\u0022"
+        }
+      ]
+    },
+    {
+      "key": "compact-header-with-a-menu-on-phones",
+      "name": "Compact header with a menu on phones",
+      "route": "/compact-header-with-a-menu-on-phones",
+      "purpose": "Where Move around on a phone lives: Compact header with a menu on phones.",
+      "features": [
+        "GN-01"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ],
+      "links": [],
+      "file": "screens/compact-header-with-a-menu-on-phones.html",
+      "changedByThisPlan": true,
+      "situations": [
+        {
+          "name": "empty",
+          "replaces": "the element with data-eid=\u0022content\u0022"
+        }
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "key": "sidebar",
+      "name": "Sidebar",
+      "route": "",
+      "purpose": "Fixed left sidebar on wide screens with the logo, Home, Statistics and Settings, a small checklist illustration and the line \u0022Plan. Focus. Achieve.\u0022",
+      "features": [],
+      "parts": [],
+      "links": [],
+      "file": "parts/sidebar.html",
+      "changedByThisPlan": true
+    },
+    {
+      "key": "header",
+      "name": "Header",
+      "route": "",
+      "purpose": "Top bar with the logo, the menu button on phones that opens Home, Statistics and Settings, the colour-mode switch and the account menu holding Settings and Sign out",
+      "features": [],
+      "parts": [],
+      "links": [],
+      "file": "parts/header.html",
+      "changedByThisPlan": true
+    }
+  ]
+}

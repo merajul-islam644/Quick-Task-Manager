@@ -1,0 +1,477 @@
+<style>
+  /* ---------- Shell & page ---------- */
+  .q-page { padding-top: calc(24px * var(--space-scale, 1)); padding-bottom: calc(64px * var(--space-scale, 1)); }
+
+  /* ---------- Page head ---------- */
+  .q-head { display: grid; gap: calc(8px * var(--space-scale, 1)); }
+  .q-head h1 { margin: 0; letter-spacing: -0.02em; }
+  .q-head p { margin: 0; max-width: 56ch; }
+
+  /* ---------- Summary cards ---------- */
+  .q-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(16px * var(--space-scale, 1)); margin-top: calc(24px * var(--space-scale, 1)); }
+  .q-stat { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: calc(4px * var(--space-scale, 1)); padding: calc(16px * var(--space-scale, 1)) calc(20px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+  .q-stat .ds-stat-value { font-size: 34px; line-height: 1.05; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .q-stat-note { font-size: 13px; color: hsl(var(--muted-foreground)); }
+  .q-stat-total .ds-stat-value { color: hsl(var(--primary-text)); }
+  .q-stat-done { background: hsl(var(--success-soft)); border-color: hsl(var(--success) / 0.35); }
+  /* Readable on the tint in light and dark: use the foreground role, not a soft shade */
+  .q-stat-done .ds-stat-label { color: hsl(var(--foreground)); }
+  .q-stat-done .q-stat-note { color: hsl(var(--muted-foreground)); }
+  .q-stat-done .ds-stat-value { color: hsl(var(--success-soft-foreground)); }
+  .q-stat-open .ds-stat-value { color: hsl(var(--foreground)); }
+  .q-stat-mark { position: absolute; right: calc(14px * var(--space-scale, 1)); top: calc(14px * var(--space-scale, 1)); width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; color: hsl(var(--success-soft-foreground)); background: hsl(var(--success) / 0.16); }
+
+  /* ---------- Add task card ---------- */
+  .q-add { margin-top: calc(16px * var(--space-scale, 1)); padding: calc(16px * var(--space-scale, 1)) calc(20px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+  .q-add-head { display: flex; align-items: baseline; gap: calc(8px * var(--space-scale, 1)); margin-bottom: calc(12px * var(--space-scale, 1)); }
+  .q-add-head h2 { margin: 0; }
+  .q-add-row { display: flex; flex-wrap: wrap; gap: calc(12px * var(--space-scale, 1)); align-items: flex-end; }
+  .q-add-title { flex: 1 1 240px; min-width: 0; }
+  .q-add-date { flex: 0 0 auto; width: 190px; }
+  .q-add-row .ds-label { font-size: 13px; }
+
+  /* ---------- Task list ---------- */
+  .q-list-head { display: flex; flex-wrap: wrap; align-items: center; gap: calc(12px * var(--space-scale, 1)); margin-top: calc(32px * var(--space-scale, 1)); margin-bottom: calc(12px * var(--space-scale, 1)); }
+  .q-clear { color: hsl(var(--destructive)); }
+  .q-tasks { display: flex; flex-direction: column; gap: calc(8px * var(--space-scale, 1)); }
+  .q-task { display: flex; align-items: center; gap: calc(12px * var(--space-scale, 1)); padding: calc(12px * var(--space-scale, 1)) calc(14px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); transition: background 0.15s ease, border-color 0.15s ease; }
+  .q-task-body { min-width: 0; flex: 1 1 auto; display: flex; flex-direction: column; gap: calc(4px * var(--space-scale, 1)); }
+  .q-task-title { font-size: 15px; font-weight: 600; color: hsl(var(--foreground)); word-break: break-word; }
+  .q-task-meta { display: flex; flex-wrap: wrap; align-items: center; gap: calc(8px * var(--space-scale, 1)); font-size: 13px; color: hsl(var(--muted-foreground)); }
+  .q-task-meta .q-date { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+  .q-task.is-done { background: hsl(var(--success-soft)); border-color: hsl(var(--success) / 0.4); }
+  /* Struck done text stays readable: foreground role with line-through, not a pale green */
+  .q-task.is-done .q-task-title { text-decoration: line-through; color: hsl(var(--foreground) / 0.72); }
+  .q-check { flex: none; width: 28px; height: 44px; display: grid; place-items: center; background: none; border: 0; cursor: pointer; padding: 0; color: hsl(var(--muted-foreground)); }
+  .q-check span { width: 24px; height: 24px; border-radius: 50%; border: 2px solid hsl(var(--border)); background: hsl(var(--card)); display: grid; place-items: center; transition: background 0.15s ease, border-color 0.15s ease; }
+  .q-task.is-done .q-check span { background: hsl(var(--success)); border-color: hsl(var(--success)); color: hsl(var(--success-foreground)); }
+  .q-check svg { width: 14px; height: 14px; opacity: 0; }
+  .q-task.is-done .q-check svg { opacity: 1; }
+  .q-row-actions { flex: none; display: flex; align-items: center; gap: calc(4px * var(--space-scale, 1)); }
+
+  /* ---------- Empty state ---------- */
+  .q-empty-wrap { margin-top: calc(32px * var(--space-scale, 1)); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: var(--card-radius, var(--radius)); box-shadow: var(--shadow); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 760px) {
+    .q-stats { grid-template-columns: 1fr; }
+    .q-add-date { width: 100%; }
+    .q-add-row .ds-btn { width: 100%; }
+    .q-task { flex-wrap: wrap; }
+    .q-task-body { flex-basis: calc(100% - 28px - 12px - 44px); }
+    .q-row-actions { margin-left: auto; }
+  }
+</style><main data-screen="home" data-eid="e1">
+  <div class="ds-shell" data-eid="e2">
+    <div data-part="sidebar" data-eid="e3"></div>
+    <div class="ds-shell-main" data-eid="e4">
+      <div data-part="header" data-eid="e5"></div>
+
+      <div data-eid="content">
+      <div class="ds-page q-page" data-eid="e6">
+        <div class="ds-page-head q-head" data-eid="e7">
+          <div data-eid="e8">
+            <h1 class="ds-h1" data-eid="e9">Your tasks</h1>
+            <p class="ds-muted" data-eid="e10">Everything on your list, with what is done and what is still waiting.</p>
+          </div>
+          <div class="ds-actions" data-eid="e11">
+            <a class="ds-btn" href="#" aria-label="Add a task" data-eid="e12">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              Add Task
+            </a>
+          </div>
+        </div>
+
+        <div class="q-stats" data-eid="e13">
+          <div class="ds-stat q-stat q-stat-total" data-eid="e14">
+            <span class="ds-stat-label" data-eid="e15">Total tasks</span>
+            <span class="ds-stat-value" data-sample data-eid="e16">5</span>
+            <span class="q-stat-note" data-eid="e17">On your list right now</span>
+          </div>
+          <div class="ds-stat q-stat q-stat-done" data-eid="e18">
+            <span class="ds-stat-label" data-eid="e19">Completed</span>
+            <span class="ds-stat-value" data-sample data-eid="e20">2</span>
+            <span class="q-stat-note" data-eid="e21">Ticked off and finished</span>
+            <span class="q-stat-mark" aria-hidden="true" data-eid="e22">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4.5 4.5L19 7"/></svg>
+            </span>
+          </div>
+          <div class="ds-stat q-stat q-stat-open" data-eid="e23">
+            <span class="ds-stat-label" data-eid="e24">Pending</span>
+            <span class="ds-stat-value" data-sample data-eid="e25">3</span>
+            <span class="q-stat-note" data-eid="e26">Still to do</span>
+          </div>
+        </div>
+
+        <div class="ds-card q-add" id="add" data-eid="e27">
+          <div class="q-add-head" data-eid="e28">
+            <h2 class="ds-h3" data-eid="e29">Add New Task</h2>
+          </div>
+          <form class="q-add-row" data-eid="e30">
+            <div class="ds-field q-add-title" data-eid="e31">
+              <label class="ds-label" for="new-task" data-eid="e32">Task</label>
+              <input class="ds-input" id="new-task" type="text" maxlength="200" placeholder="Enter your task..." data-eid="e33"/>
+            </div>
+            <div class="ds-field q-add-date" data-eid="e34">
+              <label class="ds-label" for="new-date" data-eid="e35">Due date</label>
+              <input class="ds-input" id="new-date" type="date" value="2026-11-12" data-sample="Task#new.dueDate" data-eid="e36"/>
+            </div>
+            <div class="ds-form-actions" style="margin:0" data-eid="e37">
+              <button class="ds-btn" type="submit" data-situation="done" data-eid="e38">Add Task</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="q-list-head" data-eid="e39">
+          <div class="ds-tabs" role="tablist" aria-label="Filter tasks" data-eid="e40">
+            <button class="ds-tab ds-active" role="tab" aria-selected="true" aria-controls="panel-all" id="tab-all" data-eid="e41">All <span data-sample data-eid="e42">5</span></button>
+            <button class="ds-tab" role="tab" aria-selected="false" aria-controls="panel-pending" id="tab-pending" data-eid="e43">Pending <span data-sample data-eid="e44">3</span></button>
+            <button class="ds-tab" role="tab" aria-selected="false" aria-controls="panel-completed" id="tab-completed" data-eid="e45">Completed <span data-sample data-eid="e46">2</span></button>
+          </div>
+          <span class="ds-spacer" data-eid="e47"></span>
+          <details class="ds-menu">
+            <summary class="ds-btn ds-btn-secondary" aria-label="More task list actions">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+              More
+            </summary>
+            <div class="ds-menu-list" data-eid="e48">
+              <button class="q-clear" type="button" data-eid="e49">Clear All</button>
+            </div>
+          </details>
+        </div>
+
+        <div id="panel-all" role="tabpanel" aria-labelledby="tab-all" data-eid="e50">
+          <div class="q-tasks" data-eid="e51">
+            <div class="q-task is-done" data-eid="e52">
+              <button class="q-check" type="button" aria-pressed="true" aria-label="Mark Finish project report as pending" data-eid="e53">
+                <span data-eid="e54">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>
+                </span>
+              </button>
+              <div class="q-task-body" data-eid="e55">
+                <span class="q-task-title" data-sample="Task#1.title" data-eid="e56">Finish project report</span>
+                <div class="q-task-meta" data-eid="e57">
+                  <span class="q-date" data-sample="Task#1.dueDate" data-eid="e58">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                    7 Nov
+                  </span>
+                  <span class="ds-badge ds-badge-success" data-eid="e59">Completed</span>
+                </div>
+              </div>
+              <div class="ds-row-actions q-row-actions" data-eid="e60">
+                <button class="ds-btn ds-btn-ghost ds-btn-sm" type="button" aria-label="Edit Finish project report" data-eid="e61">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  Edit
+                </button>
+                <button class="ds-btn ds-btn-ghost ds-btn-icon" type="button" aria-label="Delete Finish project report" data-eid="e62">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+                </button>
+                <details class="ds-menu">
+                  <summary class="ds-btn ds-btn-ghost ds-btn-icon" aria-label="More actions for Finish project report">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+                  </summary>
+                  <div class="ds-menu-list" data-eid="e63">
+                    <button type="button" data-eid="e64">Edit task</button>
+                    <button type="button" class="q-clear" data-eid="e65">Delete task</button>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="q-task" data-eid="e66">
+              <button class="q-check" type="button" aria-pressed="false" aria-label="Mark Read a book as completed" data-eid="e67">
+                <span data-eid="e68">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>
+                </span>
+              </button>
+              <div class="q-task-body" data-eid="e69">
+                <span class="q-task-title" data-sample="Task#2.title" data-eid="e70">Read a book</span>
+                <div class="q-task-meta" data-eid="e71">
+                  <span class="q-date" data-sample="Task#2.dueDate" data-eid="e72">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                    Today
+                  </span>
+                  <span class="ds-badge ds-badge-info" data-eid="e73">Pending</span>
+                </div>
+              </div>
+              <div class="ds-row-actions q-row-actions" data-eid="e74">
+                <button class="ds-btn ds-btn-ghost ds-btn-sm" type="button" aria-label="Edit Read a book" data-eid="e75">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  Edit
+                </button>
+                <button class="ds-btn ds-btn-ghost ds-btn-icon" type="button" aria-label="Delete Read a book" data-eid="e76">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+                </button>
+                <details class="ds-menu">
+                  <summary class="ds-btn ds-btn-ghost ds-btn-icon" aria-label="More actions for Read a book">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+                  </summary>
+                  <div class="ds-menu-list" data-eid="e77">
+                    <button type="button" data-eid="e78">Edit task</button>
+                    <button type="button" class="q-clear" data-eid="e79">Delete task</button>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="q-task" data-eid="e80">
+              <button class="q-check" type="button" aria-pressed="false" aria-label="Mark Go for a walk as completed" data-eid="e81">
+                <span data-eid="e82">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>
+                </span>
+              </button>
+              <div class="q-task-body" data-eid="e83">
+                <span class="q-task-title" data-sample="Task#3.title" data-eid="e84">Go for a walk</span>
+                <div class="q-task-meta" data-eid="e85">
+                  <span class="q-date" data-sample="Task#3.dueDate" data-eid="e86">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                    Tomorrow
+                  </span>
+                  <span class="ds-badge ds-badge-info" data-eid="e87">Pending</span>
+                </div>
+              </div>
+              <div class="ds-row-actions q-row-actions" data-eid="e88">
+                <button class="ds-btn ds-btn-ghost ds-btn-sm" type="button" aria-label="Edit Go for a walk" data-eid="e89">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  Edit
+                </button>
+                <button class="ds-btn ds-btn-ghost ds-btn-icon" type="button" aria-label="Delete Go for a walk" data-eid="e90">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+                </button>
+                <details class="ds-menu">
+                  <summary class="ds-btn ds-btn-ghost ds-btn-icon" aria-label="More actions for Go for a walk">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+                  </summary>
+                  <div class="ds-menu-list" data-eid="e91">
+                    <button type="button" data-eid="e92">Edit task</button>
+                    <button type="button" class="q-clear" data-eid="e93">Delete task</button>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="q-task" data-eid="e94">
+              <button class="q-check" type="button" aria-pressed="false" aria-label="Mark Renew car insurance as completed" data-eid="e95">
+                <span data-eid="e96">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>
+                </span>
+              </button>
+              <div class="q-task-body" data-eid="e97">
+                <span class="q-task-title" data-sample="Task#4.title" data-eid="e98">Renew car insurance before the weekend and send the new certificate to Priya</span>
+                <div class="q-task-meta" data-eid="e99">
+                  <span class="q-date" data-sample="Task#4.dueDate" data-eid="e100">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                    18 Nov
+                  </span>
+                  <span class="ds-badge ds-badge-info" data-eid="e101">Pending</span>
+                </div>
+              </div>
+              <div class="ds-row-actions q-row-actions" data-eid="e102">
+                <button class="ds-btn ds-btn-ghost ds-btn-sm" type="button" aria-label="Edit Renew car insurance" data-eid="e103">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  Edit
+                </button>
+                <button class="ds-btn ds-btn-ghost ds-btn-icon" type="button" aria-label="Delete Renew car insurance" data-eid="e104">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+                </button>
+                <details class="ds-menu">
+                  <summary class="ds-btn ds-btn-ghost ds-btn-icon" aria-label="More actions for Renew car insurance">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+                  </summary>
+                  <div class="ds-menu-list" data-eid="e105">
+                    <button type="button" data-eid="e106">Edit task</button>
+                    <button type="button" class="q-clear" data-eid="e107">Delete task</button>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="q-task is-done" data-eid="e108">
+              <button class="q-check" type="button" aria-pressed="true" aria-label="Mark Call the dentist as pending" data-eid="e109">
+                <span data-eid="e110">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>
+                </span>
+              </button>
+              <div class="q-task-body" data-eid="e111">
+                <span class="q-task-title" data-sample="Task#5.title" data-eid="e112">Call the dentist</span>
+                <div class="q-task-meta" data-eid="e113">
+                  <span class="q-date" data-sample="Task#5.dueDate" data-eid="e114">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                    3 Nov
+                  </span>
+                  <span class="ds-badge ds-badge-success" data-eid="e115">Completed</span>
+                </div>
+              </div>
+              <div class="ds-row-actions q-row-actions" data-eid="e116">
+                <button class="ds-btn ds-btn-ghost ds-btn-sm" type="button" aria-label="Edit Call the dentist" data-eid="e117">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  Edit
+                </button>
+                <button class="ds-btn ds-btn-ghost ds-btn-icon" type="button" aria-label="Delete Call the dentist" data-eid="e118">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
+                </button>
+                <details class="ds-menu">
+                  <summary class="ds-btn ds-btn-ghost ds-btn-icon" aria-label="More actions for Call the dentist">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+                  </summary>
+                  <div class="ds-menu-list" data-eid="e119">
+                    <button type="button" data-eid="e120">Edit task</button>
+                    <button type="button" class="q-clear" data-eid="e121">Delete task</button>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="panel-pending" role="tabpanel" aria-labelledby="tab-pending" hidden data-eid="e122"></div>
+        <div id="panel-completed" role="tabpanel" aria-labelledby="tab-completed" hidden data-eid="e123"></div>
+      </div>
+      </div>
+
+      <section data-state="empty" data-replaces="content" hidden data-eid="e124">
+        <div class="ds-page q-page" data-eid="e125">
+          <div class="ds-page-head q-head" data-eid="e126">
+            <div data-eid="e127">
+              <h1 class="ds-h1" data-eid="e128">Your tasks</h1>
+              <p class="ds-muted" data-eid="e129">Everything on your list, with what is done and what is still waiting.</p>
+            </div>
+            <div class="ds-actions" data-eid="e130">
+              <a class="ds-btn" href="#" aria-label="Add a task" data-eid="e131">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                Add Task
+              </a>
+            </div>
+          </div>
+
+          <div class="q-stats" data-eid="e132">
+            <div class="ds-stat q-stat q-stat-total" data-eid="e133">
+              <span class="ds-stat-label" data-eid="e134">Total tasks</span>
+              <span class="ds-stat-value" data-sample data-eid="e135">0</span>
+              <span class="q-stat-note" data-eid="e136">On your list right now</span>
+            </div>
+            <div class="ds-stat q-stat q-stat-done" data-eid="e137">
+              <span class="ds-stat-label" data-eid="e138">Completed</span>
+              <span class="ds-stat-value" data-sample data-eid="e139">0</span>
+              <span class="q-stat-note" data-eid="e140">Ticked off and finished</span>
+            </div>
+            <div class="ds-stat q-stat q-stat-open" data-eid="e141">
+              <span class="ds-stat-label" data-eid="e142">Pending</span>
+              <span class="ds-stat-value" data-sample data-eid="e143">0</span>
+              <span class="q-stat-note" data-eid="e144">Still to do</span>
+            </div>
+          </div>
+
+          <div class="ds-card q-add" id="add-empty" data-eid="e145">
+            <div class="q-add-head" data-eid="e146">
+              <h2 class="ds-h3" data-eid="e147">Add New Task</h2>
+            </div>
+            <form class="q-add-row" data-eid="e148">
+              <div class="ds-field q-add-title" data-eid="e149">
+                <label class="ds-label" for="new-task-empty" data-eid="e150">Task</label>
+                <input class="ds-input" id="new-task-empty" type="text" maxlength="200" placeholder="Enter your task..." data-eid="e151"/>
+              </div>
+              <div class="ds-field q-add-date" data-eid="e152">
+                <label class="ds-label" for="new-date-empty" data-eid="e153">Due date</label>
+                <input class="ds-input" id="new-date-empty" type="date" value="2026-11-12" data-sample="Task#new.dueDate" data-eid="e154"/>
+              </div>
+              <div class="ds-form-actions" style="margin:0" data-eid="e155">
+                <button class="ds-btn" type="submit" data-situation="done" data-eid="e156">Add Task</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="q-list-head" data-eid="e157">
+            <div class="ds-tabs" role="tablist" aria-label="Filter tasks" data-eid="e158">
+              <button class="ds-tab ds-active" role="tab" aria-selected="true" aria-controls="e-all" id="e-tab-all" data-eid="e159">All <span data-sample data-eid="e160">0</span></button>
+              <button class="ds-tab" role="tab" aria-selected="false" aria-controls="e-pending" id="e-tab-pending" data-eid="e161">Pending <span data-sample data-eid="e162">0</span></button>
+              <button class="ds-tab" role="tab" aria-selected="false" aria-controls="e-tab-completed" id="e-tab-completed" data-eid="e163">Completed <span data-sample data-eid="e164">0</span></button>
+            </div>
+          </div>
+
+          <div class="q-empty-wrap" data-eid="e165">
+            <div class="ds-empty" data-eid="e166">
+              <span class="ds-empty-icon" data-eid="e167">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+              </span>
+              <b style="color: hsl(var(--foreground))">No tasks here. Add a task to get started!</b>
+              <span data-eid="e168">Type your first task above and press Add Task.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-state="no-matches" data-replaces="content" hidden data-eid="e169">
+        <div class="ds-page q-page" data-eid="e170">
+          <div class="ds-page-head q-head" data-eid="e171">
+            <div data-eid="e172">
+              <h1 class="ds-h1" data-eid="e173">Your tasks</h1>
+              <p class="ds-muted" data-eid="e174">Everything on your list, with what is done and what is still waiting.</p>
+            </div>
+            <div class="ds-actions" data-eid="e175">
+              <a class="ds-btn" href="#" aria-label="Add a task" data-eid="e176">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                Add Task
+              </a>
+            </div>
+          </div>
+
+          <div class="q-stats" data-eid="e177">
+            <div class="ds-stat q-stat q-stat-total" data-eid="e178">
+              <span class="ds-stat-label" data-eid="e179">Total tasks</span>
+              <span class="ds-stat-value" data-sample data-eid="e180">3</span>
+              <span class="q-stat-note" data-eid="e181">On your list right now</span>
+            </div>
+            <div class="ds-stat q-stat q-stat-done" data-eid="e182">
+              <span class="ds-stat-label" data-eid="e183">Completed</span>
+              <span class="ds-stat-value" data-sample data-eid="e184">0</span>
+              <span class="q-stat-note" data-eid="e185">Ticked off and finished</span>
+            </div>
+            <div class="ds-stat q-stat q-stat-open" data-eid="e186">
+              <span class="ds-stat-label" data-eid="e187">Pending</span>
+              <span class="ds-stat-value" data-sample data-eid="e188">3</span>
+              <span class="q-stat-note" data-eid="e189">Still to do</span>
+            </div>
+          </div>
+
+          <div class="ds-card q-add" id="add-nomatch" data-eid="e190">
+            <div class="q-add-head" data-eid="e191">
+              <h2 class="ds-h3" data-eid="e192">Add New Task</h2>
+            </div>
+            <form class="q-add-row" data-eid="e193">
+              <div class="ds-field q-add-title" data-eid="e194">
+                <label class="ds-label" for="new-task-nomatch" data-eid="e195">Task</label>
+                <input class="ds-input" id="new-task-nomatch" type="text" maxlength="200" placeholder="Enter your task..." data-eid="e196"/>
+              </div>
+              <div class="ds-field q-add-date" data-eid="e197">
+                <label class="ds-label" for="new-date-nomatch" data-eid="e198">Due date</label>
+                <input class="ds-input" id="new-date-nomatch" type="date" value="2026-11-12" data-sample="Task#new.dueDate" data-eid="e199"/>
+              </div>
+              <div class="ds-form-actions" style="margin:0" data-eid="e200">
+                <button class="ds-btn" type="submit" data-situation="done" data-eid="e201">Add Task</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="q-list-head" data-eid="e202">
+            <div class="ds-tabs" role="tablist" aria-label="Filter tasks" data-eid="e203">
+              <button class="ds-tab" role="tab" aria-selected="false" aria-controls="m-all" id="m-tab-all" data-eid="e204">All <span data-sample data-eid="e205">3</span></button>
+              <button class="ds-tab" role="tab" aria-selected="false" aria-controls="m-pending" id="m-tab-pending" data-eid="e206">Pending <span data-sample data-eid="e207">3</span></button>
+              <button class="ds-tab ds-active" role="tab" aria-selected="true" aria-controls="m-completed" id="m-tab-completed" data-eid="e208">Completed <span data-sample data-eid="e209">0</span></button>
+            </div>
+          </div>
+
+          <div class="q-empty-wrap" data-eid="e210">
+            <div class="ds-empty" data-eid="e211">
+              <span class="ds-empty-icon" data-eid="e212">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+              </span>
+              <b style="color: hsl(var(--foreground))">No tasks here. Add a task to get started!</b>
+              <span data-eid="e213">Nothing is completed yet. Tick a task off to see it here.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

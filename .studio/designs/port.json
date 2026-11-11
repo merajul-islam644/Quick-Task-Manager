@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "ported": [
+    {
+      "kind": "part",
+      "key": "sidebar",
+      "name": "Sidebar",
+      "component": "SidebarPart",
+      "files": [
+        "src/app/layout/SidebarPart.tsx",
+        "src/app/layout/SidebarPart.css"
+      ],
+      "situations": [],
+      "parts": []
+    },
+    {
+      "kind": "part",
+      "key": "header",
+      "name": "Header",
+      "component": "HeaderPart",
+      "files": [
+        "src/app/layout/HeaderPart.tsx",
+        "src/app/layout/HeaderPart.css"
+      ],
+      "situations": [],
+      "parts": []
+    },
+    {
+      "kind": "screen",
+      "key": "welcome",
+      "name": "Opening screen",
+      "component": "WelcomeScreen",
+      "files": [
+        "src/features/welcome/WelcomeScreen.tsx",
+        "src/features/welcome/WelcomeScreen.css"
+      ],
+      "situations": [
+        "signed-out"
+      ],
+      "parts": []
+    },
+    {
+      "kind": "screen",
+      "key": "home",
+      "name": "Home",
+      "component": "HomeScreen",
+      "files": [
+        "src/features/home/HomeScreen.tsx",
+        "src/features/home/HomeScreen.css"
+      ],
+      "situations": [
+        "empty",
+        "no-matches"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ]
+    },
+    {
+      "kind": "screen",
+      "key": "statistics",
+      "name": "Statistics",
+      "component": "StatisticsScreen",
+      "files": [
+        "src/features/statistics/StatisticsScreen.tsx",
+        "src/features/statistics/StatisticsScreen.css"
+      ],
+      "situations": [
+        "empty"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ]
+    },
+    {
+      "kind": "screen",
+      "key": "settings",
+      "name": "Settings",
+      "component": "SettingsScreen",
+      "files": [
+        "src/features/settings/SettingsScreen.tsx",
+        "src/features/settings/SettingsScreen.css"
+      ],
+      "situations": [
+        "not-allowed"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ]
+    },
+    {
+      "kind": "screen",
+      "key": "compact-header-with-a-menu-on-phones",
+      "name": "Compact header with a menu on phones",
+      "component": "CompactHeaderWithAMenuOnPhonesScreen",
+      "files": [
+        "src/features/compact-header-with-a-menu-on-phones/CompactHeaderWithAMenuOnPhonesScreen.tsx",
+        "src/features/compact-header-with-a-menu-on-phones/CompactHeaderWithAMenuOnPhonesScreen.css"
+      ],
+      "situations": [
+        "empty"
+      ],
+      "parts": [
+        "sidebar",
+        "header"
+      ]
+    }
+  ],
+  "notPorted": [],
+  "checkedWith": "starter"
+}

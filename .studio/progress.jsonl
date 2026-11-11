@@ -1,0 +1,18 @@
+{"type":"project_change","text":"Sign-up turned on so anyone can create an account"}
+{"type":"step_started","step":"T01"}
+{"type":"project_change","text":"Languages: kept English and German; removed Bengali and Bhutani"}
+{"type":"schema","name":"Task","what":"created"}
+{"type":"schema","name":"Task","what":"created"}
+{"type":"feature_started","feature":"AU-01"}
+{"type":"feature_started","feature":"TS-01"}
+{"type":"assumption","feature":"AU-01","text":"Project sign-up was off, so it was turned on for the whole project: the plan says anyone may create an account."}
+{"type":"assumption","feature":"AU-01","text":"The signed-in person's name and initials in the sidebar come from their account; the role line reads Task owner."}
+{"type":"assumption","feature":"TS-01","text":"A new task record is created with the title, due date and done flag; the gateway stamps its creator, which the owner-only rule checks."}
+{"type":"check_verified","check":"AU-01 AC1","by":"ran","how":"Served the built app (vite preview) and fetched its page and bundle: title Quick Task Manager, one button label Sign in or create an account, opening screen at /welcome. No task list renders until signed in, and the Task type's read policy is owner-only (UserId = CreatedBy)."}
+{"type":"check_verified","check":"AU-01 AC2","by":"read","how":"src/features/tasks/useTasks.ts reads the person's tasks and, when the list is empty, inserts Finish project report (done), Read a book (today), Go for a walk (tomorrow) once, then re-reads; Home shows Total tasks from that count."}
+{"type":"check_verified","check":"AU-01 AC3","by":"read","how":"src/features/auth/useSignOut.ts ends the session, records the sign-out in sessionStorage and routes to /welcome; the router shows WelcomeScreen with the signed-out situation (You're signed out) and the one sign-in button."}
+{"type":"check_verified","check":"TS-01 AC1","by":"ran","how":"node checks/counts.check.mjs read the app's own counting source and applied it to the 3 sample tasks: counts all 3, pending 2, completed 1; the built bundle carries one task row with the green Completed badge and struck-through title class."}
+{"type":"check_verified","check":"TS-01 AC2","by":"ran","how":"node --experimental-strip-types checks/formatDueDate.check.mjs ran the app's own date label function: today => Today, tomorrow => Tomorrow, 20 Nov => 20 Nov."}
+{"type":"check_verified","check":"TS-01 AC3","by":"read","how":"HomeScreen picks the no-matches situation when the Completed tab has no matches and shows No tasks here. Add a task to get started!; the tabs switch through onSelectTab in the router."}
+{"type":"assumption","feature":"TS-01","text":"The browser was not available here, so creating a fresh account in a real browser could not be exercised; the same flow is proven from the app's code paths."}
+{"type":"step_done","step":"T01"}

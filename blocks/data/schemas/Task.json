@@ -1,0 +1,27 @@
+{
+  "schemaName": "Task",
+  "name": "Task",
+  "collectionName": "Tasks",
+  "description": "A task on one person's list.",
+  "schemaType": 1,
+  "fields": [
+    {
+      "name": "title",
+      "type": "String",
+      "isArray": false,
+      "isRequired": true
+    },
+    {
+      "name": "dueDate",
+      "type": "DateTime",
+      "isArray": false,
+      "isRequired": true
+    },
+    {
+      "name": "done",
+      "type": "Boolean",
+      "isArray": false,
+      "isRequired": true
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "plan": 1,
+  "title": "First version",
+  "buildNow": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06"
+  ],
+  "steps": [
+    {
+      "key": "T01",
+      "title": "Sign in, create an account, and land on a dashboard holding 3 sample tasks",
+      "covers": [
+        "AU-01",
+        "TS-01"
+      ],
+      "redraws": null,
+      "doneWhen": "AU-01 AC1\u2013AC3 and TS-01 AC1\u2013AC3 hold",
+      "built": false
+    },
+    {
+      "key": "T02",
+      "title": "Add a task from the dashboard card, by button or Enter",
+      "covers": [
+        "TS-02"
+      ],
+      "redraws": null,
+      "doneWhen": "TS-02 AC1\u2013AC2 hold",
+      "built": false
+    },
+    {
+      "key": "T03",
+      "title": "Check a task off in place, and reopen it",
+      "covers": [
+        "TS-03"
+      ],
+      "redraws": null,
+      "doneWhen": "TS-03 AC1\u2013AC2 hold",
+      "built": false
+    },
+    {
+      "key": "T04",
+      "title": "Change a task\u0027s text or due date, and delete tasks including Clear All",
+      "covers": [
+        "TS-04",
+        "TS-05"
+      ],
+      "redraws": null,
+      "doneWhen": "TS-04 AC1\u2013AC2 and TS-05 AC1\u2013AC2 hold",
+      "built": false
+    },
+    {
+      "key": "T05",
+      "title": "Live counts on the statistics screen, and the person\u0027s own account on Settings",
+      "covers": [
+        "NU-01",
+        "AC-01"
+      ],
+      "redraws": null,
+      "doneWhen": "NU-01 AC1\u2013AC2 and AC-01 AC1\u2013AC2 hold",
+      "built": false
+    },
+    {
+      "key": "T06",
+      "title": "The same dashboard on a phone: compact header, menu, stacked cards",
+      "covers": [
+        "GN-01"
+      ],
+      "redraws": null,
+      "doneWhen": "GN-01 AC1\u2013AC2 hold",
+      "built": false
+    }
+  ],
+  "features": [
+    {
+      "key": "AU-01",
+      "name": "Sign in and create an account",
+      "area": "Getting in",
+      "change": "add",
+      "checks": [
+        "AU-01 AC1",
+        "AU-01 AC2",
+        "AU-01 AC3"
+      ]
+    },
+    {
+      "key": "TS-01",
+      "name": "See my tasks",
+      "area": "Tasks",
+      "change": "add",
+      "checks": [
+        "TS-01 AC1",
+        "TS-01 AC2",
+        "TS-01 AC3"
+      ]
+    },
+    {
+      "key": "TS-02",
+      "name": "Add a task",
+      "area": "Tasks",
+      "change": "add",
+      "checks": [
+        "TS-02 AC1",
+        "TS-02 AC2"
+      ]
+    },
+    {
+      "key": "TS-03",
+      "name": "Mark a task done",
+      "area": "Tasks",
+      "change": "add",
+      "checks": [
+        "TS-03 AC1",
+        "TS-03 AC2"
+      ]
+    },
+    {
+      "key": "TS-04",
+      "name": "Edit a task",
+      "area": "Tasks",
+      "change": "add",
+      "checks": [
+        "TS-04 AC1",
+        "TS-04 AC2"
+      ]
+    },
+    {
+      "key": "TS-05",
+      "name": "Delete a task",
+      "area": "Tasks",
+      "change": "add",
+      "checks": [
+        "TS-05 AC1",
+        "TS-05 AC2"
+      ]
+    },
+    {
+      "key": "NU-01",
+      "name": "See my statistics",
+      "area": "Numbers",
+      "change": "add",
+      "checks": [
+        "NU-01 AC1",
+        "NU-01 AC2"
+      ]
+    },
+    {
+      "key": "AC-01",
+      "name": "See my account",
+      "area": "Account",
+      "change": "add",
+      "checks": [
+        "AC-01 AC1",
+        "AC-01 AC2"
+      ]
+    },
+    {
+      "key": "GN-01",
+      "name": "Move around on a phone",
+      "area": "Getting around",
+      "change": "add",
+      "checks": [
+        "GN-01 AC1",
+        "GN-01 AC2"
+      ]
+    }
+  ]
+}

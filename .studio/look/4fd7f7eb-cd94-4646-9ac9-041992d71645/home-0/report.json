@@ -1,0 +1,4316 @@
+{
+  "version": 1,
+  "target": ".studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/home-0.html",
+  "kind": "file",
+  "situation": null,
+  "startedAt": "2026-11-11T05:53:14.748Z",
+  "views": [
+    {
+      "width": 390,
+      "mode": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Home",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/home-0.html",
+      "situation": null,
+      "document": {
+        "width": 390,
+        "height": 1834,
+        "title": "Home",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Your tasks",
+          "text": "Your tasks",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 85,
+            "width": 358,
+            "height": 28
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "link",
+          "name": "Add a task",
+          "text": "Add Task",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": true,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 166,
+            "width": 111,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 16,
+            "y": 0,
+            "width": 358,
+            "height": 60
+          },
+          "page": {
+            "x": 16,
+            "y": 61,
+            "width": 358,
+            "height": 1773
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1834
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 60,
+            "right": 87
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Your tasks",
+          "box": {
+            "x": 16,
+            "y": 85,
+            "width": 358,
+            "height": 117
+          },
+          "content": {
+            "left": 16,
+            "right": 369
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Add New Task",
+          "box": {
+            "x": 16,
+            "y": 625,
+            "width": 358,
+            "height": 264
+          },
+          "content": {
+            "left": 37,
+            "right": 353
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Add a task",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "Add Task",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "All 5",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Pending 3",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Completed 2",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More task list actions",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Mark Finish project report as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Read a book as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Go for a walk as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Renew car insurance as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Call the dentist as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": [
+          {
+            "radius": 8
+          }
+        ]
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "no-matches",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "error",
+          "hidden": true,
+          "replaces": null,
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "#",
+          "text": "Add Task"
+        }
+      ],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Your tasks",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "link",
+          "name": "Add a task",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Add New Task",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "form",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "textbox",
+          "name": "Task",
+          "depth": 2
+        },
+        {
+          "role": "textbox",
+          "name": "Due date",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Add Task",
+          "depth": 2
+        },
+        {
+          "role": "tab",
+          "name": "All 5",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Pending 3",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Completed 2",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More task list actions",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Finish project report as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Read a book as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Go for a walk as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Renew car insurance as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Call the dentist as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Call the dentist",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Your tasks",
+        "Everything on your list, with what is done and what is still waiting.",
+        "Add Task",
+        "Total tasks",
+        "5",
+        "On your list right now",
+        "Completed",
+        "2",
+        "Ticked off and finished",
+        "Pending",
+        "3",
+        "Still to do",
+        "Add New Task",
+        "Task",
+        "Due date",
+        "Add Task",
+        "All",
+        "5",
+        "Pending",
+        "3",
+        "Completed",
+        "2",
+        "More",
+        "Finish project report",
+        "7 Nov",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Pending",
+        "Renew car insurance before the weekend and send the new certificate to Priya",
+        "18 Nov",
+        "Pending",
+        "Call the dentist",
+        "3 Nov",
+        "Completed",
+        "Clear All asks first: \"Delete all your tasks?\" with Delete all and Cancel."
+      ],
+      "lowContrast": [
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Finish project report",
+          "text": "Finish project report",
+          "classes": "q-task-title",
+          "eid": "e57",
+          "control": false,
+          "decorative": false,
+          "heading": "Add New Task",
+          "part": null,
+          "box": {
+            "x": 71,
+            "y": 1027,
+            "width": 288,
+            "height": 23
+          },
+          "colour": "#419f67",
+          "background": "#dbf1df",
+          "ratio": 2.77,
+          "required": 4.5,
+          "fontSize": 15,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Call the dentist",
+          "text": "Call the dentist",
+          "classes": "q-task-title",
+          "eid": "e113",
+          "control": false,
+          "decorative": false,
+          "heading": "Add New Task",
+          "part": null,
+          "box": {
+            "x": 71,
+            "y": 1599,
+            "width": 288,
+            "height": 23
+          },
+          "colour": "#419f67",
+          "background": "#dbf1df",
+          "ratio": 2.77,
+          "required": 4.5,
+          "fontSize": 15,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Completed",
+          "text": "Completed",
+          "classes": "ds-stat-label",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 37,
+            "y": 376,
+            "width": 316,
+            "height": 19
+          },
+          "colour": "#217b45",
+          "background": "#dbf1df",
+          "ratio": 4.43,
+          "required": 4.5,
+          "fontSize": 13,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Ticked off and finished",
+          "text": "Ticked off and finished",
+          "classes": "q-stat-note",
+          "eid": "e21",
+          "control": false,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 37,
+            "y": 439,
+            "width": 316,
+            "height": 20
+          },
+          "colour": "#217b45",
+          "background": "#dbf1df",
+          "ratio": 4.43,
+          "required": 4.5,
+          "fontSize": 13,
+          "bold": false
+        }
+      ],
+      "lowContrastCount": 4,
+      "controls": {
+        "checked": 6,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Your tasks\" [level=1]\n  - paragraph: Everything on your list, with what is done and what is still waiting.\n  - link \"Add a task\":\n    - /url: \"#\"\n    - text: Add Task\n  - text: Total tasks 5 On your list right now Completed 2 Ticked off and finished Pending 3 Still to do\n  - heading \"Add New Task\" [level=2]\n  - text: Task\n  - textbox \"Task\":\n    - /placeholder: Enter your task...\n  - text: Due date\n  - textbox \"Due date\": 2026-11-12\n  - button \"Add Task\"\n  - tablist \"Filter tasks\":\n    - tab \"All 5\" [selected]\n    - tab \"Pending 3\"\n    - tab \"Completed 2\"\n  - group: More\n  - tabpanel \"All 5\":\n    - button \"Mark Finish project report as pending\" [pressed]\n    - text: Finish project report 7 Nov Completed\n    - group\n    - button \"Mark Read a book as completed\"\n    - text: Read a book Today Pending\n    - group\n    - button \"Mark Go for a walk as completed\"\n    - text: Go for a walk Tomorrow Pending\n    - group\n    - button \"Mark Renew car insurance as completed\"\n    - text: Renew car insurance before the weekend and send the new certificate to Priya 18 Nov Pending\n    - group\n    - button \"Mark Call the dentist as pending\" [pressed]\n    - text: Call the dentist 3 Nov Completed\n    - group\n  - paragraph: \"Clear All asks first: \\\"Delete all your tasks?\\\" with Delete all and Cancel.\"",
+      "screenshot": "w390-light.png",
+      "thumbnail": "thumb-w390-light.webp",
+      "modelImage": "model-w390-light.jpg"
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Home",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/home-0.html",
+      "situation": null,
+      "document": {
+        "width": 390,
+        "height": 1834,
+        "title": "Home",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#070a10",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Your tasks",
+          "text": "Your tasks",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 85,
+            "width": 358,
+            "height": 28
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "link",
+          "name": "Add a task",
+          "text": "Add Task",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": true,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 166,
+            "width": 111,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 16,
+            "y": 0,
+            "width": 358,
+            "height": 60
+          },
+          "page": {
+            "x": 16,
+            "y": 61,
+            "width": 358,
+            "height": 1773
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1834
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 60,
+            "right": 87
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Your tasks",
+          "box": {
+            "x": 16,
+            "y": 85,
+            "width": 358,
+            "height": 117
+          },
+          "content": {
+            "left": 16,
+            "right": 369
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Add New Task",
+          "box": {
+            "x": 16,
+            "y": 625,
+            "width": 358,
+            "height": 264
+          },
+          "content": {
+            "left": 37,
+            "right": 353
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Add a task",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "Add Task",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "All 5",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Pending 3",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Completed 2",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More task list actions",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          },
+          {
+            "name": "Mark Finish project report as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Read a book as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Go for a walk as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Renew car insurance as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Call the dentist as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": [
+          {
+            "radius": 8
+          }
+        ]
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "no-matches",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "error",
+          "hidden": true,
+          "replaces": null,
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "#",
+          "text": "Add Task"
+        }
+      ],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Your tasks",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "link",
+          "name": "Add a task",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Add New Task",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "form",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "textbox",
+          "name": "Task",
+          "depth": 2
+        },
+        {
+          "role": "textbox",
+          "name": "Due date",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Add Task",
+          "depth": 2
+        },
+        {
+          "role": "tab",
+          "name": "All 5",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Pending 3",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Completed 2",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More task list actions",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Finish project report as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Read a book as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Go for a walk as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Renew car insurance as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Call the dentist as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Call the dentist",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Your tasks",
+        "Everything on your list, with what is done and what is still waiting.",
+        "Add Task",
+        "Total tasks",
+        "5",
+        "On your list right now",
+        "Completed",
+        "2",
+        "Ticked off and finished",
+        "Pending",
+        "3",
+        "Still to do",
+        "Add New Task",
+        "Task",
+        "Due date",
+        "Add Task",
+        "All",
+        "5",
+        "Pending",
+        "3",
+        "Completed",
+        "2",
+        "More",
+        "Finish project report",
+        "7 Nov",
+        "Completed",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Go for a walk",
+        "Tomorrow",
+        "Pending",
+        "Renew car insurance before the weekend and send the new certificate to Priya",
+        "18 Nov",
+        "Pending",
+        "Call the dentist",
+        "3 Nov",
+        "Completed",
+        "Clear All asks first: \"Delete all your tasks?\" with Delete all and Cancel."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 6,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Your tasks\" [level=1]\n  - paragraph: Everything on your list, with what is done and what is still waiting.\n  - link \"Add a task\":\n    - /url: \"#\"\n    - text: Add Task\n  - text: Total tasks 5 On your list right now Completed 2 Ticked off and finished Pending 3 Still to do\n  - heading \"Add New Task\" [level=2]\n  - text: Task\n  - textbox \"Task\":\n    - /placeholder: Enter your task...\n  - text: Due date\n  - textbox \"Due date\": 2026-11-12\n  - button \"Add Task\"\n  - tablist \"Filter tasks\":\n    - tab \"All 5\" [selected]\n    - tab \"Pending 3\"\n    - tab \"Completed 2\"\n  - group: More\n  - tabpanel \"All 5\":\n    - button \"Mark Finish project report as pending\" [pressed]\n    - text: Finish project report 7 Nov Completed\n    - group\n    - button \"Mark Read a book as completed\"\n    - text: Read a book Today Pending\n    - group\n    - button \"Mark Go for a walk as completed\"\n    - text: Go for a walk Tomorrow Pending\n    - group\n    - button \"Mark Renew car insurance as completed\"\n    - text: Renew car insurance before the weekend and send the new certificate to Priya 18 Nov Pending\n    - group\n    - button \"Mark Call the dentist as pending\" [pressed]\n    - text: Call the dentist 3 Nov Completed\n    - group\n  - paragraph: \"Clear All asks first: \\\"Delete all your tasks?\\\" with Delete all and Cancel.\"",
+      "screenshot": "w390-dark.png",
+      "thumbnail": "thumb-w390-dark.webp",
+      "modelImage": "model-w390-dark.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "light",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Home",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/home-0.html",
+      "situation": null,
+      "document": {
+        "width": 834,
+        "height": 1112,
+        "title": "Home",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Your tasks",
+          "text": "Your tasks",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 85,
+            "width": 438,
+            "height": 29
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "link",
+          "name": "Add a task",
+          "text": "Add Task",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": true,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 144,
+            "width": 111,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 24,
+            "y": 0,
+            "width": 786,
+            "height": 60
+          },
+          "page": {
+            "x": 24,
+            "y": 61,
+            "width": 786,
+            "height": 1001
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1112
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 76,
+            "right": 103
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Your tasks",
+          "box": {
+            "x": 24,
+            "y": 85,
+            "width": 786,
+            "height": 95
+          },
+          "content": {
+            "left": 24,
+            "right": 462
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Add New Task",
+          "box": {
+            "x": 24,
+            "y": 337,
+            "width": 786,
+            "height": 132
+          },
+          "content": {
+            "left": 45,
+            "right": 789
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Add a task",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "Add Task",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "All 5",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Pending 3",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Completed 2",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More task list actions",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Mark Finish project report as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Read a book as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Go for a walk as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Renew car insurance as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Call the dentist as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": [
+          {
+            "radius": 8
+          }
+        ]
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "no-matches",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "error",
+          "hidden": true,
+          "replaces": null,
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "#",
+          "text": "Add Task"
+        }
+      ],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Your tasks",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "link",
+          "name": "Add a task",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Add New Task",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "form",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "textbox",
+          "name": "Task",
+          "depth": 2
+        },
+        {
+          "role": "textbox",
+          "name": "Due date",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Add Task",
+          "depth": 2
+        },
+        {
+          "role": "tab",
+          "name": "All 5",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Pending 3",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Completed 2",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More task list actions",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Finish project report as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Read a book as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Go for a walk as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Renew car insurance as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Call the dentist as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Call the dentist",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Your tasks",
+        "Everything on your list, with what is done and what is still waiting.",
+        "Add Task",
+        "Total tasks",
+        "5",
+        "On your list right now",
+        "Completed",
+        "2",
+        "Ticked off and finished",
+        "Pending",
+        "3",
+        "Still to do",
+        "Add New Task",
+        "Task",
+        "Due date",
+        "Add Task",
+        "All",
+        "5",
+        "Pending",
+        "3",
+        "Completed",
+        "2",
+        "More",
+        "Finish project report",
+        "7 Nov",
+        "Completed",
+        "Edit",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Edit",
+        "Go for a walk",
+        "Tomorrow",
+        "Pending",
+        "Edit",
+        "Renew car insurance before the weekend and send the new certificate to Priya",
+        "18 Nov",
+        "Pending",
+        "Edit",
+        "Call the dentist",
+        "3 Nov",
+        "Completed",
+        "Edit",
+        "Clear All asks first: \"Delete all your tasks?\" with Delete all and Cancel."
+      ],
+      "lowContrast": [
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Finish project report",
+          "text": "Finish project report",
+          "classes": "q-task-title",
+          "eid": "e57",
+          "control": false,
+          "decorative": false,
+          "heading": "Add New Task",
+          "part": null,
+          "box": {
+            "x": 79,
+            "y": 562,
+            "width": 554,
+            "height": 23
+          },
+          "colour": "#419f67",
+          "background": "#dbf1df",
+          "ratio": 2.77,
+          "required": 4.5,
+          "fontSize": 15,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Call the dentist",
+          "text": "Call the dentist",
+          "classes": "q-task-title",
+          "eid": "e113",
+          "control": false,
+          "decorative": false,
+          "heading": "Add New Task",
+          "part": null,
+          "box": {
+            "x": 79,
+            "y": 895,
+            "width": 554,
+            "height": 23
+          },
+          "colour": "#419f67",
+          "background": "#dbf1df",
+          "ratio": 2.77,
+          "required": 4.5,
+          "fontSize": 15,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Completed",
+          "text": "Completed",
+          "classes": "ds-stat-label",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 312,
+            "y": 221,
+            "width": 209,
+            "height": 19
+          },
+          "colour": "#217b45",
+          "background": "#dbf1df",
+          "ratio": 4.43,
+          "required": 4.5,
+          "fontSize": 13,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Ticked off and finished",
+          "text": "Ticked off and finished",
+          "classes": "q-stat-note",
+          "eid": "e21",
+          "control": false,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 312,
+            "y": 284,
+            "width": 209,
+            "height": 20
+          },
+          "colour": "#217b45",
+          "background": "#dbf1df",
+          "ratio": 4.43,
+          "required": 4.5,
+          "fontSize": 13,
+          "bold": false
+        }
+      ],
+      "lowContrastCount": 4,
+      "controls": {
+        "checked": 6,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Your tasks\" [level=1]\n  - paragraph: Everything on your list, with what is done and what is still waiting.\n  - link \"Add a task\":\n    - /url: \"#\"\n    - text: Add Task\n  - text: Total tasks 5 On your list right now Completed 2 Ticked off and finished Pending 3 Still to do\n  - heading \"Add New Task\" [level=2]\n  - text: Task\n  - textbox \"Task\":\n    - /placeholder: Enter your task...\n  - text: Due date\n  - textbox \"Due date\": 2026-11-12\n  - button \"Add Task\"\n  - tablist \"Filter tasks\":\n    - tab \"All 5\" [selected]\n    - tab \"Pending 3\"\n    - tab \"Completed 2\"\n  - group: More\n  - tabpanel \"All 5\":\n    - button \"Mark Finish project report as pending\" [pressed]\n    - text: Finish project report 7 Nov Completed\n    - button \"Edit Finish project report\": Edit\n    - button \"Delete Finish project report\"\n    - group\n    - button \"Mark Read a book as completed\"\n    - text: Read a book Today Pending\n    - button \"Edit Read a book\": Edit\n    - button \"Delete Read a book\"\n    - group\n    - button \"Mark Go for a walk as completed\"\n    - text: Go for a walk Tomorrow Pending\n    - button \"Edit Go for a walk\": Edit\n    - button \"Delete Go for a walk\"\n    - group\n    - button \"Mark Renew car insurance as completed\"\n    - text: Renew car insurance before the weekend and send the new certificate to Priya 18 Nov Pending\n    - button \"Edit Renew car insurance\": Edit\n    - button \"Delete Renew car insurance\"\n    - group\n    - button \"Mark Call the dentist as pending\" [pressed]\n    - text: Call the dentist 3 Nov Completed\n    - button \"Edit Call the dentist\": Edit\n    - button \"Delete Call the dentist\"\n    - group\n  - paragraph: \"Clear All asks first: \\\"Delete all your tasks?\\\" with Delete all and Cancel.\"",
+      "screenshot": "w834-light.png",
+      "thumbnail": "thumb-w834-light.webp",
+      "modelImage": "model-w834-light.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "dark",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Home",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/home-0.html",
+      "situation": null,
+      "document": {
+        "width": 834,
+        "height": 1112,
+        "title": "Home",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#070a10",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Your tasks",
+          "text": "Your tasks",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 85,
+            "width": 438,
+            "height": 29
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "link",
+          "name": "Add a task",
+          "text": "Add Task",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": true,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 144,
+            "width": 111,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 24,
+            "y": 0,
+            "width": 786,
+            "height": 60
+          },
+          "page": {
+            "x": 24,
+            "y": 61,
+            "width": 786,
+            "height": 1001
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1112
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 76,
+            "right": 103
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Your tasks",
+          "box": {
+            "x": 24,
+            "y": 85,
+            "width": 786,
+            "height": 95
+          },
+          "content": {
+            "left": 24,
+            "right": 462
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Add New Task",
+          "box": {
+            "x": 24,
+            "y": 337,
+            "width": 786,
+            "height": 132
+          },
+          "content": {
+            "left": 45,
+            "right": 789
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Add a task",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "Add Task",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "All 5",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Pending 3",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Completed 2",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More task list actions",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          },
+          {
+            "name": "Mark Finish project report as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Read a book as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Go for a walk as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Renew car insurance as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Call the dentist as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": [
+          {
+            "radius": 8
+          }
+        ]
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "no-matches",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "error",
+          "hidden": true,
+          "replaces": null,
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "#",
+          "text": "Add Task"
+        }
+      ],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Your tasks",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "link",
+          "name": "Add a task",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Add New Task",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "form",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "textbox",
+          "name": "Task",
+          "depth": 2
+        },
+        {
+          "role": "textbox",
+          "name": "Due date",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Add Task",
+          "depth": 2
+        },
+        {
+          "role": "tab",
+          "name": "All 5",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Pending 3",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Completed 2",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More task list actions",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Finish project report as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Read a book as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Go for a walk as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Renew car insurance as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Call the dentist as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Call the dentist",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Your tasks",
+        "Everything on your list, with what is done and what is still waiting.",
+        "Add Task",
+        "Total tasks",
+        "5",
+        "On your list right now",
+        "Completed",
+        "2",
+        "Ticked off and finished",
+        "Pending",
+        "3",
+        "Still to do",
+        "Add New Task",
+        "Task",
+        "Due date",
+        "Add Task",
+        "All",
+        "5",
+        "Pending",
+        "3",
+        "Completed",
+        "2",
+        "More",
+        "Finish project report",
+        "7 Nov",
+        "Completed",
+        "Edit",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Edit",
+        "Go for a walk",
+        "Tomorrow",
+        "Pending",
+        "Edit",
+        "Renew car insurance before the weekend and send the new certificate to Priya",
+        "18 Nov",
+        "Pending",
+        "Edit",
+        "Call the dentist",
+        "3 Nov",
+        "Completed",
+        "Edit",
+        "Clear All asks first: \"Delete all your tasks?\" with Delete all and Cancel."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 6,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - heading \"Your tasks\" [level=1]\n  - paragraph: Everything on your list, with what is done and what is still waiting.\n  - link \"Add a task\":\n    - /url: \"#\"\n    - text: Add Task\n  - text: Total tasks 5 On your list right now Completed 2 Ticked off and finished Pending 3 Still to do\n  - heading \"Add New Task\" [level=2]\n  - text: Task\n  - textbox \"Task\":\n    - /placeholder: Enter your task...\n  - text: Due date\n  - textbox \"Due date\": 2026-11-12\n  - button \"Add Task\"\n  - tablist \"Filter tasks\":\n    - tab \"All 5\" [selected]\n    - tab \"Pending 3\"\n    - tab \"Completed 2\"\n  - group: More\n  - tabpanel \"All 5\":\n    - button \"Mark Finish project report as pending\" [pressed]\n    - text: Finish project report 7 Nov Completed\n    - button \"Edit Finish project report\": Edit\n    - button \"Delete Finish project report\"\n    - group\n    - button \"Mark Read a book as completed\"\n    - text: Read a book Today Pending\n    - button \"Edit Read a book\": Edit\n    - button \"Delete Read a book\"\n    - group\n    - button \"Mark Go for a walk as completed\"\n    - text: Go for a walk Tomorrow Pending\n    - button \"Edit Go for a walk\": Edit\n    - button \"Delete Go for a walk\"\n    - group\n    - button \"Mark Renew car insurance as completed\"\n    - text: Renew car insurance before the weekend and send the new certificate to Priya 18 Nov Pending\n    - button \"Edit Renew car insurance\": Edit\n    - button \"Delete Renew car insurance\"\n    - group\n    - button \"Mark Call the dentist as pending\" [pressed]\n    - text: Call the dentist 3 Nov Completed\n    - button \"Edit Call the dentist\": Edit\n    - button \"Delete Call the dentist\"\n    - group\n  - paragraph: \"Clear All asks first: \\\"Delete all your tasks?\\\" with Delete all and Cancel.\"",
+      "screenshot": "w834-dark.png",
+      "thumbnail": "thumb-w834-dark.webp",
+      "modelImage": "model-w834-dark.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Home",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/home-0.html",
+      "situation": null,
+      "document": {
+        "width": 1280,
+        "height": 1070,
+        "title": "Home",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e12",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": "sidebar",
+            "box": {
+              "x": 152,
+              "y": 717,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "kind": "ancestor",
+          "fully": false,
+          "by": {
+            "tag": "div",
+            "classes": "qs-side-art-box",
+            "text": "Plan. Focus. Achieve.",
+            "box": {
+              "x": 24,
+              "y": 749,
+              "width": 200,
+              "height": 182
+            }
+          }
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Your tasks",
+          "text": "Your tasks",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 81,
+            "width": 438,
+            "height": 41
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "link",
+          "name": "Add a task",
+          "text": "Add Task",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": true,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 152,
+            "width": 111,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 272,
+            "y": 0,
+            "width": 984,
+            "height": 56
+          },
+          "page": {
+            "x": 272,
+            "y": 57,
+            "width": 984,
+            "height": 1013
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "atTop": true,
+          "fullWidth": false
+        },
+        "footer": null,
+        "sidebar": {
+          "tag": "aside",
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "text": "Home Statistics Settings Plan. Focus. Achieve. PS Priya Shah Task owner Sign out",
+          "classes": "qs-side",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "sidebar",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1070
+          },
+          "besideContent": true
+        },
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 1070
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "content": {
+            "left": 1165,
+            "right": 1253
+          }
+        },
+        {
+          "kind": "sidebar",
+          "name": "Quick Task Manager",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1070
+          },
+          "content": {
+            "left": 24,
+            "right": 179
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Your tasks",
+          "box": {
+            "x": 272,
+            "y": 81,
+            "width": 984,
+            "height": 107
+          },
+          "content": {
+            "left": 272,
+            "right": 710
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Add New Task",
+          "box": {
+            "x": 272,
+            "y": 345,
+            "width": 984,
+            "height": 132
+          },
+          "content": {
+            "left": 293,
+            "right": 1235
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": "sidebar"
+          },
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": "header"
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Add a task",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "Add Task",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "All 5",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Pending 3",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Completed 2",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More task list actions",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Mark Finish project report as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Read a book as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Go for a walk as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Renew car insurance as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Call the dentist as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": [
+          {
+            "radius": 8
+          }
+        ]
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "no-matches",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "error",
+          "hidden": true,
+          "replaces": null,
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "welcome",
+          "text": "Sign out"
+        }
+      ],
+      "links": [
+        {
+          "href": "#",
+          "text": "Add Task"
+        }
+      ],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 2
+        },
+        {
+          "role": "navigation",
+          "name": "Main",
+          "depth": 2
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Your tasks",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "link",
+          "name": "Add a task",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Add New Task",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "form",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "textbox",
+          "name": "Task",
+          "depth": 2
+        },
+        {
+          "role": "textbox",
+          "name": "Due date",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Add Task",
+          "depth": 2
+        },
+        {
+          "role": "tab",
+          "name": "All 5",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Pending 3",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Completed 2",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More task list actions",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Finish project report as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Read a book as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Go for a walk as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Renew car insurance as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Call the dentist as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Call the dentist",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Home",
+        "Statistics",
+        "Settings",
+        "Plan. Focus. Achieve.",
+        "PS",
+        "Priya Shah",
+        "Task owner",
+        "Sign out",
+        "Your tasks",
+        "Everything on your list, with what is done and what is still waiting.",
+        "Add Task",
+        "Total tasks",
+        "5",
+        "On your list right now",
+        "Completed",
+        "2",
+        "Ticked off and finished",
+        "Pending",
+        "3",
+        "Still to do",
+        "Add New Task",
+        "Task",
+        "Due date",
+        "Add Task",
+        "All",
+        "5",
+        "Pending",
+        "3",
+        "Completed",
+        "2",
+        "More",
+        "Finish project report",
+        "7 Nov",
+        "Completed",
+        "Edit",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Edit",
+        "Go for a walk",
+        "Tomorrow",
+        "Pending",
+        "Edit",
+        "Renew car insurance before the weekend and send the new certificate to Priya",
+        "18 Nov",
+        "Pending",
+        "Edit",
+        "Call the dentist",
+        "3 Nov",
+        "Completed",
+        "Edit",
+        "Clear All asks first: \"Delete all your tasks?\" with Delete all and Cancel."
+      ],
+      "lowContrast": [
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Finish project report",
+          "text": "Finish project report",
+          "classes": "q-task-title",
+          "eid": "e57",
+          "control": false,
+          "decorative": false,
+          "heading": "Add New Task",
+          "part": null,
+          "box": {
+            "x": 327,
+            "y": 570,
+            "width": 752,
+            "height": 23
+          },
+          "colour": "#419f67",
+          "background": "#dbf1df",
+          "ratio": 2.77,
+          "required": 4.5,
+          "fontSize": 15,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Call the dentist",
+          "text": "Call the dentist",
+          "classes": "q-task-title",
+          "eid": "e113",
+          "control": false,
+          "decorative": false,
+          "heading": "Add New Task",
+          "part": null,
+          "box": {
+            "x": 327,
+            "y": 903,
+            "width": 752,
+            "height": 23
+          },
+          "colour": "#419f67",
+          "background": "#dbf1df",
+          "ratio": 2.77,
+          "required": 4.5,
+          "fontSize": 15,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Completed",
+          "text": "Completed",
+          "classes": "ds-stat-label",
+          "eid": "e19",
+          "control": false,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 626,
+            "y": 229,
+            "width": 275,
+            "height": 19
+          },
+          "colour": "#217b45",
+          "background": "#dbf1df",
+          "ratio": 4.43,
+          "required": 4.5,
+          "fontSize": 13,
+          "bold": false
+        },
+        {
+          "tag": "span",
+          "role": "generic",
+          "name": "Ticked off and finished",
+          "text": "Ticked off and finished",
+          "classes": "q-stat-note",
+          "eid": "e21",
+          "control": false,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 626,
+            "y": 292,
+            "width": 275,
+            "height": 20
+          },
+          "colour": "#217b45",
+          "background": "#dbf1df",
+          "ratio": 4.43,
+          "required": 4.5,
+          "fontSize": 13,
+          "bold": false
+        }
+      ],
+      "lowContrastCount": 4,
+      "controls": {
+        "checked": 6,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - complementary \"Quick Task Manager\":\n    - img \"Quick Task Manager\"\n    - navigation \"Main\": Home Statistics Settings\n    - text: PS Priya Shah Task owner Sign out\n  - group \"Colour mode\":\n    - button \"Light\"\n    - button \"Dark\"\n    - button \"Auto\"\n  - heading \"Your tasks\" [level=1]\n  - paragraph: Everything on your list, with what is done and what is still waiting.\n  - link \"Add a task\":\n    - /url: \"#\"\n    - text: Add Task\n  - text: Total tasks 5 On your list right now Completed 2 Ticked off and finished Pending 3 Still to do\n  - heading \"Add New Task\" [level=2]\n  - text: Task\n  - textbox \"Task\":\n    - /placeholder: Enter your task...\n  - text: Due date\n  - textbox \"Due date\": 2026-11-12\n  - button \"Add Task\"\n  - tablist \"Filter tasks\":\n    - tab \"All 5\" [selected]\n    - tab \"Pending 3\"\n    - tab \"Completed 2\"\n  - group: More\n  - tabpanel \"All 5\":\n    - button \"Mark Finish project report as pending\" [pressed]\n    - text: Finish project report 7 Nov Completed\n    - button \"Edit Finish project report\": Edit\n    - button \"Delete Finish project report\"\n    - group\n    - button \"Mark Read a book as completed\"\n    - text: Read a book Today Pending\n    - button \"Edit Read a book\": Edit\n    - button \"Delete Read a book\"\n    - group\n    - button \"Mark Go for a walk as completed\"\n    - text: Go for a walk Tomorrow Pending\n    - button \"Edit Go for a walk\": Edit\n    - button \"Delete Go for a walk\"\n    - group\n    - button \"Mark Renew car insurance as completed\"\n    - text: Renew car insurance before the weekend and send the new certificate to Priya 18 Nov Pending\n    - button \"Edit Renew car insurance\": Edit\n    - button \"Delete Renew car insurance\"\n    - group\n    - button \"Mark Call the dentist as pending\" [pressed]\n    - text: Call the dentist 3 Nov Completed\n    - button \"Edit Call the dentist\": Edit\n    - button \"Delete Call the dentist\"\n    - group\n  - paragraph: \"Clear All asks first: \\\"Delete all your tasks?\\\" with Delete all and Cancel.\"",
+      "screenshot": "w1280-light.png",
+      "thumbnail": "thumb-w1280-light.webp",
+      "modelImage": "model-w1280-light.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Home",
+      "url": "file:///workspace/.studio/look/4fd7f7eb-cd94-4646-9ac9-041992d71645/home-0.html",
+      "situation": null,
+      "document": {
+        "width": 1280,
+        "height": 1070,
+        "title": "Home",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e12",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": "sidebar",
+            "box": {
+              "x": 152,
+              "y": 717,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "kind": "ancestor",
+          "fully": false,
+          "by": {
+            "tag": "div",
+            "classes": "qs-side-art-box",
+            "text": "Plan. Focus. Achieve.",
+            "box": {
+              "x": 24,
+              "y": 749,
+              "width": 200,
+              "height": 182
+            }
+          }
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#070a10",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "Your tasks",
+          "text": "Your tasks",
+          "classes": "ds-h1",
+          "eid": "e9",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 81,
+            "width": 438,
+            "height": 41
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "link",
+          "name": "Add a task",
+          "text": "Add Task",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": true,
+          "decorative": false,
+          "heading": "Your tasks",
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 152,
+            "width": 111,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 272,
+            "y": 0,
+            "width": 984,
+            "height": 56
+          },
+          "page": {
+            "x": 272,
+            "y": 57,
+            "width": 984,
+            "height": 1013
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "atTop": true,
+          "fullWidth": false
+        },
+        "footer": null,
+        "sidebar": {
+          "tag": "aside",
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "text": "Home Statistics Settings Plan. Focus. Achieve. PS Priya Shah Task owner Sign out",
+          "classes": "qs-side",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "sidebar",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1070
+          },
+          "besideContent": true
+        },
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 1070
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "content": {
+            "left": 1165,
+            "right": 1253
+          }
+        },
+        {
+          "kind": "sidebar",
+          "name": "Quick Task Manager",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1070
+          },
+          "content": {
+            "left": 24,
+            "right": 179
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "Your tasks",
+          "box": {
+            "x": 272,
+            "y": 81,
+            "width": 984,
+            "height": 107
+          },
+          "content": {
+            "left": 272,
+            "right": 710
+          }
+        },
+        {
+          "kind": "section",
+          "name": "Add New Task",
+          "box": {
+            "x": 272,
+            "y": 345,
+            "width": 984,
+            "height": 132
+          },
+          "content": {
+            "left": 293,
+            "right": 1235
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": "sidebar"
+          },
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": "header"
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Add a task",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "Add Task",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "All 5",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          },
+          {
+            "name": "Pending 3",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Completed 2",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More task list actions",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          },
+          {
+            "name": "Mark Finish project report as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Finish project report",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Read a book as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Read a book",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Go for a walk as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Go for a walk",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Renew car insurance as completed",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Renew car insurance",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Mark Call the dentist as pending",
+            "primary": false,
+            "radius": 0,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Edit Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Delete Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "More actions for Call the dentist",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          }
+        ],
+        "cards": [
+          {
+            "radius": 8
+          }
+        ]
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "no-matches",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        },
+        {
+          "name": "error",
+          "hidden": true,
+          "replaces": null,
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "welcome",
+          "text": "Sign out"
+        }
+      ],
+      "links": [
+        {
+          "href": "#",
+          "text": "Add Task"
+        }
+      ],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 2
+        },
+        {
+          "role": "navigation",
+          "name": "Main",
+          "depth": 2
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Your tasks",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "link",
+          "name": "Add a task",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Add New Task",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "form",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "textbox",
+          "name": "Task",
+          "depth": 2
+        },
+        {
+          "role": "textbox",
+          "name": "Due date",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Add Task",
+          "depth": 2
+        },
+        {
+          "role": "tab",
+          "name": "All 5",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Pending 3",
+          "depth": 1
+        },
+        {
+          "role": "tab",
+          "name": "Completed 2",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More task list actions",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Finish project report as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Finish project report",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Read a book as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Read a book",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Go for a walk as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Go for a walk",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Renew car insurance as completed",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Renew car insurance",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Mark Call the dentist as pending",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Edit Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Delete Call the dentist",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "More actions for Call the dentist",
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Home",
+        "Statistics",
+        "Settings",
+        "Plan. Focus. Achieve.",
+        "PS",
+        "Priya Shah",
+        "Task owner",
+        "Sign out",
+        "Your tasks",
+        "Everything on your list, with what is done and what is still waiting.",
+        "Add Task",
+        "Total tasks",
+        "5",
+        "On your list right now",
+        "Completed",
+        "2",
+        "Ticked off and finished",
+        "Pending",
+        "3",
+        "Still to do",
+        "Add New Task",
+        "Task",
+        "Due date",
+        "Add Task",
+        "All",
+        "5",
+        "Pending",
+        "3",
+        "Completed",
+        "2",
+        "More",
+        "Finish project report",
+        "7 Nov",
+        "Completed",
+        "Edit",
+        "Read a book",
+        "Today",
+        "Pending",
+        "Edit",
+        "Go for a walk",
+        "Tomorrow",
+        "Pending",
+        "Edit",
+        "Renew car insurance before the weekend and send the new certificate to Priya",
+        "18 Nov",
+        "Pending",
+        "Edit",
+        "Call the dentist",
+        "3 Nov",
+        "Completed",
+        "Edit",
+        "Clear All asks first: \"Delete all your tasks?\" with Delete all and Cancel."
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 6,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - complementary \"Quick Task Manager\":\n    - img \"Quick Task Manager\"\n    - navigation \"Main\": Home Statistics Settings\n    - text: PS Priya Shah Task owner Sign out\n  - group \"Colour mode\":\n    - button \"Light\"\n    - button \"Dark\"\n    - button \"Auto\"\n  - heading \"Your tasks\" [level=1]\n  - paragraph: Everything on your list, with what is done and what is still waiting.\n  - link \"Add a task\":\n    - /url: \"#\"\n    - text: Add Task\n  - text: Total tasks 5 On your list right now Completed 2 Ticked off and finished Pending 3 Still to do\n  - heading \"Add New Task\" [level=2]\n  - text: Task\n  - textbox \"Task\":\n    - /placeholder: Enter your task...\n  - text: Due date\n  - textbox \"Due date\": 2026-11-12\n  - button \"Add Task\"\n  - tablist \"Filter tasks\":\n    - tab \"All 5\" [selected]\n    - tab \"Pending 3\"\n    - tab \"Completed 2\"\n  - group: More\n  - tabpanel \"All 5\":\n    - button \"Mark Finish project report as pending\" [pressed]\n    - text: Finish project report 7 Nov Completed\n    - button \"Edit Finish project report\": Edit\n    - button \"Delete Finish project report\"\n    - group\n    - button \"Mark Read a book as completed\"\n    - text: Read a book Today Pending\n    - button \"Edit Read a book\": Edit\n    - button \"Delete Read a book\"\n    - group\n    - button \"Mark Go for a walk as completed\"\n    - text: Go for a walk Tomorrow Pending\n    - button \"Edit Go for a walk\": Edit\n    - button \"Delete Go for a walk\"\n    - group\n    - button \"Mark Renew car insurance as completed\"\n    - text: Renew car insurance before the weekend and send the new certificate to Priya 18 Nov Pending\n    - button \"Edit Renew car insurance\": Edit\n    - button \"Delete Renew car insurance\"\n    - group\n    - button \"Mark Call the dentist as pending\" [pressed]\n    - text: Call the dentist 3 Nov Completed\n    - button \"Edit Call the dentist\": Edit\n    - button \"Delete Call the dentist\"\n    - group\n  - paragraph: \"Clear All asks first: \\\"Delete all your tasks?\\\" with Delete all and Cancel.\"",
+      "screenshot": "w1280-dark.png",
+      "thumbnail": "thumb-w1280-dark.webp",
+      "modelImage": "model-w1280-dark.jpg"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-11T05:53:26.618Z"
+}

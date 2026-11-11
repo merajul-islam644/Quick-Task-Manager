@@ -22,7 +22,7 @@ export function StatisticsScreen({ situation = "normal", onNavigate }: { situati
         <div className="ds-shell">
           <SidebarPart onNavigate={onNavigate} />
           <div className="ds-shell-main">
-            <HeaderPart onNavigate={onNavigate} />
+            <HeaderPart activePath="/statistics" onNavigate={onNavigate} />
             {situation === "empty" ? (
               <section data-state="empty">
                 <div className="st-head">

@@ -1,0 +1,1 @@
+{"kind":"screen","sidebarParts":["sidebar"],"topBarParts":["header"],"screens":[{"key":"welcome","name":"Opening screen","route":"/welcome"},{"key":"home","name":"Home","route":"/"},{"key":"statistics","name":"Statistics","route":"/statistics"},{"key":"settings","name":"Settings","route":"/settings"}],"footerParts":[]}

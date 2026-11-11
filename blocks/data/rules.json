@@ -1,3 +1,74 @@
 {
-  "policies": []
+  "security": [
+    { "schemaName": "Task", "operation": 0, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "Task", "operation": 1, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "Task", "operation": 2, "policyType": 0, "accessLevel": 3, "fieldNames": [] },
+    { "schemaName": "Task", "operation": 3, "policyType": 0, "accessLevel": 3, "fieldNames": [] }
+  ],
+  "policies": [
+    {
+      "schemaName": "Task",
+      "policyName": "Owner reads their own tasks",
+      "policyDescription": "Only the person who created the task may read it.",
+      "operation": 0,
+      "policyType": 0,
+      "priority": 0,
+      "isAllowPolicy": true,
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          { "leftSource": 0, "leftOperand": "UserId", "operator": 0, "rightSource": 1, "rightOperand": "CreatedBy", "staticValue": "" }
+        ],
+        "nestedGroups": []
+      }
+    },
+    {
+      "schemaName": "Task",
+      "policyName": "Owner adds their own tasks",
+      "policyDescription": "A task is added by the signed-in person as its creator.",
+      "operation": 1,
+      "policyType": 0,
+      "priority": 0,
+      "isAllowPolicy": true,
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          { "leftSource": 0, "leftOperand": "UserId", "operator": 0, "rightSource": 1, "rightOperand": "CreatedBy", "staticValue": "" }
+        ],
+        "nestedGroups": []
+      }
+    },
+    {
+      "schemaName": "Task",
+      "policyName": "Owner edits their own tasks",
+      "policyDescription": "Only the person who created the task may change it.",
+      "operation": 2,
+      "policyType": 0,
+      "priority": 0,
+      "isAllowPolicy": true,
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          { "leftSource": 0, "leftOperand": "UserId", "operator": 0, "rightSource": 1, "rightOperand": "CreatedBy", "staticValue": "" }
+        ],
+        "nestedGroups": []
+      }
+    },
+    {
+      "schemaName": "Task",
+      "policyName": "Owner deletes their own tasks",
+      "policyDescription": "Only the person who created the task may remove it.",
+      "operation": 3,
+      "policyType": 0,
+      "priority": 0,
+      "isAllowPolicy": true,
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          { "leftSource": 0, "leftOperand": "UserId", "operator": 0, "rightSource": 1, "rightOperand": "CreatedBy", "staticValue": "" }
+        ],
+        "nestedGroups": []
+      }
+    }
+  ]
 }

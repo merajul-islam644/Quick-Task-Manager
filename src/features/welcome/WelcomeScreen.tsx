@@ -3,13 +3,15 @@
 // actions into it and change nothing visual. Studio writes it again only when the design is redrawn;
 // then `git diff` shows what to carry over.
 import type { MouseEvent } from "react";
+import { HostedSignInButton } from "../auth/HostedSignInButton";
+import { ThemeSwitch } from "../../app/layout/ThemeSwitch";
 import { useEffect } from "react";
 import "./WelcomeScreen.css";
 
 /** The situations the design shows: the screen as it usually is, then each one drawn. Show the one the real data or request is in. */
 export type WelcomeScreenSituation = "normal" | "signed-out";
 
-export function WelcomeScreen({ situation = "normal", onNavigate }: { situation?: WelcomeScreenSituation; onNavigate?: (path: string) => void }) {
+export function WelcomeScreen({ situation = "normal", onNavigate, returnTo }: { situation?: WelcomeScreenSituation; onNavigate?: (path: string) => void; returnTo?: string }) {
   // A situation may mark the whole page, as it does in the design.
   useEffect(() => {
     const marks = ({"signed-out":["is-signed-out"]} as Record<string, string[]>)[situation] ?? [];
@@ -27,31 +29,11 @@ export function WelcomeScreen({ situation = "normal", onNavigate }: { situation?
         <header className="wl-top">
           <div className="ds-bar wl-top-bar">
             <a href="/" className="ds-brand-link" data-goto="home" onClick={goTo("/")}>
-              <img className="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" />
-              <img className="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" />
+              <img className="ds-brand ds-brand-light" src="/brand/logo.png" alt="Quick Task Manager" />
+              <img className="ds-brand ds-brand-dark" src="/brand/logo-dark.png" alt="Quick Task Manager" />
             </a>
             <div className="wl-top-right">
-              <div className="ds-theme-switch" role="group" aria-label="Colour mode">
-                <button className="ds-active" aria-label="Light">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
-                    <circle cx="12" cy="12" r="4" />
-                    <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
-                  </svg>
-                </button>
-                {" "}
-                <button aria-label="Dark">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
-                    <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" />
-                  </svg>
-                </button>
-                {" "}
-                <button aria-label="Auto">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
-                    <circle cx="12" cy="12" r="8" />
-                    <path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" />
-                  </svg>
-                </button>
-              </div>
+              <ThemeSwitch />
             </div>
           </div>
         </header>
@@ -67,11 +49,11 @@ export function WelcomeScreen({ situation = "normal", onNavigate }: { situation?
                     <div className="wl-actions">
                       <span className="wl-signed-out"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" /></svg> You're signed out. </span>
                       {" "}
-                      <button className="ds-btn ds-btn-lg" data-goto="home" onClick={goTo("/")}> Sign in or create an account <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" style={{ width: "18px", height: "18px" }}><path d="M5 12h14M13 6l6 6-6 6" /></svg> </button>
+                      <HostedSignInButton returnTo={returnTo} />
                     </div>
                   </div>
                   <div className="wl-preview-wrap">
-                    <div className="wl-preview" aria-label="A sample of your task list">
+                    <div className="wl-preview" aria-label="A preview of your task list">
                       <div className="wl-preview-head">
                         <span className="wl-preview-title">Today's list</span>
                         {" "}
@@ -160,7 +142,7 @@ export function WelcomeScreen({ situation = "normal", onNavigate }: { situation?
                     <p className="wl-lede" data-sample="">Add what needs doing, set a due date, check it off when it's done. Your list stays yours and no one else sees it.</p>
                     <div id="opening-actions">
                       <div className="wl-actions">
-                        <button className="ds-btn ds-btn-lg" data-goto="home" onClick={goTo("/")}> Sign in or create an account <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" style={{ width: "18px", height: "18px" }}><path d="M5 12h14M13 6l6 6-6 6" /></svg> </button>
+                        <HostedSignInButton returnTo={returnTo} />
                         {" "}
                         <span className="wl-note">
                           {" "}
@@ -176,7 +158,7 @@ export function WelcomeScreen({ situation = "normal", onNavigate }: { situation?
                     </div>
                   </div>
                   <div className="wl-preview-wrap">
-                    <div className="wl-preview" aria-label="A sample of your task list">
+                    <div className="wl-preview" aria-label="A preview of your task list">
                       <div className="wl-preview-head">
                         <span className="wl-preview-title">Today's list</span>
                         {" "}
@@ -282,8 +264,8 @@ export function WelcomeScreen({ situation = "normal", onNavigate }: { situation?
         <footer>
           <div className="ds-bar wl-foot">
             <a href="/" className="ds-brand-link" data-goto="home" onClick={goTo("/")}>
-              <img className="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" />
-              <img className="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" />
+              <img className="ds-brand ds-brand-light" src="/brand/logo.png" alt="Quick Task Manager" />
+              <img className="ds-brand ds-brand-dark" src="/brand/logo-dark.png" alt="Quick Task Manager" />
             </a>
             {" "}
             <span className="ds-spacer" />

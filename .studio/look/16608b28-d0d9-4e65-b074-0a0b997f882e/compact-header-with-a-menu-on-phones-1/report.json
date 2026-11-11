@@ -1,0 +1,2615 @@
+{
+  "version": 1,
+  "target": ".studio/look/16608b28-d0d9-4e65-b074-0a0b997f882e/compact-header-with-a-menu-on-phones-1.html",
+  "kind": "file",
+  "situation": null,
+  "startedAt": "2026-11-11T06:03:24.264Z",
+  "views": [
+    {
+      "width": 390,
+      "mode": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Compact header with a menu on phones",
+      "url": "file:///workspace/.studio/look/16608b28-d0d9-4e65-b074-0a0b997f882e/compact-header-with-a-menu-on-phones-1.html",
+      "situation": null,
+      "document": {
+        "width": 390,
+        "height": 1712,
+        "title": "Compact header with a menu on phones",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "text": "The same list, fitted to the screen",
+          "classes": "ds-h1",
+          "eid": "e10",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 115,
+            "width": 358,
+            "height": 55
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "generic",
+          "name": "Go to Home",
+          "text": "Go to Home",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": false,
+          "decorative": false,
+          "heading": "The same list, fitted to the screen",
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 256,
+            "width": 127,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 16,
+            "y": 0,
+            "width": 358,
+            "height": 60
+          },
+          "page": {
+            "x": 16,
+            "y": 61,
+            "width": 358,
+            "height": 1651
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1712
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 60,
+            "right": 87
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "The same list, fitted to the screen",
+          "box": {
+            "x": 16,
+            "y": 85,
+            "width": 358,
+            "height": 207
+          },
+          "content": {
+            "left": 16,
+            "right": 372
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Go to Home",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "Open the menu",
+            "primary": false,
+            "radius": 8,
+            "background": "#f2f5fa",
+            "part": null
+          },
+          {
+            "name": "See Statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Open Settings",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Go to Home"
+        },
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "statistics",
+          "text": "See Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Open Settings"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "navigation",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "One layout, three widths",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar stays",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar, fewer columns",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Compact header",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Easy to tap",
+          "level": 3,
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Move around on a phone",
+        "The same list, fitted to the screen",
+        "A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.",
+        "Go to Home",
+        "Quick Task Manager",
+        "Menu",
+        "Home",
+        "Statistics",
+        "Settings",
+        "One layout, three widths",
+        "The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.",
+        "Desktop",
+        "Sidebar stays",
+        "Fixed on the left. Cards sit in columns.",
+        "Tablet",
+        "Sidebar, fewer columns",
+        "Navigation holds. Cards wrap into fewer columns.",
+        "Phone",
+        "Compact header",
+        "App name and a menu button. Cards stack, one column.",
+        "44 px",
+        "Easy to tap",
+        "Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.",
+        "Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.",
+        "See Statistics",
+        "Open Settings"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - text: Move around on a phone\n  - heading \"The same list, fitted to the screen\" [level=1]\n  - paragraph: A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.\n  - text: Go to Home\n  - img \"Quick Task Manager\"\n  - text: Quick Task Manager\n  - button \"Open the menu\"\n  - text: Menu\n  - navigation: Home Statistics Settings\n  - heading \"One layout, three widths\" [level=2]\n  - paragraph: The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.\n  - text: Desktop\n  - heading \"Sidebar stays\" [level=3]\n  - paragraph: Fixed on the left. Cards sit in columns.\n  - text: Tablet\n  - heading \"Sidebar, fewer columns\" [level=3]\n  - paragraph: Navigation holds. Cards wrap into fewer columns.\n  - text: Phone\n  - heading \"Compact header\" [level=3]\n  - paragraph: App name and a menu button. Cards stack, one column.\n  - heading \"Easy to tap\" [level=3]\n  - paragraph: Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.\n  - paragraph: Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.\n  - text: See Statistics Open Settings",
+      "screenshot": "w390-light.png",
+      "thumbnail": "thumb-w390-light.webp",
+      "modelImage": "model-w390-light.jpg"
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Compact header with a menu on phones",
+      "url": "file:///workspace/.studio/look/16608b28-d0d9-4e65-b074-0a0b997f882e/compact-header-with-a-menu-on-phones-1.html",
+      "situation": null,
+      "document": {
+        "width": 390,
+        "height": 1712,
+        "title": "Compact header with a menu on phones",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#070a10",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "text": "The same list, fitted to the screen",
+          "classes": "ds-h1",
+          "eid": "e10",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 115,
+            "width": 358,
+            "height": 55
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "generic",
+          "name": "Go to Home",
+          "text": "Go to Home",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": false,
+          "decorative": false,
+          "heading": "The same list, fitted to the screen",
+          "part": null,
+          "box": {
+            "x": 16,
+            "y": 256,
+            "width": 127,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 16,
+            "y": 0,
+            "width": 358,
+            "height": 60
+          },
+          "page": {
+            "x": 16,
+            "y": 61,
+            "width": 358,
+            "height": 1651
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 1712
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 61
+          },
+          "content": {
+            "left": 60,
+            "right": 87
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "The same list, fitted to the screen",
+          "box": {
+            "x": 16,
+            "y": 85,
+            "width": 358,
+            "height": 207
+          },
+          "content": {
+            "left": 16,
+            "right": 372
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Go to Home",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "Open the menu",
+            "primary": false,
+            "radius": 8,
+            "background": "#242932",
+            "part": null
+          },
+          {
+            "name": "See Statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Open Settings",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Go to Home"
+        },
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "statistics",
+          "text": "See Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Open Settings"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "navigation",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "One layout, three widths",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar stays",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar, fewer columns",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Compact header",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Easy to tap",
+          "level": 3,
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Move around on a phone",
+        "The same list, fitted to the screen",
+        "A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.",
+        "Go to Home",
+        "Quick Task Manager",
+        "Menu",
+        "Home",
+        "Statistics",
+        "Settings",
+        "One layout, three widths",
+        "The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.",
+        "Desktop",
+        "Sidebar stays",
+        "Fixed on the left. Cards sit in columns.",
+        "Tablet",
+        "Sidebar, fewer columns",
+        "Navigation holds. Cards wrap into fewer columns.",
+        "Phone",
+        "Compact header",
+        "App name and a menu button. Cards stack, one column.",
+        "44 px",
+        "Easy to tap",
+        "Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.",
+        "Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.",
+        "See Statistics",
+        "Open Settings"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - text: Move around on a phone\n  - heading \"The same list, fitted to the screen\" [level=1]\n  - paragraph: A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.\n  - text: Go to Home\n  - img \"Quick Task Manager\"\n  - text: Quick Task Manager\n  - button \"Open the menu\"\n  - text: Menu\n  - navigation: Home Statistics Settings\n  - heading \"One layout, three widths\" [level=2]\n  - paragraph: The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.\n  - text: Desktop\n  - heading \"Sidebar stays\" [level=3]\n  - paragraph: Fixed on the left. Cards sit in columns.\n  - text: Tablet\n  - heading \"Sidebar, fewer columns\" [level=3]\n  - paragraph: Navigation holds. Cards wrap into fewer columns.\n  - text: Phone\n  - heading \"Compact header\" [level=3]\n  - paragraph: App name and a menu button. Cards stack, one column.\n  - heading \"Easy to tap\" [level=3]\n  - paragraph: Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.\n  - paragraph: Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.\n  - text: See Statistics Open Settings",
+      "screenshot": "w390-dark.png",
+      "thumbnail": "thumb-w390-dark.webp",
+      "modelImage": "model-w390-dark.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "light",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Compact header with a menu on phones",
+      "url": "file:///workspace/.studio/look/16608b28-d0d9-4e65-b074-0a0b997f882e/compact-header-with-a-menu-on-phones-1.html",
+      "situation": null,
+      "document": {
+        "width": 834,
+        "height": 1398,
+        "title": "Compact header with a menu on phones",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "text": "The same list, fitted to the screen",
+          "classes": "ds-h1",
+          "eid": "e10",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 115,
+            "width": 560,
+            "height": 29
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "generic",
+          "name": "Go to Home",
+          "text": "Go to Home",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": false,
+          "decorative": false,
+          "heading": "The same list, fitted to the screen",
+          "part": null,
+          "box": {
+            "x": 683,
+            "y": 159,
+            "width": 127,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 24,
+            "y": 0,
+            "width": 786,
+            "height": 60
+          },
+          "page": {
+            "x": 24,
+            "y": 61,
+            "width": 786,
+            "height": 1337
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1398
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 76,
+            "right": 103
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "The same list, fitted to the screen",
+          "box": {
+            "x": 24,
+            "y": 85,
+            "width": 786,
+            "height": 110
+          },
+          "content": {
+            "left": 24,
+            "right": 795
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Go to Home",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "Open the menu",
+            "primary": false,
+            "radius": 8,
+            "background": "#f2f5fa",
+            "part": null
+          },
+          {
+            "name": "See Statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Open Settings",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Go to Home"
+        },
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "statistics",
+          "text": "See Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Open Settings"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "navigation",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "One layout, three widths",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar stays",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar, fewer columns",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Compact header",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Easy to tap",
+          "level": 3,
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Move around on a phone",
+        "The same list, fitted to the screen",
+        "A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.",
+        "Go to Home",
+        "Quick Task Manager",
+        "Menu",
+        "Home",
+        "Statistics",
+        "Settings",
+        "One layout, three widths",
+        "The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.",
+        "Desktop",
+        "Sidebar stays",
+        "Fixed on the left. Cards sit in columns.",
+        "Tablet",
+        "Sidebar, fewer columns",
+        "Navigation holds. Cards wrap into fewer columns.",
+        "Phone",
+        "Compact header",
+        "App name and a menu button. Cards stack, one column.",
+        "44 px",
+        "Easy to tap",
+        "Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.",
+        "Home",
+        "MH",
+        "Total",
+        "4",
+        "Completed",
+        "1",
+        "Pending",
+        "3",
+        "Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.",
+        "See Statistics",
+        "Open Settings"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - text: Move around on a phone\n  - heading \"The same list, fitted to the screen\" [level=1]\n  - paragraph: A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.\n  - text: Go to Home\n  - img \"Quick Task Manager\"\n  - text: Quick Task Manager\n  - button \"Open the menu\"\n  - text: Menu\n  - navigation: Home Statistics Settings\n  - heading \"One layout, three widths\" [level=2]\n  - paragraph: The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.\n  - text: Desktop\n  - heading \"Sidebar stays\" [level=3]\n  - paragraph: Fixed on the left. Cards sit in columns.\n  - text: Tablet\n  - heading \"Sidebar, fewer columns\" [level=3]\n  - paragraph: Navigation holds. Cards wrap into fewer columns.\n  - text: Phone\n  - heading \"Compact header\" [level=3]\n  - paragraph: App name and a menu button. Cards stack, one column.\n  - heading \"Easy to tap\" [level=3]\n  - paragraph: Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.\n  - paragraph: Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.\n  - text: See Statistics Open Settings",
+      "screenshot": "w834-light.png",
+      "thumbnail": "thumb-w834-light.webp",
+      "modelImage": "model-w834-light.jpg"
+    },
+    {
+      "width": 834,
+      "mode": "dark",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "title": "Compact header with a menu on phones",
+      "url": "file:///workspace/.studio/look/16608b28-d0d9-4e65-b074-0a0b997f882e/compact-header-with-a-menu-on-phones-1.html",
+      "situation": null,
+      "document": {
+        "width": 834,
+        "height": 1398,
+        "title": "Compact header with a menu on phones",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#070a10",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "text": "The same list, fitted to the screen",
+          "classes": "ds-h1",
+          "eid": "e10",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 24,
+            "y": 115,
+            "width": 560,
+            "height": 29
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "generic",
+          "name": "Go to Home",
+          "text": "Go to Home",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": false,
+          "decorative": false,
+          "heading": "The same list, fitted to the screen",
+          "part": null,
+          "box": {
+            "x": 683,
+            "y": 159,
+            "width": 127,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 24,
+            "y": 0,
+            "width": 786,
+            "height": 60
+          },
+          "page": {
+            "x": 24,
+            "y": 61,
+            "width": 786,
+            "height": 1337
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "menu"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "atTop": true,
+          "fullWidth": true
+        },
+        "footer": null,
+        "sidebar": null,
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 1398
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 834,
+            "height": 61
+          },
+          "content": {
+            "left": 76,
+            "right": 103
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "The same list, fitted to the screen",
+          "box": {
+            "x": 24,
+            "y": 85,
+            "width": 786,
+            "height": 110
+          },
+          "content": {
+            "left": 24,
+            "right": 795
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Go to Home",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "Open the menu",
+            "primary": false,
+            "radius": 8,
+            "background": "#242932",
+            "part": null
+          },
+          {
+            "name": "See Statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Open Settings",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Go to Home"
+        },
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "statistics",
+          "text": "See Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Open Settings"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "navigation",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "One layout, three widths",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar stays",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar, fewer columns",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Compact header",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Easy to tap",
+          "level": 3,
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Move around on a phone",
+        "The same list, fitted to the screen",
+        "A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.",
+        "Go to Home",
+        "Quick Task Manager",
+        "Menu",
+        "Home",
+        "Statistics",
+        "Settings",
+        "One layout, three widths",
+        "The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.",
+        "Desktop",
+        "Sidebar stays",
+        "Fixed on the left. Cards sit in columns.",
+        "Tablet",
+        "Sidebar, fewer columns",
+        "Navigation holds. Cards wrap into fewer columns.",
+        "Phone",
+        "Compact header",
+        "App name and a menu button. Cards stack, one column.",
+        "44 px",
+        "Easy to tap",
+        "Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.",
+        "Home",
+        "MH",
+        "Total",
+        "4",
+        "Completed",
+        "1",
+        "Pending",
+        "3",
+        "Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.",
+        "See Statistics",
+        "Open Settings"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - group\n  - img \"Quick Task Manager\"\n  - text: Move around on a phone\n  - heading \"The same list, fitted to the screen\" [level=1]\n  - paragraph: A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.\n  - text: Go to Home\n  - img \"Quick Task Manager\"\n  - text: Quick Task Manager\n  - button \"Open the menu\"\n  - text: Menu\n  - navigation: Home Statistics Settings\n  - heading \"One layout, three widths\" [level=2]\n  - paragraph: The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.\n  - text: Desktop\n  - heading \"Sidebar stays\" [level=3]\n  - paragraph: Fixed on the left. Cards sit in columns.\n  - text: Tablet\n  - heading \"Sidebar, fewer columns\" [level=3]\n  - paragraph: Navigation holds. Cards wrap into fewer columns.\n  - text: Phone\n  - heading \"Compact header\" [level=3]\n  - paragraph: App name and a menu button. Cards stack, one column.\n  - heading \"Easy to tap\" [level=3]\n  - paragraph: Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.\n  - paragraph: Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.\n  - text: See Statistics Open Settings",
+      "screenshot": "w834-dark.png",
+      "thumbnail": "thumb-w834-dark.webp",
+      "modelImage": "model-w834-dark.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Compact header with a menu on phones",
+      "url": "file:///workspace/.studio/look/16608b28-d0d9-4e65-b074-0a0b997f882e/compact-header-with-a-menu-on-phones-1.html",
+      "situation": null,
+      "document": {
+        "width": 1280,
+        "height": 1115,
+        "title": "Compact header with a menu on phones",
+        "rootClass": "",
+        "prefersDark": false
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e12",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": "sidebar",
+            "box": {
+              "x": 152,
+              "y": 762,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "kind": "ancestor",
+          "fully": false,
+          "by": {
+            "tag": "div",
+            "classes": "qs-side-art-box",
+            "text": "Plan. Focus. Achieve.",
+            "box": {
+              "x": 24,
+              "y": 794,
+              "width": 200,
+              "height": 182
+            }
+          }
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#f8fafe",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": "header"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#ffffff",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "text": "The same list, fitted to the screen",
+          "classes": "ds-h1",
+          "eid": "e10",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 111,
+            "width": 560,
+            "height": 41
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "generic",
+          "name": "Go to Home",
+          "text": "Go to Home",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": false,
+          "decorative": false,
+          "heading": "The same list, fitted to the screen",
+          "part": null,
+          "box": {
+            "x": 1129,
+            "y": 167,
+            "width": 127,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 272,
+            "y": 0,
+            "width": 984,
+            "height": 56
+          },
+          "page": {
+            "x": 272,
+            "y": 57,
+            "width": 984,
+            "height": 1058
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "atTop": true,
+          "fullWidth": false
+        },
+        "footer": null,
+        "sidebar": {
+          "tag": "aside",
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "text": "Home Statistics Settings Plan. Focus. Achieve. PS Priya Shah Task owner Sign out",
+          "classes": "qs-side",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "sidebar",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1115
+          },
+          "besideContent": true
+        },
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 1115
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "content": {
+            "left": 1165,
+            "right": 1253
+          }
+        },
+        {
+          "kind": "sidebar",
+          "name": "Quick Task Manager",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1115
+          },
+          "content": {
+            "left": 24,
+            "right": 179
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "The same list, fitted to the screen",
+          "box": {
+            "x": 272,
+            "y": 81,
+            "width": 984,
+            "height": 122
+          },
+          "content": {
+            "left": 272,
+            "right": 1241
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": "sidebar"
+          },
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": "header"
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Go to Home",
+            "primary": true,
+            "radius": 8,
+            "background": "#2463eb",
+            "part": null
+          },
+          {
+            "name": "Open the menu",
+            "primary": false,
+            "radius": 8,
+            "background": "#f2f5fa",
+            "part": null
+          },
+          {
+            "name": "See Statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Open Settings",
+            "primary": false,
+            "radius": 8,
+            "background": "#ffffff",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "welcome",
+          "text": "Sign out"
+        },
+        {
+          "target": "home",
+          "text": "Go to Home"
+        },
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "statistics",
+          "text": "See Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Open Settings"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 2
+        },
+        {
+          "role": "navigation",
+          "name": "Main",
+          "depth": 2
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "navigation",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "One layout, three widths",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar stays",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar, fewer columns",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Compact header",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Easy to tap",
+          "level": 3,
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Home",
+        "Statistics",
+        "Settings",
+        "Plan. Focus. Achieve.",
+        "PS",
+        "Priya Shah",
+        "Task owner",
+        "Sign out",
+        "Move around on a phone",
+        "The same list, fitted to the screen",
+        "A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.",
+        "Go to Home",
+        "Quick Task Manager",
+        "Menu",
+        "Home",
+        "Statistics",
+        "Settings",
+        "One layout, three widths",
+        "The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.",
+        "Desktop",
+        "Sidebar stays",
+        "Fixed on the left. Cards sit in columns.",
+        "Tablet",
+        "Sidebar, fewer columns",
+        "Navigation holds. Cards wrap into fewer columns.",
+        "Phone",
+        "Compact header",
+        "App name and a menu button. Cards stack, one column.",
+        "44 px",
+        "Easy to tap",
+        "Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.",
+        "Home",
+        "MH",
+        "Total",
+        "4",
+        "Completed",
+        "1",
+        "Pending",
+        "3",
+        "Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.",
+        "See Statistics",
+        "Open Settings"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - complementary \"Quick Task Manager\":\n    - img \"Quick Task Manager\"\n    - navigation \"Main\": Home Statistics Settings\n    - text: PS Priya Shah Task owner Sign out\n  - group \"Colour mode\":\n    - button \"Light\"\n    - button \"Dark\"\n    - button \"Auto\"\n  - text: Move around on a phone\n  - heading \"The same list, fitted to the screen\" [level=1]\n  - paragraph: A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.\n  - text: Go to Home\n  - img \"Quick Task Manager\"\n  - text: Quick Task Manager\n  - button \"Open the menu\"\n  - text: Menu\n  - navigation: Home Statistics Settings\n  - heading \"One layout, three widths\" [level=2]\n  - paragraph: The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.\n  - text: Desktop\n  - heading \"Sidebar stays\" [level=3]\n  - paragraph: Fixed on the left. Cards sit in columns.\n  - text: Tablet\n  - heading \"Sidebar, fewer columns\" [level=3]\n  - paragraph: Navigation holds. Cards wrap into fewer columns.\n  - text: Phone\n  - heading \"Compact header\" [level=3]\n  - paragraph: App name and a menu button. Cards stack, one column.\n  - heading \"Easy to tap\" [level=3]\n  - paragraph: Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.\n  - paragraph: Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.\n  - text: See Statistics Open Settings",
+      "screenshot": "w1280-light.png",
+      "thumbnail": "thumb-w1280-light.webp",
+      "modelImage": "model-w1280-light.jpg"
+    },
+    {
+      "width": 1280,
+      "mode": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "title": "Compact header with a menu on phones",
+      "url": "file:///workspace/.studio/look/16608b28-d0d9-4e65-b074-0a0b997f882e/compact-header-with-a-menu-on-phones-1.html",
+      "situation": null,
+      "document": {
+        "width": 1280,
+        "height": 1115,
+        "title": "Compact header with a menu on phones",
+        "rootClass": "dark",
+        "prefersDark": true
+      },
+      "overflow": {
+        "horizontal": false,
+        "by": 0,
+        "scrollable": false,
+        "elements": []
+      },
+      "clipped": [
+        {
+          "element": {
+            "tag": "div",
+            "role": "generic",
+            "name": "",
+            "text": "",
+            "classes": "ds-deco",
+            "eid": "e12",
+            "control": false,
+            "decorative": true,
+            "heading": null,
+            "part": "sidebar",
+            "box": {
+              "x": 152,
+              "y": 762,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "kind": "ancestor",
+          "fully": false,
+          "by": {
+            "tag": "div",
+            "classes": "qs-side-art-box",
+            "text": "Plan. Focus. Achieve.",
+            "box": {
+              "x": 24,
+              "y": 794,
+              "width": 200,
+              "height": 182
+            }
+          }
+        }
+      ],
+      "scrolledAway": [],
+      "crowded": [],
+      "columnBackgrounds": [],
+      "covered": [],
+      "smallControls": [],
+      "logos": [
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#070a10",
+          "part": "sidebar"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 0,
+          "height": 0,
+          "loaded": true,
+          "background": "#13171f",
+          "part": "header"
+        },
+        {
+          "src": "https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png",
+          "width": 27,
+          "height": 28,
+          "loaded": true,
+          "background": "#13171f",
+          "part": null
+        }
+      ],
+      "expectations": {
+        "title": {
+          "tag": "h1",
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "text": "The same list, fitted to the screen",
+          "classes": "ds-h1",
+          "eid": "e10",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 272,
+            "y": 111,
+            "width": 560,
+            "height": 41
+          },
+          "shown": true
+        },
+        "mainAction": {
+          "tag": "a",
+          "role": "generic",
+          "name": "Go to Home",
+          "text": "Go to Home",
+          "classes": "ds-btn",
+          "eid": "e12",
+          "control": false,
+          "decorative": false,
+          "heading": "The same list, fitted to the screen",
+          "part": null,
+          "box": {
+            "x": 1129,
+            "y": 167,
+            "width": 127,
+            "height": 36
+          },
+          "shown": true
+        },
+        "columns": {
+          "bar": {
+            "x": 272,
+            "y": 0,
+            "width": 984,
+            "height": 56
+          },
+          "page": {
+            "x": 272,
+            "y": 57,
+            "width": 984,
+            "height": 1058
+          },
+          "left": 0,
+          "right": 0,
+          "split": false
+        },
+        "themeSwitch": {
+          "count": 2,
+          "reachable": true,
+          "how": "shown"
+        },
+        "situationsShowing": [],
+        "messagesShowing": []
+      },
+      "firstContentTop": 0,
+      "frame": {
+        "header": {
+          "tag": "header",
+          "role": "generic",
+          "name": "",
+          "text": "Home Statistics Settings Sign out",
+          "classes": "qs-top",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "header",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "atTop": true,
+          "fullWidth": false
+        },
+        "footer": null,
+        "sidebar": {
+          "tag": "aside",
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "text": "Home Statistics Settings Plan. Focus. Achieve. PS Priya Shah Task owner Sign out",
+          "classes": "qs-side",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": "sidebar",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1115
+          },
+          "besideContent": true
+        },
+        "main": {
+          "tag": "main",
+          "role": "main",
+          "name": "",
+          "text": ".qs-side { display: flex; flex-direction: column; gap: 0; height: 100%; padding…",
+          "classes": "",
+          "eid": "e1",
+          "control": false,
+          "decorative": false,
+          "heading": null,
+          "part": null,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 1115
+          }
+        }
+      },
+      "regions": [
+        {
+          "kind": "header",
+          "name": "",
+          "box": {
+            "x": 248,
+            "y": 0,
+            "width": 1032,
+            "height": 57
+          },
+          "content": {
+            "left": 1165,
+            "right": 1253
+          }
+        },
+        {
+          "kind": "sidebar",
+          "name": "Quick Task Manager",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 248,
+            "height": 1115
+          },
+          "content": {
+            "left": 24,
+            "right": 179
+          }
+        },
+        {
+          "kind": "pagehead",
+          "name": "The same list, fitted to the screen",
+          "box": {
+            "x": 272,
+            "y": 81,
+            "width": 984,
+            "height": 122
+          },
+          "content": {
+            "left": 272,
+            "right": 1241
+          }
+        }
+      ],
+      "styles": {
+        "fontFamily": "Public Sans Variable",
+        "headingFont": "Public Sans Variable",
+        "buttons": [
+          {
+            "name": "Sign out",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": "sidebar"
+          },
+          {
+            "name": "Light",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Dark",
+            "primary": false,
+            "radius": 999,
+            "background": "#ffffff",
+            "part": "header"
+          },
+          {
+            "name": "Auto",
+            "primary": false,
+            "radius": 999,
+            "background": null,
+            "part": "header"
+          },
+          {
+            "name": "Go to Home",
+            "primary": true,
+            "radius": 8,
+            "background": "#427fff",
+            "part": null
+          },
+          {
+            "name": "Open the menu",
+            "primary": false,
+            "radius": 8,
+            "background": "#242932",
+            "part": null
+          },
+          {
+            "name": "See Statistics",
+            "primary": false,
+            "radius": 8,
+            "background": null,
+            "part": null
+          },
+          {
+            "name": "Open Settings",
+            "primary": false,
+            "radius": 8,
+            "background": "#13171f",
+            "part": null
+          }
+        ],
+        "cards": []
+      },
+      "states": [
+        {
+          "name": "empty",
+          "hidden": true,
+          "replaces": "content",
+          "rootClass": null
+        }
+      ],
+      "gotos": [
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "welcome",
+          "text": "Sign out"
+        },
+        {
+          "target": "home",
+          "text": "Go to Home"
+        },
+        {
+          "target": "home",
+          "text": ""
+        },
+        {
+          "target": "home",
+          "text": "Home"
+        },
+        {
+          "target": "statistics",
+          "text": "Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Settings"
+        },
+        {
+          "target": "statistics",
+          "text": "See Statistics"
+        },
+        {
+          "target": "settings",
+          "text": "Open Settings"
+        }
+      ],
+      "links": [],
+      "accessibility": [
+        {
+          "role": "main",
+          "name": "",
+          "depth": 0
+        },
+        {
+          "role": "complementary",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 2
+        },
+        {
+          "role": "navigation",
+          "name": "Main",
+          "depth": 2
+        },
+        {
+          "role": "img",
+          "name": "",
+          "depth": 2
+        },
+        {
+          "role": "button",
+          "name": "Light",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Dark",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Auto",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "The same list, fitted to the screen",
+          "level": 1,
+          "depth": 1
+        },
+        {
+          "role": "img",
+          "name": "Quick Task Manager",
+          "depth": 1
+        },
+        {
+          "role": "button",
+          "name": "Open the menu",
+          "depth": 1
+        },
+        {
+          "role": "navigation",
+          "name": "",
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "One layout, three widths",
+          "level": 2,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar stays",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Sidebar, fewer columns",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Compact header",
+          "level": 3,
+          "depth": 1
+        },
+        {
+          "role": "heading",
+          "name": "Easy to tap",
+          "level": 3,
+          "depth": 1
+        }
+      ],
+      "texts": [
+        "Home",
+        "Statistics",
+        "Settings",
+        "Plan. Focus. Achieve.",
+        "PS",
+        "Priya Shah",
+        "Task owner",
+        "Sign out",
+        "Move around on a phone",
+        "The same list, fitted to the screen",
+        "A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.",
+        "Go to Home",
+        "Quick Task Manager",
+        "Menu",
+        "Home",
+        "Statistics",
+        "Settings",
+        "One layout, three widths",
+        "The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.",
+        "Desktop",
+        "Sidebar stays",
+        "Fixed on the left. Cards sit in columns.",
+        "Tablet",
+        "Sidebar, fewer columns",
+        "Navigation holds. Cards wrap into fewer columns.",
+        "Phone",
+        "Compact header",
+        "App name and a menu button. Cards stack, one column.",
+        "44 px",
+        "Easy to tap",
+        "Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.",
+        "Home",
+        "MH",
+        "Total",
+        "4",
+        "Completed",
+        "1",
+        "Pending",
+        "3",
+        "Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.",
+        "See Statistics",
+        "Open Settings"
+      ],
+      "lowContrast": [],
+      "lowContrastCount": 0,
+      "controls": {
+        "checked": 3,
+        "dead": [],
+        "unknownGotos": []
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "ariaSnapshot": "- main:\n  - complementary \"Quick Task Manager\":\n    - img \"Quick Task Manager\"\n    - navigation \"Main\": Home Statistics Settings\n    - text: PS Priya Shah Task owner Sign out\n  - group \"Colour mode\":\n    - button \"Light\"\n    - button \"Dark\"\n    - button \"Auto\"\n  - text: Move around on a phone\n  - heading \"The same list, fitted to the screen\" [level=1]\n  - paragraph: A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.\n  - text: Go to Home\n  - img \"Quick Task Manager\"\n  - text: Quick Task Manager\n  - button \"Open the menu\"\n  - text: Menu\n  - navigation: Home Statistics Settings\n  - heading \"One layout, three widths\" [level=2]\n  - paragraph: The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.\n  - text: Desktop\n  - heading \"Sidebar stays\" [level=3]\n  - paragraph: Fixed on the left. Cards sit in columns.\n  - text: Tablet\n  - heading \"Sidebar, fewer columns\" [level=3]\n  - paragraph: Navigation holds. Cards wrap into fewer columns.\n  - text: Phone\n  - heading \"Compact header\" [level=3]\n  - paragraph: App name and a menu button. Cards stack, one column.\n  - heading \"Easy to tap\" [level=3]\n  - paragraph: Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.\n  - paragraph: Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.\n  - text: See Statistics Open Settings",
+      "screenshot": "w1280-dark.png",
+      "thumbnail": "thumb-w1280-dark.webp",
+      "modelImage": "model-w1280-dark.jpg"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-11T06:03:32.623Z"
+}

@@ -1,0 +1,412 @@
+<style>
+  /* Phone navigation screen: art direction for the GN-01 walkthrough */
+
+  /* Sidebar mock (desktop/tablet) */
+  .gn-side {
+    width: 252px;
+    flex: none;
+    background: hsl(var(--card));
+    border-right: 1px solid hsl(var(--border));
+    padding: calc(20px * var(--space-scale, 1));
+    display: flex;
+    flex-direction: column;
+    gap: calc(20px * var(--space-scale, 1));
+    position: relative;
+    overflow: hidden;
+  }
+  .gn-side-brand { display: flex; align-items: center; gap: calc(10px * var(--space-scale, 1)); }
+  .gn-side-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: hsl(var(--foreground));
+    line-height: 1.15;
+  }
+  .gn-nav { display: flex; flex-direction: column; gap: calc(2px * var(--space-scale, 1)); }
+  .gn-nav .ds-nav-item { justify-content: flex-start; gap: calc(10px * var(--space-scale, 1)); min-height: 44px; }
+  .gn-nav .ds-nav-item svg { width: 18px; height: 18px; flex: none; }
+  .gn-side-foot {
+    margin-top: auto;
+    padding-top: calc(16px * var(--space-scale, 1));
+    border-top: 1px dashed hsl(var(--border));
+    display: flex;
+    flex-direction: column;
+    gap: calc(8px * var(--space-scale, 1));
+  }
+  .gn-side-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--primary-text));
+  }
+
+  /* Illustration: a small checklist, drawn from simple shapes */
+  .gn-illo { width: 100%; height: auto; display: block; }
+
+  /* The showcase: a framed phone beside the explanation */
+  .gn-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: calc(48px * var(--space-scale, 1));
+    align-items: center;
+    margin-top: calc(8px * var(--space-scale, 1));
+  }
+  .gn-phone-wrap { position: relative; display: flex; justify-content: center; }
+  .gn-phone {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) * 4);
+    background: hsl(var(--card));
+    box-shadow: 0 30px 60px -30px hsl(var(--main-900) / 0.35), 0 3px 8px -2px hsl(var(--main-900) / 0.12);
+    padding: calc(12px * var(--space-scale, 1));
+    position: relative;
+  }
+  .gn-notch {
+    width: 96px; height: 6px; border-radius: 99px;
+    background: hsl(var(--border));
+    margin: 0 auto calc(10px * var(--space-scale, 1));
+  }
+  .gn-ph-top {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    padding-bottom: calc(10px * var(--space-scale, 1));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .gn-ph-title {
+    font-family: var(--font-heading); font-weight: 700; font-size: 15px;
+    color: hsl(var(--foreground)); letter-spacing: -0.01em; line-height: 1.2;
+    flex: 1; min-width: 0;
+  }
+  .gn-ph-top .ds-menu-button { flex: none; border: 1px solid hsl(var(--border)); background: hsl(var(--muted)); border-radius: var(--radius-button); display: grid; place-items: center; width: 44px; height: 44px; }
+  .gn-ph-top .ds-menu-button svg { width: 20px; height: 20px; }
+  .gn-open {
+    margin-top: calc(10px * var(--space-scale, 1));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    background: hsl(var(--background));
+    padding: calc(8px * var(--space-scale, 1));
+    box-shadow: var(--shadow);
+  }
+  .gn-open-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    padding: 0 calc(8px * var(--space-scale, 1)) calc(6px * var(--space-scale, 1));
+  }
+  .gn-open .ds-nav-item { justify-content: flex-start; gap: calc(10px * var(--space-scale, 1)); min-height: 44px; width: 100%; }
+  .gn-open .ds-nav-item svg { width: 18px; height: 18px; flex: none; }
+  .gn-open .ds-theme-switch { margin: calc(6px * var(--space-scale, 1)) calc(8px * var(--space-scale, 1)) 0; }
+
+  /* Explanation column */
+  .gn-explain { display: flex; flex-direction: column; gap: calc(20px * var(--space-scale, 1)); }
+
+  /* Width ruler: a mini diagram with three breakpoint cards */
+  .gn-breaks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(12px * var(--space-scale, 1)); }
+  .gn-break {
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    background: hsl(var(--card));
+    padding: calc(14px * var(--space-scale, 1));
+    display: flex; flex-direction: column; gap: calc(8px * var(--space-scale, 1));
+  }
+  .gn-break-figure { height: 54px; display: flex; align-items: flex-end; justify-content: center; }
+  .gn-break-screen {
+    border-radius: 4px 4px 0 0;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    border-bottom: 0;
+    display: flex; gap: 3px; padding: 4px;
+    height: 46px;
+    align-items: stretch;
+  }
+  .gn-break-bar {
+    width: 4px; border-radius: 2px; background: hsl(var(--primary) / 0.5); align-self: stretch;
+  }
+  .gn-break-col { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+  .gn-break-line { height: 4px; border-radius: 2px; background: hsl(var(--border)); }
+  .gn-break h3 { margin: 0; font-size: 14px; font-weight: 650; color: hsl(var(--foreground)); }
+  .gn-break p { margin: 0; font-size: 13px; line-height: 1.4; color: hsl(var(--muted-foreground)); }
+  .gn-break .gn-bp-name { font-family: var(--font-heading); font-weight: 700; font-size: 12px; color: hsl(var(--primary-text)); letter-spacing: 0.04em; }
+
+  /* Tap-size rule card */
+  .gn-rule {
+    display: grid; grid-template-columns: auto 1fr; gap: calc(20px * var(--space-scale, 1));
+    align-items: center;
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    padding: calc(16px * var(--space-scale, 1));
+    background: hsl(var(--card));
+  }
+  .gn-tap {
+    width: 64px; height: 64px; border-radius: var(--radius);
+    display: grid; place-items: center;
+    background: hsl(var(--primary) / 0.1);
+    border: 1px dashed hsl(var(--primary) / 0.5);
+    color: hsl(var(--primary-text));
+    font-family: var(--font-heading); font-weight: 700; font-size: 15px;
+  }
+  .gn-rule h3 { margin: 0 0 4px; font-size: 15px; font-weight: 650; color: hsl(var(--foreground)); }
+  .gn-rule p { margin: 0; font-size: 14px; line-height: 1.45; color: hsl(var(--muted-foreground)); }
+
+  /* Desktop shell showcase: banner showing the sidebar layout */
+  .gn-shot {
+    display: flex;
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) * 2);
+    overflow: hidden;
+    background: hsl(var(--background));
+    box-shadow: var(--shadow);
+    min-height: 220px;
+  }
+  .gn-shot-main { flex: 1; min-width: 0; padding: calc(16px * var(--space-scale, 1)); display: flex; flex-direction: column; gap: calc(12px * var(--space-scale, 1)); }
+  .gn-shot-top {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    padding-bottom: calc(10px * var(--space-scale, 1));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .gn-shot-name { font-weight: 650; font-size: 14px; color: hsl(var(--foreground)); }
+  .gn-shot-top .ds-avatar { margin-left: auto; }
+  .gn-shot-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(8px * var(--space-scale, 1)); }
+  .gn-shot-card {
+    border: 1px solid hsl(var(--border)); border-radius: var(--radius);
+    padding: calc(10px * var(--space-scale, 1)); background: hsl(var(--card));
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .gn-shot-card span:first-child { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: hsl(var(--muted-foreground)); }
+  .gn-shot-card span:last-child { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: hsl(var(--foreground)); }
+  .gn-shot-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid hsl(var(--border)); }
+  .gn-shot-row .gn-dot { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid hsl(var(--border)); flex: none; }
+  .gn-shot-row .gn-bar { height: 6px; border-radius: 3px; background: hsl(var(--muted)); flex: 1; }
+  .gn-shot-row .gn-bar.short { flex: 0 0 40%; }
+
+  .gn-caption {
+    display: flex; align-items: center; gap: calc(8px * var(--space-scale, 1));
+    font-size: 13px; color: hsl(var(--muted-foreground));
+  }
+  .gn-caption svg { width: 16px; height: 16px; flex: none; color: hsl(var(--primary-text)); }
+
+  .gn-note {
+    background: hsl(var(--primary) / 0.06);
+    border: 1px solid hsl(var(--primary) / 0.2);
+    border-radius: var(--radius);
+    padding: calc(14px * var(--space-scale, 1)) calc(16px * var(--space-scale, 1));
+    display: flex; gap: calc(12px * var(--space-scale, 1)); align-items: flex-start;
+  }
+  .gn-note svg { width: 18px; height: 18px; flex: none; color: hsl(var(--primary-text)); margin-top: 1px; }
+  .gn-note p { margin: 0; font-size: 14px; line-height: 1.5; color: hsl(var(--foreground)); }
+
+  @media (max-width: 960px) {
+    .gn-stage { grid-template-columns: 1fr; gap: calc(32px * var(--space-scale, 1)); }
+    .gn-phone-wrap { justify-content: flex-start; }
+  }
+  @media (max-width: 560px) {
+    .gn-breaks { grid-template-columns: 1fr; }
+    .gn-shot { display: none; }
+    .gn-rule { grid-template-columns: 1fr; justify-items: start; }
+    .gn-phone { max-width: 100%; }
+  }
+</style><main data-screen="compact-header-with-a-menu-on-phones" data-eid="e1">
+  <div class="ds-shell" data-eid="e2">
+    <div data-part="sidebar" data-eid="e3"></div>
+    <div class="ds-shell-main" data-eid="e4">
+      <div data-part="header" data-eid="e5"></div>
+
+      <div data-eid="content">
+        <div class="ds-page" style="padding-top: calc(24px * var(--space-scale, 1)); padding-bottom: calc(48px * var(--space-scale, 1))" data-eid="e6">
+          <div class="ds-page-head" data-eid="e7">
+            <div data-eid="e8">
+              <span class="ds-eyebrow" data-sample="GN-01.label" data-eid="e9">Move around on a phone</span>
+              <h1 class="ds-h1" style="margin-top: calc(8px * var(--space-scale, 1))" data-eid="e10">The same list, fitted to the screen</h1>
+              <p class="ds-muted" style="margin: calc(6px * var(--space-scale, 1)) 0 0; max-width: 560px" data-eid="e11">A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.</p>
+            </div>
+            <a class="ds-btn" data-goto="home" data-eid="e12">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+              Go to Home
+            </a>
+          </div>
+
+          <div class="gn-stage" data-eid="e13">
+            <!-- LEFT: framed phone with the compact header and the open menu -->
+            <div class="gn-phone-wrap" data-eid="e14">
+              <div class="ds-deco" style="left: -8%; top: 6%; width: 116%; height: 88%; border-radius: 50%; background: radial-gradient(circle at 50% 30%, hsl(var(--primary) / 0.14), transparent 68%);" data-eid="e15"></div>
+              <div class="gn-phone" data-eid="e16">
+                <div class="gn-notch" aria-hidden="true" data-eid="e17"></div>
+                <div class="gn-ph-top" data-eid="e18">
+                  <a class="ds-brand-link" data-goto="home" aria-label="Quick Task Manager" data-eid="e19">
+                    <img class="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="Quick Task Manager" data-eid="e20">
+                    <img class="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="Quick Task Manager" data-eid="e21">
+                  </a>
+                  <span class="gn-ph-title" data-sample data-eid="e22">Quick Task Manager</span>
+                  <button class="ds-menu-button" aria-label="Open the menu" title="Open the menu" data-eid="e23">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                  </button>
+                </div>
+
+                <div class="gn-open" data-eid="e24">
+                  <div class="gn-open-label" data-sample data-eid="e25">Menu</div>
+                  <nav class="ds-nav" data-eid="e26">
+                    <a class="ds-nav-item ds-active" data-goto="home" data-eid="e27">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+                      Home
+                    </a>
+                    <a class="ds-nav-item" data-goto="statistics" data-eid="e28">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+                      Statistics
+                    </a>
+                    <a class="ds-nav-item" data-goto="settings" data-eid="e29">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+                      Settings
+                    </a>
+                  </nav>
+                  <div class="ds-theme-switch" role="group" aria-label="Colour mode" data-eid="e30">
+                    <button aria-label="Light" data-eid="e31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg></button>
+                    <button class="ds-active" aria-label="Dark" data-eid="e32"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+                    <button aria-label="Auto" data-eid="e33"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></svg></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: explanation of the whole move -->
+            <div class="gn-explain" data-eid="e34">
+              <div data-eid="e35">
+                <h2 class="ds-h2" style="margin: 0 0 calc(8px * var(--space-scale, 1))" data-eid="e36">One layout, three widths</h2>
+                <p class="ds-text" style="margin: 0; color: hsl(var(--muted-foreground)); max-width: 520px" data-eid="e37">The sidebar holds the navigation on a wide screen. It folds into a compact header and a menu button on a phone, so the same list fits without any sideways scrolling.</p>
+              </div>
+
+              <div class="gn-breaks" data-eid="e38">
+                <div class="gn-break" data-eid="e39">
+                  <div class="gn-break-figure" data-eid="e40">
+                    <div class="gn-break-screen" aria-hidden="true" style="width: 100%" data-eid="e41">
+                      <div class="gn-break-bar" data-eid="e42"></div>
+                      <div class="gn-break-col" data-eid="e43"><div class="gn-break-line" style="width: 70%" data-eid="e44"></div><div class="gn-break-line" data-eid="e45"></div><div class="gn-break-line" data-eid="e46"></div></div>
+                    </div>
+                  </div>
+                  <span class="gn-bp-name" data-eid="e47">Desktop</span>
+                  <h3 data-eid="e48">Sidebar stays</h3>
+                  <p data-eid="e49">Fixed on the left. Cards sit in columns.</p>
+                </div>
+                <div class="gn-break" data-eid="e50">
+                  <div class="gn-break-figure" data-eid="e51">
+                    <div class="gn-break-screen" aria-hidden="true" style="width: 78%" data-eid="e52">
+                      <div class="gn-break-bar" data-eid="e53"></div>
+                      <div class="gn-break-col" data-eid="e54"><div class="gn-break-line" style="width: 60%" data-eid="e55"></div><div class="gn-break-line" data-eid="e56"></div></div>
+                    </div>
+                  </div>
+                  <span class="gn-bp-name" data-eid="e57">Tablet</span>
+                  <h3 data-eid="e58">Sidebar, fewer columns</h3>
+                  <p data-eid="e59">Navigation holds. Cards wrap into fewer columns.</p>
+                </div>
+                <div class="gn-break" data-eid="e60">
+                  <div class="gn-break-figure" data-eid="e61">
+                    <div class="gn-break-screen" aria-hidden="true" style="width: 52%" data-eid="e62">
+                      <div class="gn-break-col" data-eid="e63"><div class="gn-break-line" style="width: 50%" data-eid="e64"></div><div class="gn-break-line" data-eid="e65"></div><div class="gn-break-line" style="width: 80%" data-eid="e66"></div></div>
+                    </div>
+                  </div>
+                  <span class="gn-bp-name" data-eid="e67">Phone</span>
+                  <h3 data-eid="e68">Compact header</h3>
+                  <p data-eid="e69">App name and a menu button. Cards stack, one column.</p>
+                </div>
+              </div>
+
+              <div class="gn-rule" data-eid="e70">
+                <div class="gn-tap" aria-hidden="true" data-eid="e71">44 px</div>
+                <div data-eid="e72">
+                  <h3 data-eid="e73">Easy to tap</h3>
+                  <p data-eid="e74">Buttons and checkboxes stay at least 44 pixels tall, and no screen scrolls sideways at any width.</p>
+                </div>
+              </div>
+
+              <div class="gn-shot" aria-hidden="true" data-eid="e75">
+                <div class="gn-side" data-eid="e76">
+                  <div class="gn-side-brand" data-eid="e77">
+                    <img class="ds-brand ds-brand-light" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/4db7d9fa-5751-4d03-a387-a03389ae8786/66bc4fc6-9829-4297-b579-36b98cd4b1c2/pikachu.png" alt="" data-eid="e78">
+                    <img class="ds-brand ds-brand-dark" src="https://blocksdev.blob.core.windows.net/d37088d949337437ea80c61bce50dfd50/Public/f2f6488c-a0c3-4e6a-9786-e726fff29e15/106500fc-0028-44d1-a371-c9fae6669afd/pikachu.png" alt="" data-eid="e79">
+                    <span class="gn-side-name" data-eid="e80">Quick Task Manager</span>
+                  </div>
+                  <div class="gn-nav" data-eid="e81">
+                    <span class="ds-nav-item ds-active" data-eid="e82"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Home</span>
+                    <span class="ds-nav-item" data-eid="e83"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Statistics</span>
+                    <span class="ds-nav-item" data-eid="e84"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9 2 2 0 1 1-2.8 2.8 1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5 2 2 0 1 1-4 0 1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3 2 2 0 1 1-2.8-2.8 1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1 2 2 0 1 1 0-4 1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9 2 2 0 1 1 2.8-2.8 1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5 2 2 0 1 1 4 0 1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3 2 2 0 1 1 2.8 2.8 1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.5 1 2 2 0 1 1 0 4 1.7 1.7 0 0 0-1.5 1Z"/></svg>Settings</span>
+                  </div>
+                  <div class="gn-side-foot" data-eid="e85">
+                    <svg class="gn-illo" viewBox="0 0 180 96" fill="none" aria-hidden="true">
+                      <rect x="6" y="12" width="120" height="18" rx="5" fill="hsl(var(--primary) / 0.12)"/>
+                      <circle cx="18" cy="21" r="5" fill="hsl(var(--success))"/>
+                      <path d="M15.5 21l2 2 3-4" stroke="hsl(var(--success-foreground))" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="28" y="18" width="72" height="6" rx="3" fill="hsl(var(--primary) / 0.3)"/>
+                      <rect x="6" y="40" width="120" height="18" rx="5" fill="hsl(var(--muted))"/>
+                      <circle cx="18" cy="49" r="5" stroke="hsl(var(--border))" stroke-width="1.75"/>
+                      <rect x="28" y="46" width="58" height="6" rx="3" fill="hsl(var(--border))"/>
+                      <rect x="6" y="68" width="120" height="18" rx="5" fill="hsl(var(--muted))"/>
+                      <circle cx="18" cy="77" r="5" stroke="hsl(var(--border))" stroke-width="1.75"/>
+                      <rect x="28" y="74" width="84" height="6" rx="3" fill="hsl(var(--border))"/>
+                      <circle cx="150" cy="48" r="22" fill="hsl(var(--primary) / 0.1)"/>
+                      <path d="M143 48l5 5 10-11" stroke="hsl(var(--primary-text))" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="gn-side-tag" data-eid="e86">Plan. Focus. Achieve.</span>
+                  </div>
+                </div>
+                <div class="gn-shot-main" data-eid="e87">
+                  <div class="gn-shot-top" data-eid="e88">
+                    <span class="gn-shot-name" data-eid="e89">Home</span>
+                    <span class="ds-avatar ds-avatar-sm" data-sample data-eid="e90">MH</span>
+                  </div>
+                  <div class="gn-shot-cards" data-eid="e91">
+                    <div class="gn-shot-card" data-eid="e92"><span data-eid="e93">Total</span><span data-eid="e94">4</span></div>
+                    <div class="gn-shot-card" data-eid="e95"><span data-eid="e96">Completed</span><span data-eid="e97">1</span></div>
+                    <div class="gn-shot-card" data-eid="e98"><span data-eid="e99">Pending</span><span data-eid="e100">3</span></div>
+                  </div>
+                  <div class="gn-shot-row" data-eid="e101"><span class="gn-dot" data-eid="e102"></span><span class="gn-bar" data-eid="e103"></span></div>
+                  <div class="gn-shot-row" data-eid="e104"><span class="gn-dot" style="border-color: hsl(var(--success)); background: hsl(var(--success) / 0.18)" data-eid="e105"></span><span class="gn-bar short" data-eid="e106"></span></div>
+                </div>
+              </div>
+
+              <div class="gn-caption" data-eid="e107">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+                <span data-eid="e108">The menu on a phone also holds the colour mode switch, so no screen loses its toggle.</span>
+              </div>
+
+              <div class="gn-note" data-eid="e109">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+                <p data-eid="e110">Home is selected first. Reaching Statistics or Settings is one menu choice away, and the chosen screen closes the menu.</p>
+              </div>
+
+              <div class="ds-actions" data-eid="e111">
+                <a class="ds-btn ds-btn-ghost" data-goto="statistics" data-eid="e112">See Statistics</a>
+                <a class="ds-btn ds-btn-secondary" data-goto="settings" data-eid="e113">Open Settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Situation: an empty task list, so the same layout holds up when there is nothing to show -->
+      <section data-state="empty" data-replaces="content" hidden data-eid="e114">
+        <div class="ds-page" style="padding-top: calc(24px * var(--space-scale, 1)); padding-bottom: calc(48px * var(--space-scale, 1))" data-eid="e115">
+          <div class="ds-page-head" data-eid="e116">
+            <div data-eid="e117">
+              <span class="ds-eyebrow" data-sample="GN-01.label" data-eid="e118">Move around on a phone</span>
+              <h1 class="ds-h1" style="margin-top: calc(8px * var(--space-scale, 1))" data-eid="e119">The same list, fitted to the screen</h1>
+              <p class="ds-muted" style="margin: calc(6px * var(--space-scale, 1)) 0 0; max-width: 560px" data-eid="e120">A fixed sidebar on a desktop, a compact header with a menu on a phone. Home, Statistics and Settings are always one tap away.</p>
+            </div>
+            <a class="ds-btn" data-goto="home" data-eid="e121">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 12l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+              Go to Home
+            </a>
+          </div>
+
+          <div class="ds-card" style="margin-top: calc(24px * var(--space-scale, 1))" data-eid="e122">
+            <div class="ds-empty" style="padding: calc(32px * var(--space-scale, 1)) calc(16px * var(--space-scale, 1))" data-eid="e123">
+              <span class="ds-empty-icon" data-eid="e124">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+              </span>
+              <b style="color: hsl(var(--foreground))">No tasks here. Add a task to get started!</b>
+              <span data-eid="e125">Home is on the menu. Add your first task and the layout settles into place at every width.</span>
+              <a class="ds-btn ds-btn-sm" style="margin-top: calc(8px * var(--space-scale, 1))" data-goto="home" data-eid="e126">Add a task</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

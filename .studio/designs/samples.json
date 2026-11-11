@@ -1,0 +1,55 @@
+{
+  "records": {
+    "Task": [
+      {
+        "itemId": "task-1",
+        "title": "Finish project report",
+        "dueDate": "7 Nov"
+      },
+      {
+        "itemId": "task-2",
+        "title": "Read a book",
+        "dueDate": "Today"
+      },
+      {
+        "itemId": "task-3",
+        "title": "Go for a walk",
+        "dueDate": "Tomorrow"
+      },
+      {
+        "itemId": "task-4",
+        "title": "Renew car insurance before the weekend and send the new certificate to Priya",
+        "dueDate": "18 Nov"
+      },
+      {
+        "itemId": "task-5",
+        "title": "Call the dentist",
+        "dueDate": "3 Nov"
+      }
+    ],
+    "GN-01": [
+      {
+        "itemId": "gn-01-1",
+        "label": "Move around on a phone"
+      }
+    ]
+  },
+  "me": {
+    "name": "Priya Shah",
+    "email": "priya.shah@northgate-studio.co.uk",
+    "memberSince": "3 Nov 2026",
+    "role": "Task owner"
+  },
+  "empty": {
+    "home": {
+      "empty": [
+        "Task"
+      ]
+    },
+    "compact-header-with-a-menu-on-phones": {
+      "empty": [
+        "GN-01"
+      ]
+    }
+  }
+}
